@@ -1,6 +1,7 @@
 "use client";
 
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
+import EmotionRegistry from "./EmotionRegistry";
 import { Playfair_Display, Inter } from "next/font/google";
 
 const inter = Inter({
@@ -102,9 +103,11 @@ export default function ThemeRegistry({
   children: React.ReactNode;
 }) {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      {children}
-    </ThemeProvider>
+    <EmotionRegistry>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        {children}
+      </ThemeProvider>
+    </EmotionRegistry>
   );
 }
