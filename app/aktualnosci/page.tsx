@@ -1,0 +1,174 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Box, Container, Grid, Typography } from "@mui/material";
+import { getAllPosts } from "@/lib/posts";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+
+export const metadata: Metadata = {
+  title: "Aktualności | Jan Matusiak — Radca Prawny",
+  description:
+    "Artykuły prawne i komentarze dotyczące prawa spółek, umów, negocjacji i obsługi przedsiębiorców. Blog kancelarii Jana Matusiaka.",
+};
+
+const NAVY = "#0B1829";
+const GOLD = "#B8924A";
+const BORDER = "#E8E4DC";
+const LIGHT = "#F6F4F0";
+
+function formatDate(dateStr: string) {
+  return new Date(dateStr).toLocaleDateString("pl-PL", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
+export default function AktualnosciPage() {
+  const posts = getAllPosts();
+
+  return (
+    <Box sx={{ backgroundColor: "#ffffff", minHeight: "100vh" }}>
+
+      {/* ── NAGŁÓWEK ── */}
+      <Box sx={{
+        backgroundColor: NAVY,
+        pt: { xs: "88px", md: "108px" },
+        pb: { xs: 6, md: 7 },
+        borderBottom: `3px solid ${GOLD}`,
+      }}>
+        <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 2.5 }}>
+            <Box sx={{ width: 24, height: "1.5px", backgroundColor: GOLD }} />
+            <Typography sx={{
+              color: GOLD, fontSize: "0.68rem", fontWeight: 600,
+              letterSpacing: "0.22em", textTransform: "uppercase",
+            }}>
+              Blog · Aktualności
+            </Typography>
+          </Box>
+          <Typography variant="h1" sx={{
+            color: "#ffffff",
+            fontSize: { xs: "2rem", md: "3rem" },
+            lineHeight: 1.15, letterSpacing: "-0.015em", mb: 2, maxWidth: 600,
+          }}>
+            Prawo w{" "}
+            <Box component="span" sx={{ color: GOLD, fontStyle: "italic" }}>
+              praktyce biznesowej.
+            </Box>
+          </Typography>
+          <Typography sx={{
+            color: "rgba(255,255,255,0.6)",
+            fontSize: { xs: "0.9rem", md: "1rem" },
+            lineHeight: 1.75, maxWidth: 520,
+          }}>
+            Artykuły i komentarze dotyczące prawa spółek, umów, negocjacji
+            i obsługi przedsiębiorców. Bez zbędnej teorii — z naciskiem
+            na praktyczne znaczenie omawianych zagadnień.
+          </Typography>
+        </Container>
+      </Box>
+
+      {/* ── LISTA ARTYKUŁÓW ── */}
+      <Box sx={{ backgroundColor: LIGHT, py: { xs: 6, md: 8 } }}>
+        <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
+
+          {posts.length === 0 ? (
+            <Box sx={{
+              backgroundColor: "#ffffff", border: `1px solid ${BORDER}`,
+              p: 6, textAlign: "center",
+            }}>
+              <Typography sx={{ color: "#9CA3AF", fontSize: "0.9rem" }}>
+                Wkrótce pojawią się pierwsze artykuły.
+              </Typography>
+            </Box>
+          ) : (
+            <Grid container spacing={{ xs: 2.5, md: 3 }}>
+              {posts.map((post, i) => (
+                <Grid key={post.slug} size={{ xs: 12, md: i === 0 ? 12 : 6 }}>
+                  <Link href={`/aktualnosci/${post.slug}`} style={{ textDecoration: "none", display: "block", height: "100%" }}>
+                  <Box
+                    sx={{
+                      display: "block",
+                      backgroundColor: "#ffffff",
+                      border: `1px solid ${BORDER}`,
+                      borderTop: `3px solid ${i === 0 ? GOLD : BORDER}`,
+                      p: { xs: 3, md: i === 0 ? 4.5 : 3.5 },
+                      height: "100%",
+                      transition: "border-top-color 0.2s, box-shadow 0.2s",
+                      "&:hover": {
+                        borderTopColor: GOLD,
+                        boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+                      },
+                    }}
+                  >
+                    {/* Meta */}
+                    <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}>
+                      <Typography sx={{
+                        fontSize: "0.68rem", fontWeight: 600,
+                        color: GOLD, letterSpacing: "0.15em", textTransform: "uppercase",
+                      }}>
+                        {post.category}
+                      </Typography>
+                      <Box sx={{ width: 3, height: 3, borderRadius: "50%", backgroundColor: BORDER }} />
+                      <Typography sx={{ fontSize: "0.75rem", color: "#9CA3AF" }}>
+                        {formatDate(post.date)}
+                      </Typography>
+                      <Box sx={{ width: 3, height: 3, borderRadius: "50%", backgroundColor: BORDER }} />
+                      <Typography sx={{ fontSize: "0.75rem", color: "#9CA3AF" }}>
+                        {post.readTime} czytania
+                      </Typography>
+                    </Box>
+
+                    {/* Tytuł */}
+                    <Typography
+                      variant={i === 0 ? "h2" : "h3"}
+                      sx={{
+                        fontFamily: "'Playfair Display', Georgia, serif",
+                        fontWeight: 700,
+                        fontSize: i === 0
+                          ? { xs: "1.3rem", md: "1.75rem" }
+                          : { xs: "1.05rem", md: "1.2rem" },
+                        color: NAVY,
+                        lineHeight: 1.3,
+                        mb: 1.5,
+                        letterSpacing: "-0.01em",
+                      }}
+                    >
+                      {post.title}
+                    </Typography>
+
+                    {/* Excerpt */}
+                    <Typography sx={{
+                      fontSize: "0.875rem", color: "#5A5A5A",
+                      lineHeight: 1.75,
+                      mb: 2.5,
+                      display: "-webkit-box",
+                      WebkitLineClamp: i === 0 ? 3 : 2,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                    }}>
+                      {post.excerpt}
+                    </Typography>
+
+                    {/* Link */}
+                    <Box sx={{ display: "flex", alignItems: "center", gap: 0.75 }}>
+                      <Typography sx={{
+                        fontSize: "0.8rem", fontWeight: 600,
+                        color: NAVY, letterSpacing: "0.02em",
+                      }}>
+                        Czytaj dalej
+                      </Typography>
+                      <ArrowForwardIcon sx={{ fontSize: "0.9rem", color: GOLD }} />
+                    </Box>
+                  </Box>
+                  </Link>
+                </Grid>
+              ))}
+            </Grid>
+          )}
+        </Container>
+      </Box>
+
+    </Box>
+  );
+}
