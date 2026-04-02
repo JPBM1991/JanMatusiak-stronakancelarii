@@ -6,7 +6,7 @@ import ScheduleOutlinedIcon from "@mui/icons-material/ScheduleOutlined";
 import InsightsOutlinedIcon from "@mui/icons-material/InsightsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
@@ -16,14 +16,14 @@ import { KancelariaCTA } from "@/components/KanalariaClient";
 export const metadata: Metadata = {
   title: "Kancelaria | Jan Matusiak — Radca Prawny",
   description:
-    "Jednoosobowa, butikowa kancelaria radcy prawnego Jana Matusiaka. Strategiczne doradztwo prawne dla przedsiębiorców. Model pracy, wartości i zasady współpracy.",
+    "Jednoosobowa kancelaria radcy prawnego Jana Matusiaka. Strategiczne doradztwo prawne dla przedsiębiorców. Model pracy, wartości i zasady współpracy.",
 };
 
-const NAVY = "#0B1829";
-const NAVY_MID = "#1A2B45";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
-const LIGHT = "#F6F4F0";
+const NAVY = "#2B3A4A";
+const NAVY_MID = "#425A6F";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
+const LIGHT = "#EDF3F6";
 
 const differentiators = [
   {
@@ -34,7 +34,7 @@ const differentiators = [
   {
     icon: <WorkHistoryOutlinedIcon />,
     title: "Doświadczenie",
-    desc: "Wieloletnia praktyka w zakresie prawa spółek, umów, postępowań spornych i obsługi przedsiębiorców — w tym dla podmiotów z branży IT, medycznej, budowlanej i nowych technologii.",
+    desc: "Wieloletnia praktyka w zakresie prawa spółek, umów, postępowań spornych i obsługi przedsiębiorców. W tym dla podmiotów z branży FMCG, IT, medycznej, budowlanej i nowych technologii.",
   },
   {
     icon: <ScheduleOutlinedIcon />,
@@ -61,15 +61,15 @@ const differentiators = [
 const steps = [
   {
     number: "01",
-    icon: <PhoneOutlinedIcon />,
+    icon: <MailOutlineIcon />,
     title: "Pierwszy kontakt",
-    desc: "Rozmowa telefoniczna lub wideorozmowa — krótka, bez zobowiązań. Celem jest wstępne rozpoznanie, z czym przychodzi klient i czy sprawa mieści się w zakresie mojej praktyki.",
+    desc: "Napisz wiadomość e-mail z krótkim opisem sprawy — czym się zajmujesz, z czym przychodzisz i czego szukasz. To wystarczy, żebym mógł wstępnie ocenić, czy mogę pomóc. Preferuję tę formę kontaktu: pozwala obu stronom dobrze przygotować się do rozmowy. Możliwy jest też kontakt telefoniczny.",
   },
   {
     number: "02",
     icon: <SearchOutlinedIcon />,
     title: "Ocena sprawy",
-    desc: "Po wstępnej rozmowie oceniam, czy kancelaria może realnie pomóc. Nie przyjmuję spraw, które wykraczają poza mój profil praktyki — to uczciwe wobec obu stron.",
+    desc: "Po wstępnym kontakcie oceniam, czy kancelaria może realnie pomóc. Nie przyjmuję spraw, które wykraczają poza mój profil praktyki czy dotychczasowe doświadczenie. To uczciwe wobec obu stron.",
   },
   {
     number: "03",
@@ -87,7 +87,7 @@ const steps = [
     number: "05",
     icon: <SupportAgentOutlinedIcon />,
     title: "Obsługa sprawy",
-    desc: "Praca merytoryczna, kontakt mailowy i telefoniczny, raportowanie postępów. Zdalne, sprawnie i z pełnym zaangażowaniem.",
+    desc: "Praca merytoryczna, kontakt mailowy i telefoniczny, raportowanie postępów. Zdalnie lub stacjonarnie — zależnie od potrzeb.",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function KancelariaPage() {
             fontSize: { xs: "2rem", md: "3rem" },
             lineHeight: 1.15, letterSpacing: "-0.015em", mb: 2, maxWidth: 680,
           }}>
-            Butikowa kancelaria dla{" "}
+            Kancelaria dla{" "}
             <Box component="span" sx={{ color: GOLD, fontStyle: "italic" }}>
               przedsiębiorców.
             </Box>
@@ -137,10 +137,7 @@ export default function KancelariaPage() {
             fontSize: { xs: "0.9rem", md: "1rem" },
             lineHeight: 1.75, maxWidth: 560,
           }}>
-            Jednoosobowa praktyka nastawiona na strategiczne doradztwo prawne
-            dla biznesu. Nie kancelaria od wszystkiego — kancelaria
-            dla klientów, których sprawy mieszczą się w jasno określonym
-            profilu praktyki.
+            Praktyka nastawiona na strategiczne doradztwo prawne dla biznesu.
           </Typography>
         </Container>
       </Box>
@@ -163,45 +160,21 @@ export default function KancelariaPage() {
               <Typography variant="h2" sx={{
                 color: NAVY,
                 fontSize: { xs: "1.6rem", md: "2.1rem" },
-                lineHeight: 1.25, letterSpacing: "-0.01em", mb: 3,
+                lineHeight: 1.25, letterSpacing: "-0.01em",
               }}>
-                Osobiste wsparcie prawne. Nie masowa obsługa.
+                Strategiczne wsparcie prawne.
               </Typography>
-              <Box
-                sx={{
-                  borderLeft: `3px solid ${GOLD}`,
-                  pl: 3,
-                  py: 0.5,
-                }}
-              >
-                <Typography sx={{
-                  fontFamily: "'Playfair Display', Georgia, serif",
-                  fontSize: { xs: "1rem", md: "1.1rem" },
-                  color: NAVY,
-                  lineHeight: 1.65,
-                  fontStyle: "italic",
-                }}>
-                  „Zależy mi na tym, żeby obsługa prawna była realnie
-                  użyteczna dla klienta — a nie tylko formalnie poprawna."
-                </Typography>
-                <Typography sx={{
-                  fontSize: "0.78rem", color: GOLD, fontWeight: 600,
-                  mt: 1.5, letterSpacing: "0.05em",
-                }}>
-                  — Jan Matusiak, radca prawny
-                </Typography>
-              </Box>
             </Grid>
 
             <Grid size={{ xs: 12, md: 7 }}>
               {[
                 {
-                  lead: "Kancelaria Jana Matusiaka to jednoosobowa, butikowa praktyka prawna nastawiona na strategiczne doradztwo dla przedsiębiorców i biznesu.",
-                  body: "Działam w modelu zbliżonym do zewnętrznego general counsel — jako prawnik, który rozumie nie tylko przepisy, ale też realia prowadzenia firmy, ryzyko kontraktowe, struktury korporacyjne i potrzeby operacyjne klienta.",
+                  lead: "Kancelaria specjalizuje się przede wszystkim w obsłudze prawnej przedsiębiorców oraz klientów indywidualnych w pięciu obszarach.",
+                  body: "",
                 },
                 {
                   lead: "Obsługuję ograniczoną liczbę klientów.",
-                  body: "To świadomy wybór. Zależy mi na tym, żeby każda sprawa była prowadzona z pełnym zaangażowaniem — a nie tylko zarejestrowana w systemie i przekazana do obsługi. Każdy klient kontaktuje się bezpośrednio ze mną.",
+                  body: "To świadomy wybór. Każda sprawa jest prowadzona przeze mnie — nie przekazywana dalej. Każdy klient kontaktuje się bezpośrednio ze mną.",
                 },
                 {
                   lead: "Działam ogólnopolsko i zdalnie.",
@@ -265,7 +238,7 @@ export default function KancelariaPage() {
                     {d.icon}
                   </Box>
                   <Typography sx={{
-                    fontFamily: "'Playfair Display', Georgia, serif",
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
                     fontWeight: 700, fontSize: "0.95rem",
                     color: NAVY, mb: 1.25, lineHeight: 1.3,
                   }}>
@@ -355,7 +328,7 @@ export default function KancelariaPage() {
                       {step.number}
                     </Typography>
                     <Typography sx={{
-                      fontFamily: "'Playfair Display', Georgia, serif",
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
                       fontWeight: 700, fontSize: { xs: "0.95rem", md: "1.05rem" },
                       color: NAVY,
                     }}>
@@ -389,11 +362,9 @@ export default function KancelariaPage() {
               Wynagrodzenie
             </Typography>
             <Typography sx={{ fontSize: "0.875rem", color: "#4A4A4A", lineHeight: 1.75 }}>
-              Na stronie nie ma cennika ani orientacyjnych stawek. Wynagrodzenie jest
-              ustalane indywidualnie — po kontakcie i wstępnej ocenie sprawy.
-              Podstawowym modelem rozliczeń jest stawka godzinowa, możliwe są też
-              inne formy uzgodnione z klientem. Co do zasady czynności są płatne;
-              wstępna rozmowa rozpoznawcza (ok. 15 min) może być wyjątkiem.
+              Wynagrodzenie jest ustalane indywidualnie — na etapie wstępnej rozmowy,
+              po ocenie sprawy. Podstawowym modelem rozliczeń jest stawka godzinowa;
+              możliwe są też inne formy uzgodnione z klientem.
             </Typography>
           </Box>
         </Container>

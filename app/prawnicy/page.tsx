@@ -1,0 +1,165 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { Box, Container, Grid, Typography } from "@mui/material";
+
+export const metadata: Metadata = {
+  title: "Prawnicy | Jan Matusiak — Radca Prawny",
+  description:
+    "Jan Matusiak — radca prawny, założyciel kancelarii. Daria Meysztowicz-Matusiak — radca prawny, Of Counsel, specjalistka ds. transakcji inwestycyjnych i venture capital.",
+};
+
+const NAVY = "#2B3A4A";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
+const LIGHT = "#EDF3F6";
+
+const lawyers = [
+  {
+    name: "Jan Matusiak",
+    role: "Radca prawny · Założyciel",
+    photo: "/jan-matusiak.jpg",
+    excerpt:
+      "Specjalizuję się w prawie cywilnym i gospodarczym. Obsługuję przede wszystkim przedsiębiorców i klientów indywidualnych w sprawach korporacyjnych, majątkowych i spornych.",
+    href: "/jan-matusiak",
+  },
+  {
+    name: "Daria Meysztowicz-Matusiak",
+    role: "Radca prawny · Of Counsel",
+    photo: "/daria-meysztowicz-matusiak.jpg",
+    excerpt:
+      "Koncentruje swoją praktykę na transakcjach inwestycyjnych, w szczególności w obszarze venture capital, oraz na bieżącej obsłudze prawnej podmiotów gospodarczych.",
+    href: "/of-counsel",
+  },
+];
+
+export default function PrawnicyPage() {
+  return (
+    <Box sx={{ backgroundColor: "#ffffff", minHeight: "100vh" }}>
+
+      {/* ── NAGŁÓWEK ── */}
+      <Box sx={{
+        backgroundColor: NAVY,
+        pt: { xs: "88px", md: "108px" },
+        pb: { xs: 6, md: 7 },
+        borderBottom: `3px solid ${GOLD}`,
+      }}>
+        <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 2.5 }}>
+            <Box sx={{ width: 24, height: "1.5px", backgroundColor: GOLD }} />
+            <Typography sx={{
+              color: GOLD,
+              fontSize: "0.68rem",
+              fontWeight: 600,
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+            }}>
+              Kancelaria
+            </Typography>
+          </Box>
+          <Typography variant="h1" sx={{
+            color: "#ffffff",
+            fontSize: { xs: "2.2rem", md: "3rem" },
+            lineHeight: 1.15,
+            letterSpacing: "-0.015em",
+            mb: 1.5,
+          }}>
+            Prawnicy
+          </Typography>
+          <Typography sx={{
+            color: "rgba(255,255,255,0.6)",
+            fontSize: { xs: "0.9rem", md: "1rem" },
+            lineHeight: 1.75,
+            maxWidth: 520,
+          }}>
+            Kancelaria prowadzona przez Jana Matusiaka. W wybranych sprawach
+            współpracuje z doświadczonymi prawnikami zewnętrznymi.
+          </Typography>
+        </Container>
+      </Box>
+
+      {/* ── KARTY ── */}
+      <Box sx={{ backgroundColor: LIGHT, py: { xs: 7, md: 9 } }}>
+        <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
+          <Grid container spacing={{ xs: 4, md: 5 }}>
+            {lawyers.map((lawyer) => (
+              <Grid key={lawyer.href} size={{ xs: 12, md: 6 }}>
+                <Box sx={{
+                  backgroundColor: "#ffffff",
+                  border: `1px solid ${BORDER}`,
+                  borderTop: `3px solid ${GOLD}`,
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}>
+                  {/* Zdjęcie */}
+                  <Box sx={{ position: "relative", width: "100%", aspectRatio: "4/3", overflow: "hidden" }}>
+                    <Image
+                      src={lawyer.photo}
+                      alt={lawyer.name}
+                      fill
+                      style={{ objectFit: "cover", objectPosition: "center top" }}
+                    />
+                  </Box>
+
+                  {/* Treść */}
+                  <Box sx={{ p: { xs: 3, md: 3.5 }, flexGrow: 1, display: "flex", flexDirection: "column" }}>
+                    <Typography sx={{
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
+                      fontWeight: 700,
+                      fontSize: { xs: "1.2rem", md: "1.4rem" },
+                      color: NAVY,
+                      lineHeight: 1.2,
+                      mb: 0.5,
+                    }}>
+                      {lawyer.name}
+                    </Typography>
+                    <Typography sx={{
+                      fontSize: "0.7rem",
+                      fontWeight: 600,
+                      letterSpacing: "0.15em",
+                      textTransform: "uppercase",
+                      color: GOLD,
+                      mb: 2,
+                    }}>
+                      {lawyer.role}
+                    </Typography>
+                    <Typography sx={{
+                      fontSize: "0.875rem",
+                      color: "#5A5A5A",
+                      lineHeight: 1.75,
+                      flexGrow: 1,
+                      mb: 3,
+                    }}>
+                      {lawyer.excerpt}
+                    </Typography>
+                    <Link href={lawyer.href} style={{ textDecoration: "none" }}>
+                      <Box
+                        sx={{
+                          display: "inline-block",
+                          border: `1px solid ${BORDER}`,
+                          color: NAVY,
+                          fontWeight: 500,
+                          fontSize: "0.8rem",
+                          letterSpacing: "0.05em",
+                          py: 1.25,
+                          px: 3,
+                          cursor: "pointer",
+                          transition: "border-color 0.2s, color 0.2s",
+                          "&:hover": { borderColor: GOLD, color: GOLD },
+                        }}
+                      >
+                        Czytaj więcej →
+                      </Box>
+                    </Link>
+                  </Box>
+                </Box>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </Box>
+
+    </Box>
+  );
+}

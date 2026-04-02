@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     "Obsługa prawna dla przedsiębiorców MSP i właścicieli firm. Zewnętrzny radca prawny zamiast etatu — stałe wsparcie, elastyczny model, bezpośredni kontakt.",
 };
 
-const NAVY = "#0B1829";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
-const LIGHT = "#F6F4F0";
+const NAVY = "#2B3A4A";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
+const LIGHT = "#EDF3F6";
 
 const scenarios = [
   {
@@ -274,7 +274,7 @@ export default function DlaPrzedsiebiorcowPage() {
                       {scenario.icon}
                     </Box>
                     <Typography sx={{
-                      fontFamily: "'Playfair Display', Georgia, serif",
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
                       fontWeight: 700,
                       fontSize: { xs: "1.1rem", md: "1.25rem" },
                       color: NAVY,
@@ -348,7 +348,7 @@ export default function DlaPrzedsiebiorcowPage() {
           }}>
             <Box>
               <Typography sx={{
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontWeight: 700,
                 fontSize: { xs: "1rem", md: "1.15rem" },
                 color: NAVY, mb: 0.75,

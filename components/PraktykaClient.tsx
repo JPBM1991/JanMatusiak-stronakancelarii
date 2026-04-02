@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { Box, Button } from "@mui/material";
 
-const GOLD = "#B8924A";
-const NAVY = "#0B1829";
+const GOLD = "#2B3A4A";
+const NAVY = "#2B3A4A";
 
 export function PraktykaCTA() {
   return (

@@ -2,67 +2,68 @@
 
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import EmotionRegistry from "./EmotionRegistry";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Cormorant_Garamond, Outfit } from "next/font/google";
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600"],
+  weight: ["300", "400", "500", "600"],
 });
-const playfair = Playfair_Display({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin", "latin-ext"],
-  weight: ["600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
-const NAVY = "#0B1829";
-const NAVY_MID = "#1A2B45";
-const GOLD = "#C9A96E";
-const GOLD_LIGHT = "#DFC08E";
-const OFFWHITE = "#F8F7F5";
-const MUTED = "#6B7280";
+const BLUE = "#2B3A4A";
+const BLUE_MID = "#425A6F";
+const ACCENT = "#425A6F";
+const ACCENT_LIGHT = "#6A8BA0";
+const OFFWHITE = "#EDF3F6";
+const MUTED = "#6B6E73";
 
 const theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: NAVY,
-      light: NAVY_MID,
+      main: BLUE,
+      light: BLUE_MID,
       contrastText: "#ffffff",
     },
     secondary: {
-      main: GOLD,
-      light: GOLD_LIGHT,
-      contrastText: NAVY,
+      main: ACCENT,
+      light: ACCENT_LIGHT,
+      contrastText: BLUE,
     },
     background: {
       default: OFFWHITE,
-      paper: "#ffffff",
+      paper: "#FAFAFA",
     },
     text: {
-      primary: "#1C1C1E",
+      primary: "#1A1C1E",
       secondary: MUTED,
     },
   },
   typography: {
-    fontFamily: inter.style.fontFamily,
+    fontFamily: outfit.style.fontFamily,
     h1: {
-      fontFamily: playfair.style.fontFamily,
-      fontWeight: 700,
+      fontFamily: cormorant.style.fontFamily,
+      fontWeight: 300,
     },
     h2: {
-      fontFamily: playfair.style.fontFamily,
-      fontWeight: 700,
+      fontFamily: cormorant.style.fontFamily,
+      fontWeight: 400,
     },
     h3: {
-      fontFamily: playfair.style.fontFamily,
-      fontWeight: 600,
+      fontFamily: cormorant.style.fontFamily,
+      fontWeight: 400,
     },
     h4: {
-      fontFamily: playfair.style.fontFamily,
-      fontWeight: 600,
+      fontFamily: cormorant.style.fontFamily,
+      fontWeight: 400,
     },
     button: {
       textTransform: "none",
-      fontWeight: 600,
+      fontWeight: 500,
       letterSpacing: "0.02em",
     },
   },

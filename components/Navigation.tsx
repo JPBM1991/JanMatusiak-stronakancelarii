@@ -19,13 +19,13 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
-const NAVY = "#0B1829";
-const NAVY_MID = "#1A2B45";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
+const NAVY = "#2B3A4A";
+const NAVY_MID = "#425A6F";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
 
 const links = [
-  { label: "Jan Matusiak", href: "/jan-matusiak" },
+  { label: "Prawnicy", href: "/prawnicy" },
   { label: "Kancelaria", href: "/kancelaria" },
   { label: "Praktyka", href: "/praktyka" },
   { label: "Dla przedsiębiorców", href: "/dla-przedsiebiorcow" },
@@ -68,7 +68,7 @@ export default function Navigation() {
           >
             <Typography
               sx={{
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontWeight: 700,
                 fontSize: { xs: "1rem", md: "1.05rem" },
                 color: NAVY,
@@ -169,7 +169,7 @@ export default function Navigation() {
           <Box>
             <Typography
               sx={{
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontWeight: 700,
                 color: NAVY,
                 fontSize: "1rem",
@@ -201,7 +201,7 @@ export default function Navigation() {
                 component={Link}
                 href={link.href}
                 onClick={() => setDrawerOpen(false)}
-                sx={{ px: 3, py: 1.5, "&:hover": { backgroundColor: "#F6F4F0" } }}
+                sx={{ px: 3, py: 1.5, "&:hover": { backgroundColor: "#EDF3F6" } }}
               >
                 <ListItemText
                   primary={link.label}

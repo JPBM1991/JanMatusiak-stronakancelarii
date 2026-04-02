@@ -11,10 +11,10 @@ import {
 } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
-const NAVY = "#0B1829";
-const NAVY_MID = "#1A2B45";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
+const NAVY = "#2B3A4A";
+const NAVY_MID = "#425A6F";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -97,7 +97,7 @@ export default function ContactForm() {
         <CheckCircleOutlineIcon sx={{ fontSize: 48, color: GOLD, mb: 2 }} />
         <Typography
           sx={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontWeight: 700,
             fontSize: "1.4rem",
             color: NAVY,
@@ -128,7 +128,7 @@ export default function ContactForm() {
     >
       <Typography
         sx={{
-          fontFamily: "'Playfair Display', Georgia, serif",
+          fontFamily: "'Cormorant Garamond', Georgia, serif",
           fontWeight: 700,
           fontSize: "1.2rem",
           color: NAVY,
@@ -138,8 +138,7 @@ export default function ContactForm() {
         Opisz sprawę
       </Typography>
       <Typography sx={{ fontSize: "0.82rem", color: "#6B7280", mb: 3.5, lineHeight: 1.6 }}>
-        Powiedz w kilku zdaniach, z czym przychodzisz. Skontaktuję się,
-        żeby umówić wstępną rozmowę.
+        Powiedz w kilku zdaniach, z czym przychodzisz.
       </Typography>
 
       {status === "error" && (
@@ -157,7 +156,7 @@ export default function ContactForm() {
         <TextField
           required
           fullWidth
-          label="Imię i nazwisko"
+          label="Imię"
           name="name"
           value={form.name}
           onChange={handleChange}

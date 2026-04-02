@@ -14,16 +14,17 @@ export const metadata: Metadata = {
     "Prawo spółek, kontraktowanie, obsługa bieżąca przedsiębiorców, spory gospodarcze i transakcje. Zakres praktyki kancelarii Jana Matusiaka.",
 };
 
-const NAVY = "#0B1829";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
-const LIGHT = "#F6F4F0";
+const NAVY = "#2B3A4A";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
+const LIGHT = "#EDF3F6";
 
 const areas = [
   {
+    id: "prawo-korporacyjne",
     icon: <BusinessOutlinedIcon />,
-    title: "Prawo spółek",
-    lead: "Zakładanie, przekształcanie i bieżąca obsługa spółek handlowych.",
+    title: "Prawo korporacyjne i handlowe",
+    lead: "Zakładanie, przekształcanie i bieżąca obsługa spółek.",
     items: [
       "Zakładanie spółek (sp. z o.o., S.A., spółki osobowe)",
       "Umowy i statuty spółek — projektowanie i negocjowanie",
@@ -35,9 +36,10 @@ const areas = [
     ],
   },
   {
+    id: "kontrakty",
     icon: <DescriptionOutlinedIcon />,
-    title: "Prawo umów i kontraktowanie",
-    lead: "Projektowanie, analiza i negocjowanie umów B2B.",
+    title: "Kontrakty i negocjacje",
+    lead: "Projektowanie, analiza i negocjowanie umów handlowych.",
     items: [
       "Umowy B2B — przegląd, sporządzanie, negocjowanie",
       "Umowy o współpracy, agencyjne, dystrybucyjne, franczyzowe",
@@ -48,9 +50,10 @@ const areas = [
     ],
   },
   {
+    id: "obsluga-przedsiebiorcow",
     icon: <SupportAgentOutlinedIcon />,
-    title: "Bieżąca obsługa prawna",
-    lead: "Model zewnętrznego radcy prawnego — stałe wsparcie bez etatu.",
+    title: "Obsługa przedsiębiorców",
+    lead: "Model zewnętrznego counsel — stałe wsparcie prawne bez etatu.",
     items: [
       "Stała obsługa prawna w modelu retainer (ryczałt miesięczny)",
       "Opiniowanie umów i dokumentów korporacyjnych na bieżąco",
@@ -61,29 +64,31 @@ const areas = [
     ],
   },
   {
+    id: "postepowania-sporne",
     icon: <BalanceOutlinedIcon />,
-    title: "Spory gospodarcze",
-    lead: "Reprezentacja w sporach między przedsiębiorcami.",
+    title: "Postępowania sporne",
+    lead: "Reprezentacja przed sądami w sprawach gospodarczych i cywilnych.",
     items: [
       "Spory kontraktowe — roszczenia z umów B2B",
       "Dochodzenie wierzytelności i obrona przed roszczeniami",
       "Postępowania sądowe przed sądami powszechnymi",
+      "Sprawy frankowe — reprezentacja kredytobiorców",
       "Negocjacje i ugody pozasądowe",
-      "Zabezpieczenia roszczeń w toku postępowania",
       "Spory wspólnicze i korporacyjne",
     ],
   },
   {
+    id: "majatek",
     icon: <CompareArrowsOutlinedIcon />,
-    title: "Transakcje i M&A",
-    lead: "Prawne wsparcie przy nabyciu i sprzedaży spółek oraz aktywów.",
+    title: "Ochrona i planowanie majątku",
+    lead: "Strukturyzacja, zabezpieczenie i sukcesja majątku — dla firm i klientów indywidualnych.",
     items: [
-      "Transakcje nabycia i sprzedaży udziałów / akcji (share deal)",
-      "Transakcje nabycia zorganizowanej części przedsiębiorstwa (asset deal)",
-      "Due diligence prawne — ocena ryzyka przed transakcją",
-      "Projektowanie i negocjowanie umów transakcyjnych (SPA, NDA, LOI)",
-      "Reprezentacje i gwarancje (R&W) w umowach sprzedaży",
-      "Post-closing — zamknięcie transakcji, rejestracja zmian",
+      "Planowanie i zabezpieczenie majątku osobistego i firmowego",
+      "Intercyzy i umowy majątkowe małżeńskie",
+      "Sukcesja i przekazanie majątku na kolejne pokolenia",
+      "Działy i rozliczenia majątkowe w sprawach rodzinnych",
+      "Darowizny i przeniesienie własności",
+      "Strukturyzacja majątku przez spółki",
     ],
   },
 ];
@@ -149,11 +154,13 @@ export default function PraktykaPage() {
             {areas.map((area, i) => (
               <Box
                 key={i}
+                id={area.id}
                 sx={{
                   backgroundColor: "#ffffff",
                   border: `1px solid ${BORDER}`,
                   borderLeft: `3px solid ${i % 2 === 0 ? GOLD : NAVY}`,
                   p: { xs: 3, md: 5 },
+                  scrollMarginTop: "100px",
                 }}
               >
                 <Grid container spacing={{ xs: 3, md: 6 }} alignItems="flex-start">
@@ -164,7 +171,7 @@ export default function PraktykaPage() {
                       {area.icon}
                     </Box>
                     <Typography sx={{
-                      fontFamily: "'Playfair Display', Georgia, serif",
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
                       fontWeight: 700,
                       fontSize: { xs: "1.15rem", md: "1.35rem" },
                       color: NAVY,

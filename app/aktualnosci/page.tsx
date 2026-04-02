@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     "Artykuły prawne i komentarze dotyczące prawa spółek, umów, negocjacji i obsługi przedsiębiorców. Blog kancelarii Jana Matusiaka.",
 };
 
-const NAVY = "#0B1829";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
-const LIGHT = "#F6F4F0";
+const NAVY = "#2B3A4A";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
+const LIGHT = "#EDF3F6";
 
 function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString("pl-PL", {
@@ -123,7 +123,7 @@ export default function AktualnosciPage() {
                     <Typography
                       variant={i === 0 ? "h2" : "h3"}
                       sx={{
-                        fontFamily: "'Playfair Display', Georgia, serif",
+                        fontFamily: "'Cormorant Garamond', Georgia, serif",
                         fontWeight: 700,
                         fontSize: i === 0
                           ? { xs: "1.3rem", md: "1.75rem" }

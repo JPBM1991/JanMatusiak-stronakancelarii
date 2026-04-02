@@ -3,17 +3,17 @@
 import Link from "next/link";
 import { Box, Button } from "@mui/material";
 
-const NAVY = "#0B1829";
-const NAVY_MID = "#1A2B45";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
+const NAVY = "#2B3A4A";
+const NAVY_MID = "#425A6F";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
 
 export function ContactButtons() {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
       <Button
         component="a"
-        href="tel:+48690720320"
+        href="tel:+48500255293"
         variant="contained"
         fullWidth
         sx={{
@@ -25,7 +25,7 @@ export function ContactButtons() {
           "&:hover": { backgroundColor: NAVY_MID },
         }}
       >
-        +48 690 720 320
+        +48 500 255 293
       </Button>
       <Button
         component="a"
@@ -87,7 +87,7 @@ export function CtaButtons() {
       </Button>
       <Button
         component="a"
-        href="tel:+48690720320"
+        href="tel:+48500255293"
         variant="outlined"
         size="large"
         fullWidth
@@ -103,7 +103,7 @@ export function CtaButtons() {
           },
         }}
       >
-        +48 690 720 320
+        +48 500 255 293
       </Button>
     </Box>
   );

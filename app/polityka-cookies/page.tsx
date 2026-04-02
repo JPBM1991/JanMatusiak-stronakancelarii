@@ -7,10 +7,10 @@ export const metadata: Metadata = {
     "Polityka Prywatności i Cookies kancelarii Jana Matusiaka — informacje o przetwarzaniu danych osobowych, plikach cookies i prawach użytkowników.",
 };
 
-const NAVY = "#0B1829";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
-const LIGHT = "#F6F4F0";
+const NAVY = "#2B3A4A";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
+const LIGHT = "#EDF3F6";
 
 function Section({ number, title, children }: { number: string; title: string; children: React.ReactNode }) {
   return (
@@ -23,7 +23,7 @@ function Section({ number, title, children }: { number: string; title: string; c
           {number}
         </Typography>
         <Typography sx={{
-          fontFamily: "'Playfair Display', Georgia, serif",
+          fontFamily: "'Cormorant Garamond', Georgia, serif",
           fontWeight: 700,
           fontSize: { xs: "1rem", md: "1.15rem" },
           color: NAVY,

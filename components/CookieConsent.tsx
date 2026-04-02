@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 
-const NAVY = "#0B1829";
-const GOLD = "#B8924A";
+const NAVY = "#2B3A4A";
+const GOLD = "#2B3A4A";
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);

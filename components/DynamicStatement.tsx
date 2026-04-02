@@ -4,14 +4,14 @@ import { useState, useEffect } from "react";
 import { Box, Container, Typography } from "@mui/material";
 import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
 
-const NAVY = "#0B1829";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
+const NAVY = "#2B3A4A";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
 
 const statements = [
   {
-    situation: "Masz umowę do podpisania.",
-    question: "Czy wiesz, co ryzykujesz?",
+    situation: "Masz umowę do podpisania?",
+    question: "Czy rozumiesz, co podpisujesz?",
   },
   {
     situation: "Spółka rośnie.",
@@ -110,7 +110,7 @@ export default function DynamicStatement() {
           >
             <Typography
               sx={{
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontWeight: 600,
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 color: NAVY,
@@ -121,7 +121,7 @@ export default function DynamicStatement() {
             </Typography>
             <Typography
               sx={{
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontWeight: 600,
                 fontStyle: "italic",
                 fontSize: { xs: "1.2rem", md: "1.5rem" },

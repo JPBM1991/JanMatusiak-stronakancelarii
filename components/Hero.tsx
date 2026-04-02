@@ -9,11 +9,11 @@ import GavelOutlinedIcon from "@mui/icons-material/GavelOutlined";
 import CheckIcon from "@mui/icons-material/Check";
 import DynamicStatement from "./DynamicStatement";
 
-const NAVY = "#0B1829";
-const NAVY_MID = "#1A2B45";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
-const LIGHT = "#F6F4F0";
+const NAVY = "#2B3A4A";
+const NAVY_MID = "#425A6F";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
+const LIGHT = "#EDF3F6";
 
 const pillars = [
   {
@@ -125,7 +125,7 @@ export default function Hero() {
                 maxWidth: 500,
                 mb: 4,
               }}>
-                Butikowa kancelaria prowadzona osobiście przez radcę prawnego
+                Kancelaria prowadzona osobiście przez radcę prawnego
                 Jana Matusiaka. Obsługuję firmy i przedsiębiorców, którym
                 zależy na świadomym partnerze prawnym — nie na najtańszej
                 usłudze. Działam ogólnopolsko, zdalnie.
@@ -183,7 +183,7 @@ export default function Hero() {
                 }}
               >
                 <Typography sx={{
-                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontFamily: "'Cormorant Garamond', Georgia, serif",
                   fontSize: "1.05rem",
                   fontWeight: 700,
                   color: NAVY,
@@ -222,7 +222,7 @@ export default function Hero() {
                   <Box component="span" sx={{ color: NAVY, fontWeight: 600 }}>
                     polskim i angielskim
                   </Box>
-                  . Sprawy z elementem zagranicznym — bez bariery językowej.
+                  .
                 </Typography>
               </Box>
             </Grid>
@@ -273,7 +273,7 @@ export default function Hero() {
                     {p.icon}
                   </Box>
                   <Typography sx={{
-                    fontFamily: "'Playfair Display', Georgia, serif",
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
                     fontWeight: 700,
                     fontSize: "0.95rem",
                     color: NAVY,

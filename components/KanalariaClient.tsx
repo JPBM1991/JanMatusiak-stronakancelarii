@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { Box, Button } from "@mui/material";
 
-const NAVY = "#0B1829";
-const NAVY_MID = "#1A2B45";
-const GOLD = "#B8924A";
+const NAVY = "#2B3A4A";
+const NAVY_MID = "#425A6F";
+const GOLD = "#2B3A4A";
 
 export function KancelariaCTA() {
   return (

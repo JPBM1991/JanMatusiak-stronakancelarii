@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     "Skontaktuj się z kancelarią. Opisz sprawę — umówimy wstępną rozmowę.",
 };
 
-const NAVY = "#0B1829";
-const GOLD = "#B8924A";
-const BORDER = "#E8E4DC";
-const LIGHT = "#F6F4F0";
+const NAVY = "#2B3A4A";
+const GOLD = "#2B3A4A";
+const BORDER = "#D4E2EA";
+const LIGHT = "#EDF3F6";
 
 const contactDetails = [
   {
@@ -21,23 +21,23 @@ const contactDetails = [
   },
   {
     label: "Telefon",
-    value: "+48 690 720 320",
-    href: "tel:+48690720320",
+    value: "+48 500 255 293",
+    href: "tel:+48500255293",
   },
 ];
 
 const infoItems = [
   {
     title: "Jak pracuję",
-    text: "Obsługuję klientów zdalnie — telefonicznie, mailowo i przez wideokonferencje. Spotkania stacjonarne organizuję wtedy, gdy są rzeczywiście potrzebne.",
+    text: "Obsługuję klientów przede wszystkim w sposób zdalny. Spotkania stacjonarne są organizowane każdorazowo przy zaistnieniu takiej potrzeby.",
   },
   {
     title: "Czas odpowiedzi",
     text: "Na wiadomości e-mail i zgłoszenia z formularza odpowiadam w ciągu 1–2 dni roboczych. W pilnych sprawach — zadzwoń bezpośrednio.",
   },
   {
-    title: "Pierwsza rozmowa",
-    text: "Zaczyna się od krótkiej rozmowy, żebym mógł ocenić, czy sprawa mieści się w zakresie mojej praktyki i czy współpraca ma sens dla obu stron.",
+    title: "Współpraca",
+    text: "Nawiązanie współpracy zaczynamy od korespondencji e-mail bądź krótkiej rozmowy telefonicznej, żebym mógł ocenić czy jestem w stanie pomóc w Twojej sprawie.",
   },
 ];
 
@@ -119,7 +119,7 @@ export default function KontaktPage() {
                 }}
               >
                 <Typography sx={{
-                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontFamily: "'Cormorant Garamond', Georgia, serif",
                   fontWeight: 700,
                   fontSize: "1.05rem",
                   color: NAVY,
@@ -162,9 +162,29 @@ export default function KontaktPage() {
                     Zasięg
                   </Typography>
                   <Typography sx={{ fontSize: "0.88rem", color: "#4A4A4A", lineHeight: 1.65 }}>
-                    Ogólnopolsko · Sprawy z elementem zagranicznym
+                    Ogólnopolskie · Doradztwo międzynarodowe
                     <br />
                     Obsługa w języku polskim i angielskim
+                  </Typography>
+                </Box>
+
+                <Box sx={{ borderTop: `1px solid ${BORDER}`, pt: 2, mt: 2.5 }}>
+                  <Typography sx={{ fontSize: "0.68rem", fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: GOLD, mb: 0.4 }}>
+                    Spotkania osobiste
+                  </Typography>
+                  <Typography sx={{ fontSize: "0.88rem", color: "#4A4A4A", lineHeight: 1.65 }}>
+                    Po wcześniejszym uzgodnieniu, w wybranym miejscu w Krakowie lub online (wideokonferencja).
+                  </Typography>
+                </Box>
+
+                <Box sx={{ borderTop: `1px solid ${BORDER}`, pt: 2, mt: 2.5 }}>
+                  <Typography sx={{ fontSize: "0.68rem", fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: GOLD, mb: 0.4 }}>
+                    Adres rejestrowy
+                  </Typography>
+                  <Typography sx={{ fontSize: "0.88rem", color: "#4A4A4A", lineHeight: 1.65 }}>
+                    ul. Stańczyka 22/54
+                    <br />
+                    30-126 Kraków
                   </Typography>
                 </Box>
               </Box>
@@ -182,7 +202,7 @@ export default function KontaktPage() {
                     }}
                   >
                     <Typography sx={{
-                      fontFamily: "'Playfair Display', Georgia, serif",
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
                       fontWeight: 700,
                       fontSize: "0.9rem",
                       color: NAVY,

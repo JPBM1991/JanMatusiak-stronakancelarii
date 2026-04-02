@@ -9,9 +9,9 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
-const NAVY = "#0B1829";
-const NAVY_DARK = "#060f1a";
-const GOLD = "#B8924A";
+const NAVY = "#2B3A4A";
+const NAVY_DARK = "#1A1C1E";
+const GOLD = "#2B3A4A";
 const BORDER = "rgba(255,255,255,0.08)";
 
 const navLinks = [
@@ -35,7 +35,7 @@ export default function Footer() {
       {/* ── MAPA ── */}
       <Box sx={{ display: { xs: "none", md: "block" }, width: "100%", height: 380, overflow: "hidden" }}>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.1140072297294!2d19.94999671561108!3d50.0466955794217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b4472279295%3A0xb94013a700838631!2sPiwna%2015%2C%2030-527%20Krak%C3%B3w%2C%20Polska!5e0!3m2!1spl!2sus!4v1675286443176!5m2!1spl!2sus"
+          src="https://maps.google.com/maps?q=ul.+Sta%C5%84czyka+22%2F54%2C+30-126+Krak%C3%B3w&output=embed"
           width="100%"
           height="380"
           style={{ border: 0, display: "block", filter: "grayscale(0.3) contrast(1.05)" }}
@@ -55,7 +55,7 @@ export default function Footer() {
             {/* Logo / nazwa */}
             <Box sx={{ mb: 3.5 }}>
               <Typography sx={{
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontWeight: 700,
                 fontSize: "1.2rem",
                 color: "#ffffff",
@@ -82,14 +82,14 @@ export default function Footer() {
                 <LocationOnOutlinedIcon sx={{ fontSize: "1rem", color: GOLD, mt: "2px", flexShrink: 0 }} />
                 <Box>
                   <Typography sx={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.75)", lineHeight: 1.6 }}>
-                    ul. Piwna 15/3
+                    ul. Stańczyka 22/54
                   </Typography>
                   <Typography sx={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.75)", lineHeight: 1.6 }}>
-                    30-527 Kraków
+                    30-126 Kraków
                   </Typography>
                   <Box
                     component="a"
-                    href="https://goo.gl/maps/PiQzy4NwX1Y7FHC9A"
+                    href="https://www.google.com/maps/search/?api=1&query=ul.+Sta%C5%84czyka+22%2F54%2C+30-126+Krak%C3%B3w"
                     target="_blank"
                     rel="noopener noreferrer"
                     sx={{
@@ -108,7 +108,7 @@ export default function Footer() {
                 <PhoneOutlinedIcon sx={{ fontSize: "1rem", color: GOLD, flexShrink: 0 }} />
                 <Box
                   component="a"
-                  href="tel:+48690720320"
+                  href="tel:+48500255293"
                   sx={{
                     fontSize: "0.85rem",
                     color: "rgba(255,255,255,0.75)",
@@ -116,7 +116,7 @@ export default function Footer() {
                     "&:hover": { color: GOLD },
                   }}
                 >
-                  +48 690 720 320
+                  +48 500 255 293
                 </Box>
               </Box>
 
