@@ -11,9 +11,9 @@ import {
 } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Of Counsel | Jan Matusiak — Radca Prawny",
+  title: "Daria Meysztowicz-Matusiak — Radca Prawny | Of Counsel",
   description:
-    "Kancelaria współpracuje z doświadczonymi prawnikami w wybranych dziedzinach, zapewniając wsparcie prawne również w obszarach wymagających wąskiej specjalizacji.",
+    "Daria Meysztowicz-Matusiak — radca prawny, Of Counsel kancelarii Jana Matusiaka. Specjalistka ds. transakcji inwestycyjnych i venture capital. Absolwentka UJ, członek OIRP Kraków.",
 };
 
 const NAVY = "#2B3A4A";
@@ -84,7 +84,7 @@ export default function OfCounselPage() {
               <Box sx={{ width: "100%", mb: 3, position: "relative" }}>
                 <Image
                   src="/daria-meysztowicz-matusiak.jpg"
-                  alt="Daria Meysztowicz-Matusiak — Radca Prawny"
+                  alt="Daria Meysztowicz–Matusiak — Radca Prawny"
                   width={600}
                   height={800}
                   style={{ width: "100%", height: "auto", display: "block", objectFit: "cover", objectPosition: "center top" }}
@@ -114,7 +114,6 @@ export default function OfCounselPage() {
                   { label: "Tytuł", value: "Radca prawny" },
                   { label: "Specjalizacja", value: "Transakcje inwestycyjne · Venture Capital" },
                   { label: "Języki", value: "Polski · Angielski · Francuski · Hiszpański" },
-                  { label: "Aktualne stanowisko", value: "Legal Counsel, Inovo.vc" },
                 ].map((c, i) => (
                   <Box key={c.label}>
                     {i > 0 && <Divider sx={{ my: 1.75, borderColor: BORDER }} />}
@@ -143,7 +142,7 @@ export default function OfCounselPage() {
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
                 <Button
                   component="a"
-                  href="https://www.linkedin.com/in/daria-meysztowicz-matusiak-a15215173/"
+                  href="https://www.linkedin.com/in/daria-Meysztowicz-Matusiak-a15215173/"
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="outlined"
@@ -178,10 +177,10 @@ export default function OfCounselPage() {
                   fontSize: { xs: "1.5rem", md: "1.8rem" },
                   color: NAVY,
                   lineHeight: 1.2,
-                  letterSpacing: "-0.01em",
+                  letterSpacing: "0em",
                   mb: 0.5,
                 }}>
-                  Daria Meysztowicz-Matusiak
+                  Daria Meysztowicz–Matusiak
                 </Typography>
                 <Typography sx={{
                   color: GOLD,
@@ -198,7 +197,7 @@ export default function OfCounselPage() {
 
                 {[
                   "Daria koncentruje swoją praktykę na transakcjach inwestycyjnych, w szczególności w obszarze venture capital, oraz na bieżącej obsłudze prawnej podmiotów gospodarczych.",
-                  "Brała udział w transakcjach z udziałem międzynarodowych funduszy inwestycyjnych i prywatnych inwestorów na różnych etapach finansowania, od Pre-seed do Series A. Przeprowadziła wiele procesów due diligence i negocjowała umowy inwestycyjne po obu stronach stołu.",
+                  "Brała udział w transakcjach z udziałem międzynarodowych funduszy inwestycyjnych i prywatnych inwestorów na różnych etapach finansowania, od Pre-seed do Series A. Przeprowadziła wiele procesów due diligence oraz negocjacji umów inwestycyjnych.",
                   "Dzięki temu doradza klientom nie tylko w kwestiach prawnych, ale też w zakresie strategii transakcyjnej i strukturyzacji całego procesu.",
                   "Absolwentka prawa i filologii romańskiej na Uniwersytecie Jagiellońskim w Krakowie. Posługuje się językiem angielskim, francuskim i hiszpańskim.",
                 ].map((text, i, arr) => (
@@ -215,6 +214,29 @@ export default function OfCounselPage() {
                     {text}
                   </Typography>
                 ))}
+
+                <Divider sx={{ borderColor: BORDER, my: 3.5 }} />
+
+                <Box sx={{ display: "flex", gap: 1.5, mb: 1 }}>
+                  <Box sx={{ width: 20, height: "1.5px", backgroundColor: GOLD, mt: "10px", flexShrink: 0 }} />
+                  <Typography sx={{
+                    fontSize: "0.68rem",
+                    fontWeight: 600,
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    color: GOLD,
+                  }}>
+                    Wykształcenie i przynależność
+                  </Typography>
+                </Box>
+                <Box sx={{ pl: "32px" }}>
+                  <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 0.5 }}>
+                    Wydział Prawa i Administracji oraz Instytut Filologii Romańskiej — Uniwersytet Jagielloński w Krakowie
+                  </Typography>
+                  <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 2.5 }}>
+                    Okręgowa Izba Radców Prawnych w Krakowie
+                  </Typography>
+                </Box>
               </Box>
             </Grid>
 

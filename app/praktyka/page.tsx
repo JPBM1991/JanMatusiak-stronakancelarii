@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import BusinessOutlinedIcon from "@mui/icons-material/BusinessOutlined";
-import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
-import BalanceOutlinedIcon from "@mui/icons-material/BalanceOutlined";
-import CompareArrowsOutlinedIcon from "@mui/icons-material/CompareArrowsOutlined";
+import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlined";
+import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
+import BusinessCenterOutlinedIcon from "@mui/icons-material/BusinessCenterOutlined";
+import GavelOutlinedIcon from "@mui/icons-material/GavelOutlined";
+import ShieldOutlinedIcon from "@mui/icons-material/ShieldOutlined";
 import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
+import WorkOutlinedIcon from "@mui/icons-material/WorkOutlined";
+import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
+import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
+import TrendingUpOutlinedIcon from "@mui/icons-material/TrendingUpOutlined";
+import BrushOutlinedIcon from "@mui/icons-material/BrushOutlined";
+import LocalHospitalOutlinedIcon from "@mui/icons-material/LocalHospitalOutlined";
 import { PraktykaCTA } from "@/components/PraktykaClient";
 
 export const metadata: Metadata = {
@@ -22,36 +28,35 @@ const LIGHT = "#EDF3F6";
 const areas = [
   {
     id: "prawo-korporacyjne",
-    icon: <BusinessOutlinedIcon />,
+    icon: <AccountBalanceOutlinedIcon />,
     title: "Prawo korporacyjne i handlowe",
     lead: "Zakładanie, przekształcanie i bieżąca obsługa spółek.",
     items: [
-      "Zakładanie spółek (sp. z o.o., S.A., spółki osobowe)",
-      "Umowy i statuty spółek — projektowanie i negocjowanie",
+      "Zakładanie spółek",
       "Umowy wspólników (shareholders agreements)",
-      "Zmiany w strukturze udziałowej — wejście inwestora, wyjście wspólnika",
-      "Przekształcenia i reorganizacje (JDG → sp. z o.o., spółka cywilna → handlowa)",
+      "Przekształcenia, reorganizacje, likwidacje spółek",
+      "Prawa i obowiązki zarządu, odpowiedzialność członków zarządu, doradztwo dla członków organów spółek",
+      "Umowy i statuty spółek — projektowanie i negocjowanie",
+      "Zmiany w strukturze udziałowej spółek",
       "Obsługa zgromadzeń wspólników i walnych zgromadzeń",
-      "Prawa i obowiązki zarządu, odpowiedzialność członków zarządu",
+      "Transakcje na udziałach i akcjach (M&A)",
     ],
   },
   {
     id: "kontrakty",
-    icon: <DescriptionOutlinedIcon />,
+    icon: <HandshakeOutlinedIcon />,
     title: "Kontrakty i negocjacje",
     lead: "Projektowanie, analiza i negocjowanie umów handlowych.",
     items: [
-      "Umowy B2B — przegląd, sporządzanie, negocjowanie",
-      "Umowy o współpracy, agencyjne, dystrybucyjne, franczyzowe",
-      "Umowy o świadczenie usług IT, SaaS, licencje oprogramowania",
-      "Kontrakty z elementem zagranicznym (w języku angielskim)",
-      "Klauzule ograniczenia odpowiedzialności, kary umowne, SLA",
-      "Analiza ryzyka kontraktowego i rekomendacje",
+      "Umowy B2B, B2C — przegląd, weryfikacja, sporządzanie, negocjowanie",
+      "Umowy o współpracy, agencyjne, dystrybucyjne, franczyzowe, dostawy",
+      "Umowy z elementem zagranicznym",
+      "Umowy dla branży FMCG",
     ],
   },
   {
     id: "obsluga-przedsiebiorcow",
-    icon: <SupportAgentOutlinedIcon />,
+    icon: <BusinessCenterOutlinedIcon />,
     title: "Obsługa przedsiębiorców",
     lead: "Model zewnętrznego counsel — stałe wsparcie prawne bez etatu.",
     items: [
@@ -65,43 +70,43 @@ const areas = [
   },
   {
     id: "postepowania-sporne",
-    icon: <BalanceOutlinedIcon />,
+    icon: <GavelOutlinedIcon />,
     title: "Postępowania sporne",
-    lead: "Reprezentacja przed sądami w sprawach gospodarczych i cywilnych.",
+    lead: "Reprezentacja przed sądami w sprawach gospodarczych, cywilnych, rodzinnych oraz administracyjnych.",
     items: [
       "Spory kontraktowe — roszczenia z umów B2B",
       "Dochodzenie wierzytelności i obrona przed roszczeniami",
+      "Odzyskiwanie należności i reprezentacja przed komornikiem",
       "Postępowania sądowe przed sądami powszechnymi",
-      "Sprawy frankowe — reprezentacja kredytobiorców",
       "Negocjacje i ugody pozasądowe",
       "Spory wspólnicze i korporacyjne",
     ],
   },
   {
     id: "majatek",
-    icon: <CompareArrowsOutlinedIcon />,
+    icon: <ShieldOutlinedIcon />,
     title: "Ochrona i planowanie majątku",
-    lead: "Strukturyzacja, zabezpieczenie i sukcesja majątku — dla firm i klientów indywidualnych.",
+    lead: "Kompleksowe podejście do majątku prywatnego i firmowego — od strukturyzacji i zabezpieczenia, przez sukcesję i dziedziczenie, po rozliczenia w sytuacjach życiowych i biznesowych.",
     items: [
-      "Planowanie i zabezpieczenie majątku osobistego i firmowego",
-      "Intercyzy i umowy majątkowe małżeńskie",
-      "Sukcesja i przekazanie majątku na kolejne pokolenia",
-      "Działy i rozliczenia majątkowe w sprawach rodzinnych",
+      "Strukturyzacja majątku (spółki, nieruchomości, aktywa)",
+      "Zabezpieczenie majątku przed ryzykiem gospodarczym i osobistym",
+      "Sukcesja, dziedziczenie i przekazanie majątku na kolejne pokolenia",
+      "Realizacja i ochrona praw majątkowych w sprawach spadkowych",
+      "Umowy majątkowe małżeńskie",
+      "Rozliczenia majątkowe przy zmianach w życiu i biznesie",
       "Darowizny i przeniesienie własności",
-      "Strukturyzacja majątku przez spółki",
+      "Fundacje rodzinne",
     ],
   },
 ];
 
 const industries = [
-  "Technologia i IT",
-  "SaaS i produkty cyfrowe",
-  "E-commerce",
-  "Budownictwo i nieruchomości",
-  "Usługi profesjonalne",
-  "Branża medyczna i medtech",
-  "Agencje i media",
-  "Startupy i scale-upy",
+  { name: "Usługi profesjonalne", icon: <WorkOutlinedIcon /> },
+  { name: "FMCG & Retail", icon: <StorefrontOutlinedIcon /> },
+  { name: "E-commerce", icon: <LanguageOutlinedIcon /> },
+  { name: "Inwestycje", icon: <TrendingUpOutlinedIcon /> },
+  { name: "Branża kreatywna, IP & wizerunek", icon: <BrushOutlinedIcon /> },
+  { name: "Branża medyczna", icon: <LocalHospitalOutlinedIcon /> },
 ];
 
 export default function PraktykaPage() {
@@ -131,7 +136,7 @@ export default function PraktykaPage() {
             lineHeight: 1.15, letterSpacing: "-0.015em", mb: 2, maxWidth: 660,
           }}>
             Co wchodzi w zakres{" "}
-            <Box component="span" sx={{ color: GOLD, fontStyle: "italic" }}>
+            <Box component="span" sx={{ color: "#EDF3F6", fontStyle: "italic" }}>
               obsługi.
             </Box>
           </Typography>
@@ -140,9 +145,7 @@ export default function PraktykaPage() {
             fontSize: { xs: "0.9rem", md: "1rem" },
             lineHeight: 1.75, maxWidth: 560,
           }}>
-            Kancelaria specjalizuje się w obsłudze prawnej przedsiębiorców
-            w pięciu obszarach. Poniżej znajdziesz szczegółowy zakres —
-            z konkretnymi typami spraw, nie ogólnymi hasłami.
+            Kancelaria specjalizuje się w obsłudze prawnej Klientów w pięciu obszarach. Poniżej znajdziesz szczegółowy zakres z przykładowymi zagadnieniami, w których doradzam Klientom.
           </Typography>
         </Container>
       </Box>
@@ -257,18 +260,15 @@ export default function PraktykaPage() {
                 Sektory, z którymi pracuję najczęściej.
               </Typography>
               <Typography sx={{
-                fontSize: "0.875rem", color: "#5A5A5A", lineHeight: 1.8,
+                fontSize: "0.875rem", color: "#5A5A5A", lineHeight: 1.8, textAlign: "justify",
               }}>
-                Kancelaria nie jest sprofilowana wyłącznie branżowo —
-                kluczowy jest charakter prawny sprawy, nie sektor.
-                W praktyce jednak obsługuję przede wszystkim przedsiębiorców
-                z tych obszarów:
+                Kancelaria nie jest sprofilowana branżowo — decydujący jest charakter sprawy. Dotychczasowe doświadczenie zdobyłem przede wszystkim obsługując klientów biznesowych z następujących obszarów:
               </Typography>
             </Grid>
             <Grid size={{ xs: 12, md: 7 }}>
               <Box sx={{
                 display: "grid",
-                gridTemplateColumns: { xs: "1fr 1fr", sm: "1fr 1fr 1fr 1fr" },
+                gridTemplateColumns: { xs: "1fr 1fr", sm: "1fr 1fr 1fr" },
                 gap: { xs: 1.5, md: 2 },
               }}>
                 {industries.map((industry, i) => (
@@ -279,15 +279,22 @@ export default function PraktykaPage() {
                       border: `1px solid ${BORDER}`,
                       p: { xs: 2, md: 2.5 },
                       textAlign: "center",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      gap: 1,
                     }}
                   >
+                    <Box sx={{ color: NAVY, opacity: 0.5, "& svg": { fontSize: "1.3rem" } }}>
+                      {industry.icon}
+                    </Box>
                     <Typography sx={{
                       fontSize: { xs: "0.75rem", md: "0.8rem" },
                       color: NAVY,
                       fontWeight: 600,
                       lineHeight: 1.4,
                     }}>
-                      {industry}
+                      {industry.name}
                     </Typography>
                   </Box>
                 ))}
@@ -327,7 +334,8 @@ export default function PraktykaPage() {
       <Box sx={{
         backgroundColor: NAVY,
         py: { xs: 6, md: 7 },
-        borderTop: `3px solid ${GOLD}`,
+        borderTop: `3px solid rgba(255,255,255,0.15)`,
+        borderBottom: `1px solid rgba(255,255,255,0.08)`,
       }}>
         <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
           <Grid container spacing={4} alignItems="center">
@@ -338,7 +346,7 @@ export default function PraktykaPage() {
                 lineHeight: 1.25, mb: 1.5, letterSpacing: "-0.01em",
               }}>
                 Masz sprawę z tego{" "}
-                <Box component="span" sx={{ color: GOLD, fontStyle: "italic" }}>
+                <Box component="span" sx={{ color: "#EDF3F6", fontStyle: "italic" }}>
                   zakresu?
                 </Box>
               </Typography>

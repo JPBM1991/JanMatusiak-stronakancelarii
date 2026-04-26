@@ -66,7 +66,7 @@ export default function AmlRodoPage() {
       <Box sx={{
         backgroundColor: NAVY,
         pt: { xs: "88px", md: "108px" },
-        pb: { xs: 5, md: 6 },
+        pb: { xs: 6, md: 7 },
         borderBottom: `3px solid ${GOLD}`,
       }}>
         <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
@@ -85,7 +85,7 @@ export default function AmlRodoPage() {
             lineHeight: 1.2, letterSpacing: "-0.015em", mb: 1.5, maxWidth: 640,
           }}>
             Klauzula informacyjna{" "}
-            <Box component="span" sx={{ color: GOLD, fontStyle: "italic" }}>
+            <Box component="span" sx={{ color: "#EDF3F6", fontStyle: "italic" }}>
               AML / RODO
             </Box>
           </Typography>
@@ -94,7 +94,7 @@ export default function AmlRodoPage() {
             fontSize: "0.8rem",
           }}>
             Informacja o przetwarzaniu danych osobowych w związku z obowiązkami wynikającymi
-            z ustawy AML
+            z ustawy AML · Obowiązuje od: 1 kwietnia 2026 r.
           </Typography>
         </Container>
       </Box>
@@ -119,7 +119,7 @@ export default function AmlRodoPage() {
               Podstawa prawna
             </Typography>
             <Typography sx={{ fontSize: "0.875rem", color: "#4A4A4A", lineHeight: 1.8 }}>
-              Kancelaria Jana Matusiaka, jako instytucja obowiązana w rozumieniu ustawy z dnia
+              Jan Matusiak, prowadzący działalność gospodarczą pod firmą: Jan Matusiak Kancelaria Radcy Prawnego, jako instytucja obowiązana w rozumieniu ustawy z dnia
               1 marca 2018 r. o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu
               (dalej: „ustawa AML"), przetwarza dane osobowe klientów w celu wykonania obowiązków
               wynikających z tej ustawy. Poniższa klauzula zawiera informacje wymagane przez
@@ -136,13 +136,12 @@ export default function AmlRodoPage() {
 
             <Section number="I." title="Administrator danych osobowych">
               <P>
-                Administratorem danych osobowych jest Jan Matusiak, radca prawny,
-                prowadzący kancelarię pod adresem: ul. Piwna 15/3, 30-527 Kraków.
+                Administratorem danych osobowych jest Jan Matusiak, prowadzący działalność gospodarczą pod firmą: Jan Matusiak Kancelaria Radcy Prawnego, adres: ul. Stańczyka 22/54, 30-126 Kraków, NIP: 6772488832, REGON: 524117386.
               </P>
               <P>Kontakt z Administratorem:</P>
-              <Li>mailowo: j.matusiak@kmtlegal.pl</Li>
-              <Li>telefonicznie: +48 690 720 320</Li>
-              <Li>korespondencyjnie: ul. Piwna 15/3, 30-527 Kraków</Li>
+              <Li>mailowo: jan.matusiak@matusiak.legal</Li>
+              <Li>telefonicznie: +48 500 255 293</Li>
+              <Li>korespondencyjnie: ul. Stańczyka 22/54, 30-126 Kraków</Li>
             </Section>
 
             <Box sx={{ borderTop: `1px solid ${BORDER}`, mb: 5 }} />

@@ -10,20 +10,20 @@ const BORDER = "#D4E2EA";
 
 const statements = [
   {
-    situation: "Masz umowę do podpisania?",
-    question: "Czy rozumiesz, co podpisujesz?",
+    situation: "Zawarcie umowy?",
+    question: "Czy wiesz, co podpisujesz?",
   },
   {
     situation: "Spółka rośnie.",
     question: "Struktura prawna musi za nią nadążyć.",
   },
   {
-    situation: "Kontrahent z zagranicy.",
-    question: "Kontrakt po angielsku. Wiem, jak go czytać.",
+    situation: "Współpraca międzynarodowa.",
+    question: "Potrafię zadbać o Twoje interesy.",
   },
   {
     situation: "Spór z kontrahentem.",
-    question: "Potrzebujesz kogoś, kto myśli jak biznes.",
+    question: "Dowiedz się jakie istnieją rozwiązania.",
   },
   {
     situation: "Przekształcenie firmy.",

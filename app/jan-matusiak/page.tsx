@@ -61,13 +61,11 @@ const expertiseAreas = [
   },
 ];
 
-const bioParas = [
-  "Specjalizuję się w prawie cywilnym i gospodarczym, prowadząc sprawy zarówno dla przedsiębiorców i spółek, jak i klientów indywidualnych — w szczególności tam, gdzie prawo majątkowe, korporacyjne i procesowe wzajemnie się przenikają.",
-  "Przedsiębiorcom doradzam jako zewnętrzny counsel — działam jak część zespołu klienta, nie jako kancelaria świadcząca usługi projektowe. Obsługuję podmioty z branży FMCG, IT, medycznej i budowlanej, w sprawach krajowych i z elementem międzynarodowym.",
-  "W zakresie prawa spółek przeprowadzam procesy zakładania, przekształceń i reorganizacji spółek, zmian struktury właścicielskiej oraz obsługi organów korporacyjnych. Prowadzę postępowania upadłościowe i restrukturyzacyjne — zarówno po stronie podmiotów niewypłacalnych, jak i wierzycieli.",
-  "Klientom indywidualnym pomagam w sprawach majątkowych — od planowania i zabezpieczenia majątku, przez postępowania spadkowe i działy spadku, po podział majątku w sprawach rodzinnych. Doradzam również przy intercyzach i umowach majątkowych małżeńskich.",
-  "Reprezentuję klientów przed sądami powszechnymi w sprawach z zakresu prawa bankowego (postępowania frankowe), sporów korporacyjnych i między wspólnikami. Negocjuję i przygotowuję kontrakty handlowe, w tym z kontrahentami zagranicznymi w języku angielskim.",
-  "Absolwent Wydziału Prawa i Administracji Uniwersytetu Jagiellońskiego w Krakowie.",
+const bioParas: React.ReactNode[] = [
+  "Pomagam klientom zarówno w kwestiach dotyczących ich spraw firmowych oraz biznesowych jak i w wybranych zagadnieniach prywatnych. Zdobyte doświadczenie, przede wszystkim w obszarach cywilistycznych oraz gospodarczych, pozwala mi na dogłębną analizę sytuacji oraz ocenę jej skutków prawnych bądź ryzyk na wielu poziomach. Szczególnie cenię możliwość pracy przy złożonych projektach, które wymagają koordynacji działań w kilku obszarach prawa jednocześnie.",
+  <>Swoją ofertę kieruję przede wszystkim do przedsiębiorców. Uważam, że model współpracy w charakterze zewnętrznego <Box component="span" sx={{ fontStyle: "italic" }}>counsela</Box> zapewnia klientom oczekiwane efekty. Prawnik znający daną organizację i jej procesy od środka umożliwia sprawne działanie i wdrażanie właściwych rozwiązań, kiedy stają się one niezbędne. Doradzam podmiotom m.in. z branży FMCG, Retail, e-commerce, inwestycyjnej, IT, medycznej, architektoniczno-budowlanej czy świadczącym usługi zarządzania wizerunkiem, w sprawach bieżących (krajowych) bądź także z elementem międzynarodowym.</>,
+  "Klientom indywidualnym pomagam głównie w sprawach ich majątku. Doradzam począwszy od planowania i zabezpieczenia majątku, przez postępowania spadkowe i działy spadku, po regulowanie kwestii majątkowych w ramach spraw rodzinnych, z uwzględnieniem fundacji rodzinnych.",
+  "Reprezentuję klientów przed sądami i organami administracji, ale także w trakcie negocjacji czy w sporach korporacyjnych. Negocjuję i przygotowuję kontrakty handlowe oraz inne dokumenty, w tym z kontrahentami zagranicznymi w języku angielskim.",
 ];
 
 export default function JanMatusiakPage() {
@@ -196,21 +194,16 @@ export default function JanMatusiakPage() {
                   p: { xs: 3, md: 4.5 },
                 }}
               >
-                <Typography
-                  sx={{
-                    fontFamily: "'Cormorant Garamond', Georgia, serif",
-                    fontWeight: 600,
-                    fontSize: { xs: "1.05rem", md: "1.2rem" },
-                    color: NAVY,
-                    lineHeight: 1.55,
-                    mb: 3,
-                    fontStyle: "italic",
-                  }}
-                >
-                  Prawnik, który rozumie Twój biznes od środka — nie tylko od
-                  strony paragrafów. Pomagam przedsiębiorcom podejmować lepsze
-                  decyzje.
-                </Typography>
+
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 2 }}>
+                  <Box sx={{ width: 24, height: "1.5px", backgroundColor: GOLD, flexShrink: 0 }} />
+                  <Typography sx={{
+                    fontSize: "0.68rem", fontWeight: 600,
+                    letterSpacing: "0.22em", textTransform: "uppercase", color: GOLD,
+                  }}>
+                    Jan Matusiak · Radca prawny
+                  </Typography>
+                </Box>
 
                 <Divider sx={{ borderColor: BORDER, mb: 3 }} />
 
@@ -342,7 +335,7 @@ export default function JanMatusiakPage() {
                 }}
               >
                 Masz sprawę, która{" "}
-                <Box component="span" sx={{ color: GOLD, fontStyle: "italic" }}>
+                <Box component="span" sx={{ color: "#EDF3F6", fontStyle: "italic" }}>
                   pasuje do tej praktyki?
                 </Box>
               </Typography>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
   AppBar,
@@ -24,7 +25,7 @@ const NAVY_MID = "#425A6F";
 const GOLD = "#2B3A4A";
 const BORDER = "#D4E2EA";
 
-const links = [
+const plLinks = [
   { label: "Prawnicy", href: "/prawnicy" },
   { label: "Kancelaria", href: "/kancelaria" },
   { label: "Praktyka", href: "/praktyka" },
@@ -32,8 +33,39 @@ const links = [
   { label: "Aktualności", href: "/aktualnosci" },
 ];
 
+const enLinks = [
+  { label: "Lawyers", href: "/en/prawnicy" },
+  { label: "The Firm", href: "/en/kancelaria" },
+  { label: "Practice", href: "/en/praktyka" },
+  { label: "For Business", href: "/en/dla-przedsiebiorcow" },
+  { label: "News", href: "/en/aktualnosci" },
+];
+
+const noEnVersion = ["/aml-rodo", "/polityka-cookies"];
+
+function getLangSwitchHref(pathname: string, isEn: boolean): string {
+  if (isEn) {
+    if (pathname === "/en" || pathname === "/en/") return "/";
+    if (pathname.startsWith("/en/aktualnosci")) return "/aktualnosci";
+    if (pathname.startsWith("/en/")) return pathname.slice(3);
+    return "/";
+  } else {
+    if (noEnVersion.some((p) => pathname.startsWith(p))) return "/en";
+    if (pathname.startsWith("/aktualnosci")) return "/en/aktualnosci";
+    if (pathname === "/") return "/en";
+    return "/en" + pathname;
+  }
+}
+
 export default function Navigation() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const pathname = usePathname();
+  const isEn = pathname.startsWith("/en");
+  const links = isEn ? enLinks : plLinks;
+  const contactHref = isEn ? "/en/kontakt" : "/kontakt";
+  const contactLabel = isEn ? "Contact" : "Kontakt";
+  const logoHref = isEn ? "/en" : "/";
+  const langSwitchHref = getLangSwitchHref(pathname, isEn);
 
   return (
     <>
@@ -57,7 +89,7 @@ export default function Navigation() {
           {/* Logo */}
           <Box
             component={Link}
-            href="/"
+            href={logoHref}
             sx={{
               textDecoration: "none",
               display: "flex",
@@ -121,7 +153,7 @@ export default function Navigation() {
             ))}
             <Button
               component={Link}
-              href="/kontakt"
+              href={contactHref}
               variant="contained"
               sx={{
                 ml: 2.5,
@@ -134,8 +166,37 @@ export default function Navigation() {
                 "&:hover": { backgroundColor: NAVY_MID },
               }}
             >
-              Kontakt
+              {contactLabel}
             </Button>
+
+            {/* Language switcher */}
+            <Box
+              component={Link}
+              href={langSwitchHref}
+              sx={{
+                ml: 1.5,
+                display: "flex",
+                alignItems: "center",
+                gap: 0.5,
+                border: `1px solid ${BORDER}`,
+                px: 1.5,
+                py: 0.75,
+                fontSize: "0.72rem",
+                fontWeight: 700,
+                color: NAVY,
+                textDecoration: "none",
+                letterSpacing: "0.06em",
+                lineHeight: 1,
+                transition: "border-color 0.2s",
+                "&:hover": { borderColor: NAVY },
+                userSelect: "none",
+              }}
+            >
+              <Box component="span" sx={{ fontSize: "1rem", lineHeight: 1 }}>
+                {isEn ? "🇵🇱" : "🇬🇧"}
+              </Box>
+              {isEn ? "PL" : "EN"}
+            </Box>
           </Box>
 
           {/* Mobile hamburger */}
@@ -195,7 +256,7 @@ export default function Navigation() {
         </Box>
 
         <List sx={{ pt: 1 }}>
-          {[...links, { label: "Kontakt", href: "/kontakt" }].map((link) => (
+          {[...links, { label: contactLabel, href: contactHref }].map((link) => (
             <ListItem key={link.href} disablePadding>
               <ListItemButton
                 component={Link}
@@ -218,9 +279,33 @@ export default function Navigation() {
 
         <Box sx={{ px: 3, mt: "auto", pb: 4 }}>
           <Divider sx={{ mb: 3, borderColor: BORDER }} />
+          <Box
+            component={Link}
+            href={langSwitchHref}
+            onClick={() => setDrawerOpen(false)}
+            sx={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 0.75,
+              border: `1px solid ${BORDER}`,
+              px: 2,
+              py: 1,
+              fontSize: "0.78rem",
+              fontWeight: 700,
+              color: NAVY,
+              textDecoration: "none",
+              letterSpacing: "0.06em",
+              mb: 2.5,
+              "&:hover": { borderColor: NAVY },
+            }}
+          >
+            <Box component="span" sx={{ fontSize: "1.1rem", lineHeight: 1 }}>
+              {isEn ? "🇵🇱" : "🇬🇧"}
+            </Box>
+            {isEn ? "Przełącz na polski" : "Switch to English"}
+          </Box>
           <Typography sx={{ fontSize: "0.75rem", color: "#9CA3AF", lineHeight: 1.65 }}>
-            Kancelaria działa ogólnopolsko.<br />
-            Obsługa w języku polskim i angielskim.
+            {isEn ? "Nationwide practice.\nServices in Polish and English." : "Kancelaria działa ogólnopolsko.\nObsługa w języku polskim i angielskim."}
           </Typography>
         </Box>
       </Drawer>

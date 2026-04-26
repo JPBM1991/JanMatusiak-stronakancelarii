@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Box, Button } from "@mui/material";
 
-const GOLD = "#2B3A4A";
 const NAVY = "#2B3A4A";
 
 export function PraktykaCTA() {
@@ -14,8 +13,8 @@ export function PraktykaCTA() {
         href="/kontakt"
         variant="contained"
         sx={{
-          backgroundColor: GOLD,
-          color: "#ffffff",
+          backgroundColor: "#ffffff",
+          color: NAVY,
           fontWeight: 700,
           fontSize: "0.85rem",
           px: 3.5,
@@ -23,7 +22,7 @@ export function PraktykaCTA() {
           borderRadius: 0,
           textTransform: "none",
           letterSpacing: "0.02em",
-          "&:hover": { backgroundColor: "#A07D3E" },
+          "&:hover": { backgroundColor: "rgba(255,255,255,0.88)" },
         }}
       >
         Umów rozmowę
@@ -33,8 +32,8 @@ export function PraktykaCTA() {
         href="/kancelaria"
         variant="outlined"
         sx={{
-          borderColor: "rgba(255,255,255,0.3)",
-          color: "rgba(255,255,255,0.75)",
+          borderColor: "rgba(255,255,255,0.2)",
+          color: "rgba(255,255,255,0.7)",
           fontWeight: 600,
           fontSize: "0.85rem",
           px: 3.5,
@@ -42,9 +41,9 @@ export function PraktykaCTA() {
           borderRadius: 0,
           textTransform: "none",
           "&:hover": {
-            borderColor: GOLD,
-            color: GOLD,
-            backgroundColor: "transparent",
+            borderColor: "rgba(255,255,255,0.45)",
+            color: "#ffffff",
+            backgroundColor: "rgba(255,255,255,0.06)",
           },
         }}
       >

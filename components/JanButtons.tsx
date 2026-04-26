@@ -29,7 +29,7 @@ export function ContactButtons() {
       </Button>
       <Button
         component="a"
-        href="mailto:j.matusiak@kmtlegal.pl"
+        href="mailto:jan.matusiak@matusiak.legal"
         variant="outlined"
         fullWidth
         sx={{
@@ -41,7 +41,7 @@ export function ContactButtons() {
           "&:hover": { borderColor: NAVY, backgroundColor: "transparent" },
         }}
       >
-        j.matusiak@kmtlegal.pl
+        jan.matusiak@matusiak.legal
       </Button>
       <Button
         component="a"

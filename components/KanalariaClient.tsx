@@ -4,8 +4,6 @@ import Link from "next/link";
 import { Box, Button } from "@mui/material";
 
 const NAVY = "#2B3A4A";
-const NAVY_MID = "#425A6F";
-const GOLD = "#2B3A4A";
 
 export function KancelariaCTA() {
   return (
@@ -17,12 +15,12 @@ export function KancelariaCTA() {
         size="large"
         fullWidth
         sx={{
-          backgroundColor: GOLD,
-          color: "#ffffff",
+          backgroundColor: "#ffffff",
+          color: NAVY,
           fontWeight: 700,
           fontSize: "0.9rem",
           py: 1.75,
-          "&:hover": { backgroundColor: "#A07D3E" },
+          "&:hover": { backgroundColor: "rgba(255,255,255,0.88)" },
         }}
       >
         Umów wstępną rozmowę
@@ -34,14 +32,15 @@ export function KancelariaCTA() {
         size="large"
         fullWidth
         sx={{
-          color: "rgba(255,255,255,0.8)",
-          borderColor: "rgba(255,255,255,0.25)",
+          color: "rgba(255,255,255,0.7)",
+          borderColor: "rgba(255,255,255,0.2)",
           fontWeight: 500,
           fontSize: "0.9rem",
           py: 1.75,
           "&:hover": {
-            borderColor: "rgba(255,255,255,0.5)",
-            backgroundColor: "rgba(255,255,255,0.05)",
+            borderColor: "rgba(255,255,255,0.45)",
+            backgroundColor: "rgba(255,255,255,0.06)",
+            color: "#ffffff",
           },
         }}
       >

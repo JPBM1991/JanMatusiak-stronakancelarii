@@ -1,13 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" fill="#0B1829"/>
+  <rect width="32" height="32" fill="#2B3A4A"/>
+  <!-- thin gold frame -->
+  <rect x="2.5" y="2.5" width="27" height="27" fill="none" stroke="#B8924A" stroke-width="0.75"/>
+  <!-- decorative top line -->
+  <rect x="9" y="7" width="14" height="1" fill="#B8924A"/>
+  <!-- M letterform using paths for serif style -->
   <text
     x="16"
-    y="22"
+    y="24"
     text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="14"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="18"
     font-weight="700"
     fill="#B8924A"
-    letter-spacing="0.5"
-  >JM</text>
+    letter-spacing="-0.5"
+  >M</text>
 </svg>

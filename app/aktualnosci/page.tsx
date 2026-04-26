@@ -52,7 +52,7 @@ export default function AktualnosciPage() {
             lineHeight: 1.15, letterSpacing: "-0.015em", mb: 2, maxWidth: 600,
           }}>
             Prawo w{" "}
-            <Box component="span" sx={{ color: GOLD, fontStyle: "italic" }}>
+            <Box component="span" sx={{ color: "#EDF3F6", fontStyle: "italic" }}>
               praktyce biznesowej.
             </Box>
           </Typography>

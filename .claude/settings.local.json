@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(npm run:*)",
-      "Bash(cmd //c \"taskkill /PID 20044 /F\")"
+      "Bash(cmd //c \"taskkill /PID 20044 /F\")",
+      "WebFetch(domain:dzp.pl)"
     ]
   }
 }

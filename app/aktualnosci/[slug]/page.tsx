@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const NAVY = "#0B1829";
 const GOLD = "#B8924A";
@@ -76,6 +76,7 @@ const mdxComponents = {
         color: "#3A3A3A",
         lineHeight: 1.9,
         mb: 2.5,
+        textAlign: "justify",
       }}
       {...props}
     />
@@ -273,6 +274,61 @@ export default async function PostPage({
 
                 {/* MDX content */}
                 <MDXRemote source={post.content} components={mdxComponents} />
+
+                {/* Autor na końcu artykułu */}
+                <Box sx={{ borderTop: `1px solid ${BORDER}`, mt: 4, pt: 4 }}>
+                  <Typography sx={{
+                    fontFamily: "'Playfair Display', Georgia, serif",
+                    fontSize: { xs: "1rem", md: "1.1rem" },
+                    color: NAVY,
+                    fontWeight: 700,
+                    mb: 2.5,
+                  }}>
+                    Pytania? Zapraszam do kontaktu.
+                  </Typography>
+                  <Link href="/jan-matusiak" style={{ textDecoration: "none" }}>
+                    <Box sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 2.5,
+                      p: 2.5,
+                      border: `1px solid ${BORDER}`,
+                      transition: "border-color 0.2s",
+                      "&:hover": { borderColor: GOLD },
+                    }}>
+                      <Box sx={{ width: 64, height: 64, flexShrink: 0, overflow: "hidden" }}>
+                        <Image
+                          src="/jan-matusiak.jpg"
+                          alt="Jan Matusiak"
+                          width={64}
+                          height={64}
+                          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
+                        />
+                      </Box>
+                      <Box>
+                        <Typography sx={{
+                          fontFamily: "'Playfair Display', Georgia, serif",
+                          fontWeight: 700,
+                          fontSize: "1rem",
+                          color: NAVY,
+                          lineHeight: 1.2,
+                          mb: 0.4,
+                        }}>
+                          Jan Matusiak
+                        </Typography>
+                        <Typography sx={{
+                          fontSize: "0.72rem",
+                          color: GOLD,
+                          fontWeight: 600,
+                          letterSpacing: "0.1em",
+                          textTransform: "uppercase",
+                        }}>
+                          Radca prawny
+                        </Typography>
+                      </Box>
+                    </Box>
+                  </Link>
+                </Box>
               </Box>
 
               {/* Nawigacja prev/next */}
@@ -368,8 +424,7 @@ export default async function PostPage({
                   <Typography sx={{
                     fontSize: "0.8rem", color: "#5A5A5A", lineHeight: 1.7,
                   }}>
-                    Absolwent UJ, członek OIRP Kraków. Kancelaria skupiona
-                    na obsłudze przedsiębiorców, prawie spółek i kontraktowaniu.
+                    Absolwent UJ, członek OIRP w Krakowie.
                   </Typography>
                 </Box>
 
