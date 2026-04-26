@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   Box,
   Button,
@@ -35,6 +35,8 @@ const inputSx = {
 };
 
 export default function ContactForm() {
+  const loadedAt = useRef(Date.now());
+  const [honey, setHoney] = useState("");
   const [form, setForm] = useState({
     name: "",
     company: "",
@@ -60,7 +62,7 @@ export default function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, _honey: honey, _loadedAt: loadedAt.current }),
       });
 
       const data = await res.json();
@@ -150,6 +152,11 @@ export default function ContactForm() {
           {errorMsg}
         </Alert>
       )}
+
+      {/* Honeypot — niewidoczne dla ludzi, pułapka na boty */}
+      <Box component="div" sx={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, overflow: "hidden" }} aria-hidden="true">
+        <input type="text" name="website" value={honey} onChange={(e) => setHoney(e.target.value)} tabIndex={-1} autoComplete="off" />
+      </Box>
 
       {/* Wiersz 1: imię + firma */}
       <Box sx={{ display: "flex", gap: 2, mb: 2 }}>

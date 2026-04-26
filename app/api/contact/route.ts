@@ -1,20 +1,39 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-});
-
+const resend = new Resend(process.env.RESEND_API_KEY);
 const TO_EMAIL = "jpbmat91@gmail.com";
+
+const SPAM_KEYWORDS = [
+  "casino", "crypto", "bitcoin", "forex", "loan", "mortgage", "seo ",
+  "backlink", "viagra", "cialis", "pills", "pharmacy", "dating", "escort",
+  "click here", "kliknij tutaj", "free money", "make money", "earn money",
+  "work from home", "praca z domu", "kredyt bez", "chwilówka", "pożyczka bez",
+  "http://", "https://t.me", "t.me/", "wa.me/", "whatsapp.com/",
+];
+
+const MIN_SUBMIT_SECONDS = 4;
+
+function isSpam(message: string, name: string): boolean {
+  const combined = `${name} ${message}`.toLowerCase();
+  return SPAM_KEYWORDS.some((kw) => combined.includes(kw.toLowerCase()));
+}
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, company, email, phone, message } = body;
+    const { name, company, email, phone, message, _honey, _loadedAt } = body;
+
+    // Honeypot — boty wypełniają ukryte pole
+    if (_honey) {
+      return NextResponse.json({ success: true }, { status: 200 });
+    }
+
+    // Minimalny czas — boty wysyłają natychmiast
+    const elapsed = _loadedAt ? (Date.now() - Number(_loadedAt)) / 1000 : 999;
+    if (elapsed < MIN_SUBMIT_SECONDS) {
+      return NextResponse.json({ success: true }, { status: 200 });
+    }
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -31,8 +50,20 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    await transporter.sendMail({
-      from: `"Formularz · matusiak.legal" <${process.env.GMAIL_USER}>`,
+    if (message.length > 5000) {
+      return NextResponse.json(
+        { error: "Wiadomość jest zbyt długa." },
+        { status: 400 }
+      );
+    }
+
+    // Filtr słów kluczowych
+    if (isSpam(message, name)) {
+      return NextResponse.json({ success: true }, { status: 200 });
+    }
+
+    const { error } = await resend.emails.send({
+      from: "Formularz · matusiak.legal <onboarding@resend.dev>",
       to: TO_EMAIL,
       replyTo: email,
       subject: `Nowa wiadomość od ${name}${company ? ` (${company})` : ""}`,
@@ -57,11 +88,18 @@ export async function POST(req: NextRequest) {
       `,
     });
 
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json(
+        { error: "Wystąpił błąd podczas wysyłki. Spróbuj ponownie." },
+        { status: 500 }
+      );
+    }
+
     return NextResponse.json({ success: true }, { status: 200 });
-  } catch (err) {
-    console.error("Mail error:", err);
+  } catch {
     return NextResponse.json(
-      { error: "Wystąpił błąd podczas wysyłki. Spróbuj ponownie." },
+      { error: "Wystąpił błąd. Spróbuj ponownie." },
       { status: 500 }
     );
   }
