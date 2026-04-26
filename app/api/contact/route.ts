@@ -97,7 +97,8 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json({ success: true }, { status: 200 });
-  } catch {
+  } catch (err) {
+    console.error("Contact API error:", err);
     return NextResponse.json(
       { error: "Wystąpił błąd. Spróbuj ponownie." },
       { status: 500 }
