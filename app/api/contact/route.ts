@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const TO_EMAIL = "jpbmat91@gmail.com";
+const TO_EMAIL = "jan.matusiak@interia.pl";
 
 const SPAM_KEYWORDS = [
   "casino", "crypto", "bitcoin", "forex", "loan", "mortgage", "seo ",
