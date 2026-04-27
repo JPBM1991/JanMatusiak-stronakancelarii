@@ -13,7 +13,7 @@ import { ContactButtons, CtaButtons } from "@/components/JanButtons";
 export const metadata: Metadata = {
   title: "Jan Matusiak — Radca Prawny",
   description:
-    "Jan Matusiak — radca prawny, absolwent UJ, członek OIRP Kraków. Wieloletnie doświadczenie w obsłudze przedsiębiorców, prawie spółek, postępowaniach spornych i kontraktowaniu.",
+    "Jan Matusiak — Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
 };
 
 const NAVY = "#2B3A4A";

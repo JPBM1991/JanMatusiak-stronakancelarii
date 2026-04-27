@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://matusiak.legal"),
   title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków",
   description:
-    "Jednoosobowa kancelaria radcy prawnego. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych — prawo spółek, kontrakty, sprawy sporne, majątek. Ogólnopolsko.",
+    "Jan Matusiak — Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
   keywords:
     "radca prawny, Jan Matusiak, prawo spółek, obsługa przedsiębiorców, kancelaria prawna, prawo umów, własność intelektualna",
   robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Jan Matusiak Kancelaria Radcy Prawnego",
     title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków",
     description:
-      "Jednoosobowa kancelaria radcy prawnego. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych — prawo spółek, kontrakty, sprawy sporne, majątek.",
+      "Jan Matusiak — Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
     images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Radca Prawny" }],
   },
   twitter: {
