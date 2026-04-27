@@ -68,8 +68,39 @@ const bioParas: React.ReactNode[] = [
   "Reprezentuję klientów przed sądami i organami administracji, ale także w trakcie negocjacji czy w sporach korporacyjnych. Negocjuję i przygotowuję kontrakty handlowe oraz inne dokumenty, w tym z kontrahentami zagranicznymi w języku angielskim.",
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Jan Matusiak",
+  jobTitle: "Radca Prawny",
+  description:
+    "Radca prawny, absolwent UJ, członek OIRP w Krakowie. Wieloletnie doświadczenie w obsłudze przedsiębiorców, prawie spółek, postępowaniach spornych i kontraktowaniu.",
+  url: "https://matusiak.legal/jan-matusiak",
+  image: "https://matusiak.legal/jan-matusiak.jpg",
+  email: "jan.matusiak@matusiak.legal",
+  telephone: "+48500255293",
+  worksFor: {
+    "@type": "LegalService",
+    name: "Jan Matusiak Kancelaria Radcy Prawnego",
+    url: "https://matusiak.legal",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Uniwersytet Jagielloński",
+  },
+  memberOf: {
+    "@type": "Organization",
+    name: "Okręgowa Izba Radców Prawnych w Krakowie",
+  },
+};
+
 export default function JanMatusiakPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <Box sx={{ backgroundColor: "#ffffff", minHeight: "100vh" }}>
 
       {/* ── NAGŁÓWEK ── */}
@@ -357,5 +388,6 @@ export default function JanMatusiakPage() {
       </Box>
 
     </Box>
+    </>
   );
 }

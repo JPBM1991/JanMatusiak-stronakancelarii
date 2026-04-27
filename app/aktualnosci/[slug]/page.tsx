@@ -175,13 +175,45 @@ export default async function PostPage({
   const { slug } = await params;
   const post = getPostBySlug(slug);
 
-  // Poprzedni i następny artykuł
   const allPosts = getAllPosts();
   const currentIndex = allPosts.findIndex((p) => p.slug === slug);
   const prevPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: "Jan Matusiak",
+      url: "https://matusiak.legal/jan-matusiak",
+    },
+    publisher: {
+      "@type": "LegalService",
+      name: "Jan Matusiak Kancelaria Radcy Prawnego",
+      url: "https://matusiak.legal",
+      logo: { "@type": "ImageObject", url: "https://matusiak.legal/jan-matusiak.jpg" },
+    },
+    mainEntityOfPage: `https://matusiak.legal/aktualnosci/${slug}`,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://matusiak.legal" },
+      { "@type": "ListItem", position: 2, name: "Aktualności", item: "https://matusiak.legal/aktualnosci" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://matusiak.legal/aktualnosci/${slug}` },
+    ],
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
     <Box sx={{ backgroundColor: "#ffffff", minHeight: "100vh" }}>
 
       {/* ── NAGŁÓWEK ARTYKUŁU ── */}
@@ -473,5 +505,6 @@ export default async function PostPage({
       </Box>
 
     </Box>
+    </>
   );
 }

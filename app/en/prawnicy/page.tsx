@@ -29,7 +29,7 @@ const lawyers = [
     photo: "/daria-meysztowicz-matusiak.jpg",
     excerpt:
       "She concentrates her practice on investment transactions, particularly in the venture capital space, and on ongoing legal services for business entities.",
-    href: "/en/of-counsel",
+    href: "/en/daria-meysztowicz-matusiak",
   },
 ];
 

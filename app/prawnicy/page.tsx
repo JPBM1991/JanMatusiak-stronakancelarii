@@ -29,7 +29,7 @@ const lawyers = [
     photo: "/daria-meysztowicz-matusiak.jpg",
     excerpt:
       "Koncentruje swoją praktykę na transakcjach inwestycyjnych, w szczególności w obszarze venture capital, oraz na bieżącej obsłudze prawnej podmiotów gospodarczych.",
-    href: "/of-counsel",
+    href: "/daria-meysztowicz-matusiak",
   },
 ];
 

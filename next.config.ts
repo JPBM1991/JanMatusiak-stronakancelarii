@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
         destination: "https://matusiak.legal/:path*",
         permanent: true,
       },
+      {
+        source: "/of-counsel",
+        destination: "/daria-meysztowicz-matusiak",
+        permanent: true,
+      },
+      {
+        source: "/en/of-counsel",
+        destination: "/en/daria-meysztowicz-matusiak",
+        permanent: true,
+      },
     ];
   },
 };

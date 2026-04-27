@@ -17,6 +17,23 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  openGraph: {
+    type: "website",
+    locale: "pl_PL",
+    url: "https://matusiak.legal",
+    siteName: "Jan Matusiak Kancelaria Radcy Prawnego",
+    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków",
+    description:
+      "Jednoosobowa kancelaria radcy prawnego. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych — prawo spółek, kontrakty, sprawy sporne, majątek.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Radca Prawny" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków",
+    description:
+      "Jednoosobowa kancelaria radcy prawnego. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 export default function RootLayout({
