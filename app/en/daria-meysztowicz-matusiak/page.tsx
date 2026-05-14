@@ -11,9 +11,9 @@ import {
 } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Daria Meysztowicz-Matusiak — Attorney at Law | Of Counsel",
+  title: "Daria Meysztowicz-Matusiak — Attorney at Law",
   description:
-    "Daria Meysztowicz-Matusiak — attorney at law, Of Counsel at Jan Matusiak's law firm. Specialist in investment transactions and venture capital. Graduate of Jagiellonian University, member of OIRP Kraków.",
+    "Daria Meysztowicz-Matusiak — attorney at law, specialist in investment transactions and venture capital. Of Counsel at Jan Matusiak Law Office in Kraków.",
 };
 
 const NAVY = "#2B3A4A";

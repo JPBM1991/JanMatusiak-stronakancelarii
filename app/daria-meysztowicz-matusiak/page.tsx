@@ -11,9 +11,9 @@ import {
 } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Daria Meysztowicz-Matusiak — Radca Prawny | Of Counsel",
+  title: "Daria Meysztowicz-Matusiak — Radca Prawny",
   description:
-    "Daria Meysztowicz-Matusiak — radca prawny, Of Counsel kancelarii Jana Matusiaka. Specjalistka ds. transakcji inwestycyjnych i venture capital. Absolwentka UJ, członek OIRP Kraków.",
+    "Daria Meysztowicz-Matusiak — radca prawny, specjalistka ds. transakcji inwestycyjnych i venture capital. Of Counsel kancelarii Jana Matusiaka w Krakowie.",
 };
 
 const NAVY = "#2B3A4A";
