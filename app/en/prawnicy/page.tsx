@@ -7,6 +7,29 @@ export const metadata: Metadata = {
   title: "Lawyers | Jan Matusiak — Attorney at Law",
   description:
     "Jan Matusiak — attorney at law, founder of the firm. Daria Meysztowicz–Matusiak — attorney at law, Of Counsel, specialist in investment transactions and venture capital.",
+  alternates: {
+    canonical: "https://matusiak.legal/en/prawnicy",
+    languages: {
+      pl: "https://matusiak.legal/prawnicy",
+      en: "https://matusiak.legal/en/prawnicy",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en/prawnicy",
+    siteName: "Jan Matusiak Law Office",
+    title: "Lawyers | Jan Matusiak — Attorney at Law",
+    description:
+      "Jan Matusiak — attorney at law, founder of the firm. Daria Meysztowicz–Matusiak — attorney at law, Of Counsel, specialist in investment transactions and venture capital.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lawyers | Jan Matusiak — Attorney at Law",
+    description: "Jan Matusiak and Daria Meysztowicz–Matusiak — attorneys at law in Kraków.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";

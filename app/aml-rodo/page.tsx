@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: "AML / RODO | Jan Matusiak — Radca Prawny",
   description:
     "Klauzula informacyjna RODO w zakresie ustawy AML — informacje o przetwarzaniu danych osobowych w ramach obowiązków wynikających z ustawy o przeciwdziałaniu praniu pieniędzy.",
+  alternates: {
+    canonical: "https://matusiak.legal/aml-rodo",
+    languages: {
+      pl: "https://matusiak.legal/aml-rodo",
+      en: "https://matusiak.legal/en/aml-rodo",
+    },
+  },
 };
 
 const NAVY = "#2B3A4A";

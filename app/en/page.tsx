@@ -12,6 +12,30 @@ export const metadata: Metadata = {
   title: "Jan Matusiak | Attorney at Law",
   description:
     "A law office personally run by attorney Jan Matusiak. Strategic legal support for entrepreneurs and individual clients — corporate law, contracts, dispute resolution, asset planning. Nationwide.",
+  alternates: {
+    canonical: "https://matusiak.legal/en",
+    languages: {
+      pl: "https://matusiak.legal",
+      en: "https://matusiak.legal/en",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en",
+    siteName: "Jan Matusiak Law Office",
+    title: "Jan Matusiak | Attorney at Law",
+    description:
+      "A law office personally run by attorney Jan Matusiak. Strategic legal support for entrepreneurs and individual clients — corporate law, contracts, dispute resolution, asset planning. Nationwide.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jan Matusiak | Attorney at Law",
+    description:
+      "A law office personally run by attorney Jan Matusiak. Strategic legal support for entrepreneurs and individual clients.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";

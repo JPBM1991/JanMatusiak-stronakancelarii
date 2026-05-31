@@ -25,6 +25,17 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Jan Matusiak — Attorney at Law`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://matusiak.legal/en/aktualnosci/${slug}`,
+    },
+    openGraph: {
+      type: "article",
+      locale: "en_US",
+      url: `https://matusiak.legal/en/aktualnosci/${slug}`,
+      title: `${post.title} | Jan Matusiak — Attorney at Law`,
+      description: post.excerpt,
+      images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+    },
   };
 }
 
@@ -173,7 +184,40 @@ export default async function PostENPage({
   const prevPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: "Jan Matusiak",
+      url: "https://matusiak.legal/en/jan-matusiak",
+    },
+    publisher: {
+      "@type": "LegalService",
+      name: "Jan Matusiak Law Office",
+      url: "https://matusiak.legal/en",
+      logo: { "@type": "ImageObject", url: "https://matusiak.legal/jan-matusiak.jpg" },
+    },
+    mainEntityOfPage: `https://matusiak.legal/en/aktualnosci/${slug}`,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://matusiak.legal/en" },
+      { "@type": "ListItem", position: 2, name: "News", item: "https://matusiak.legal/en/aktualnosci" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://matusiak.legal/en/aktualnosci/${slug}` },
+    ],
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
     <Box sx={{ backgroundColor: "#ffffff", minHeight: "100vh" }}>
 
       {/* ── HEADER ── */}
@@ -428,5 +472,6 @@ export default async function PostENPage({
       </Box>
 
     </Box>
+    </>
   );
 }

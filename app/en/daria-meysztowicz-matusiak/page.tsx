@@ -14,6 +14,29 @@ export const metadata: Metadata = {
   title: "Daria Meysztowicz-Matusiak — Attorney at Law",
   description:
     "Daria Meysztowicz-Matusiak — attorney at law, specialist in investment transactions and venture capital. Of Counsel at Jan Matusiak Law Office in Kraków.",
+  alternates: {
+    canonical: "https://matusiak.legal/en/daria-meysztowicz-matusiak",
+    languages: {
+      pl: "https://matusiak.legal/daria-meysztowicz-matusiak",
+      en: "https://matusiak.legal/en/daria-meysztowicz-matusiak",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en/daria-meysztowicz-matusiak",
+    siteName: "Jan Matusiak Law Office",
+    title: "Daria Meysztowicz-Matusiak — Attorney at Law",
+    description:
+      "Daria Meysztowicz-Matusiak — attorney at law, specialist in investment transactions and venture capital. Of Counsel at Jan Matusiak Law Office in Kraków.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Daria Meysztowicz-Matusiak — Attorney at Law",
+    description: "Attorney at law, specialist in investment transactions and venture capital. Of Counsel in Kraków.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";

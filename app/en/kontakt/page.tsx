@@ -6,6 +6,28 @@ export const metadata: Metadata = {
   title: "Contact | Jan Matusiak — Attorney at Law",
   description:
     "Get in touch with the firm. Describe your matter — we will arrange an initial conversation.",
+  alternates: {
+    canonical: "https://matusiak.legal/en/kontakt",
+    languages: {
+      pl: "https://matusiak.legal/kontakt",
+      en: "https://matusiak.legal/en/kontakt",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en/kontakt",
+    siteName: "Jan Matusiak Law Office",
+    title: "Contact | Jan Matusiak — Attorney at Law",
+    description: "Get in touch with the firm. Describe your matter — we will arrange an initial conversation.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact | Jan Matusiak — Attorney at Law",
+    description: "Get in touch with the firm. Describe your matter — we will arrange an initial conversation.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";

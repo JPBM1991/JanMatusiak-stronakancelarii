@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Prawnicy | Jan Matusiak — Radca Prawny",
   description:
     "Jan Matusiak — radca prawny, założyciel kancelarii. Daria Meysztowicz–Matusiak — radca prawny, Of Counsel, specjalistka ds. transakcji inwestycyjnych i venture capital.",
+  alternates: {
+    canonical: "https://matusiak.legal/prawnicy",
+    languages: {
+      pl: "https://matusiak.legal/prawnicy",
+      en: "https://matusiak.legal/en/prawnicy",
+    },
+  },
 };
 
 const NAVY = "#2B3A4A";

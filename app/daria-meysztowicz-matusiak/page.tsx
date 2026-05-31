@@ -14,6 +14,13 @@ export const metadata: Metadata = {
   title: "Daria Meysztowicz-Matusiak — Radca Prawny",
   description:
     "Daria Meysztowicz-Matusiak — radca prawny, specjalistka ds. transakcji inwestycyjnych i venture capital. Of Counsel kancelarii Jana Matusiaka w Krakowie.",
+  alternates: {
+    canonical: "https://matusiak.legal/daria-meysztowicz-matusiak",
+    languages: {
+      pl: "https://matusiak.legal/daria-meysztowicz-matusiak",
+      en: "https://matusiak.legal/en/daria-meysztowicz-matusiak",
+    },
+  },
 };
 
 const NAVY = "#2B3A4A";

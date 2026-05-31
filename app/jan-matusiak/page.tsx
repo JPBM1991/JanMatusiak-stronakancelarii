@@ -14,6 +14,13 @@ export const metadata: Metadata = {
   title: "Jan Matusiak — Radca Prawny",
   description:
     "Jan Matusiak — Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
+  alternates: {
+    canonical: "https://matusiak.legal/jan-matusiak",
+    languages: {
+      pl: "https://matusiak.legal/jan-matusiak",
+      en: "https://matusiak.legal/en/jan-matusiak",
+    },
+  },
 };
 
 const NAVY = "#2B3A4A";

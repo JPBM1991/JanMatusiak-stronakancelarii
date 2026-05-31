@@ -18,6 +18,13 @@ export const metadata: Metadata = {
   title: "Zakres praktyki | Jan Matusiak — Radca Prawny",
   description:
     "Prawo spółek, kontraktowanie, obsługa bieżąca przedsiębiorców, spory gospodarcze i transakcje. Zakres praktyki kancelarii Jana Matusiaka.",
+  alternates: {
+    canonical: "https://matusiak.legal/praktyka",
+    languages: {
+      pl: "https://matusiak.legal/praktyka",
+      en: "https://matusiak.legal/en/praktyka",
+    },
+  },
 };
 
 const NAVY = "#2B3A4A";

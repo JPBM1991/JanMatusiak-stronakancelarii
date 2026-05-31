@@ -5,6 +5,29 @@ export const metadata: Metadata = {
   title: "AML-RODO Notice | Jan Matusiak — Attorney at Law",
   description:
     "GDPR information notice in connection with AML obligations — information on the processing of personal data under the Anti-Money Laundering Act.",
+  alternates: {
+    canonical: "https://matusiak.legal/en/aml-rodo",
+    languages: {
+      pl: "https://matusiak.legal/aml-rodo",
+      en: "https://matusiak.legal/en/aml-rodo",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en/aml-rodo",
+    siteName: "Jan Matusiak Law Office",
+    title: "AML-RODO Notice | Jan Matusiak — Attorney at Law",
+    description:
+      "GDPR information notice in connection with AML obligations — information on the processing of personal data under the Anti-Money Laundering Act.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AML-RODO Notice | Jan Matusiak — Attorney at Law",
+    description: "GDPR information notice in connection with AML obligations.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";

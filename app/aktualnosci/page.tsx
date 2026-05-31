@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: "Aktualności | Jan Matusiak — Radca Prawny",
   description:
     "Artykuły prawne i komentarze dotyczące prawa spółek, umów, negocjacji i obsługi przedsiębiorców. Blog kancelarii Jana Matusiaka.",
+  alternates: {
+    canonical: "https://matusiak.legal/aktualnosci",
+    languages: {
+      pl: "https://matusiak.legal/aktualnosci",
+      en: "https://matusiak.legal/en/aktualnosci",
+    },
+  },
 };
 
 const NAVY = "#2B3A4A";

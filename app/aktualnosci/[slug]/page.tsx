@@ -25,6 +25,17 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Jan Matusiak — Radca Prawny`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://matusiak.legal/aktualnosci/${slug}`,
+    },
+    openGraph: {
+      type: "article",
+      locale: "pl_PL",
+      url: `https://matusiak.legal/aktualnosci/${slug}`,
+      title: `${post.title} | Jan Matusiak — Radca Prawny`,
+      description: post.excerpt,
+      images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Radca Prawny" }],
+    },
   };
 }
 

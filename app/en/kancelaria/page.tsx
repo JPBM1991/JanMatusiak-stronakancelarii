@@ -11,6 +11,29 @@ export const metadata: Metadata = {
   title: "The Firm | Jan Matusiak — Attorney at Law",
   description:
     "A law office personally run by attorney Jan Matusiak. Strategic legal advisory for businesses — corporate law, contracts, dispute resolution.",
+  alternates: {
+    canonical: "https://matusiak.legal/en/kancelaria",
+    languages: {
+      pl: "https://matusiak.legal/kancelaria",
+      en: "https://matusiak.legal/en/kancelaria",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en/kancelaria",
+    siteName: "Jan Matusiak Law Office",
+    title: "The Firm | Jan Matusiak — Attorney at Law",
+    description:
+      "A law office personally run by attorney Jan Matusiak. Strategic legal advisory for businesses — corporate law, contracts, dispute resolution.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Firm | Jan Matusiak — Attorney at Law",
+    description: "A law office personally run by attorney Jan Matusiak. Strategic legal advisory for businesses.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";

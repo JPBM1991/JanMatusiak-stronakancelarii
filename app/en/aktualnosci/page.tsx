@@ -8,6 +8,29 @@ export const metadata: Metadata = {
   title: "News | Jan Matusiak — Attorney at Law",
   description:
     "Legal articles and commentary on company law, contracts, negotiations and business advisory. Blog of Jan Matusiak's law firm.",
+  alternates: {
+    canonical: "https://matusiak.legal/en/aktualnosci",
+    languages: {
+      pl: "https://matusiak.legal/aktualnosci",
+      en: "https://matusiak.legal/en/aktualnosci",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en/aktualnosci",
+    siteName: "Jan Matusiak Law Office",
+    title: "News | Jan Matusiak — Attorney at Law",
+    description:
+      "Legal articles and commentary on company law, contracts, negotiations and business advisory. Blog of Jan Matusiak's law firm.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "News | Jan Matusiak — Attorney at Law",
+    description: "Legal articles on company law, contracts, negotiations and business advisory.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";

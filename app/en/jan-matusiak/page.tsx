@@ -14,6 +14,29 @@ export const metadata: Metadata = {
   title: "Jan Matusiak — Attorney at Law",
   description:
     "Jan Matusiak — attorney at law, graduate of Jagiellonian University, member of the Kraków Bar of Attorneys at Law. Years of experience advising entrepreneurs, corporate law, dispute resolution and contract work.",
+  alternates: {
+    canonical: "https://matusiak.legal/en/jan-matusiak",
+    languages: {
+      pl: "https://matusiak.legal/jan-matusiak",
+      en: "https://matusiak.legal/en/jan-matusiak",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en/jan-matusiak",
+    siteName: "Jan Matusiak Law Office",
+    title: "Jan Matusiak — Attorney at Law",
+    description:
+      "Jan Matusiak — attorney at law, graduate of Jagiellonian University, member of the Kraków Bar of Attorneys at Law. Years of experience advising entrepreneurs, corporate law, dispute resolution and contract work.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jan Matusiak — Attorney at Law",
+    description: "Attorney at law, graduate of Jagiellonian University, member of the Kraków Bar of Attorneys at Law.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";

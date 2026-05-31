@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://matusiak.legal",
+    languages: {
+      pl: "https://matusiak.legal",
+      en: "https://matusiak.legal/en",
+    },
+  },
+};
 
 const jsonLd = {
   "@context": "https://schema.org",

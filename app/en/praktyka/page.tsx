@@ -17,6 +17,29 @@ export const metadata: Metadata = {
   title: "Practice Areas | Jan Matusiak — Attorney at Law",
   description:
     "Corporate law, contracts, ongoing business support, dispute resolution, asset protection and planning. Practice scope of Jan Matusiak's law office.",
+  alternates: {
+    canonical: "https://matusiak.legal/en/praktyka",
+    languages: {
+      pl: "https://matusiak.legal/praktyka",
+      en: "https://matusiak.legal/en/praktyka",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en/praktyka",
+    siteName: "Jan Matusiak Law Office",
+    title: "Practice Areas | Jan Matusiak — Attorney at Law",
+    description:
+      "Corporate law, contracts, ongoing business support, dispute resolution, asset protection and planning. Practice scope of Jan Matusiak's law office.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Practice Areas | Jan Matusiak — Attorney at Law",
+    description: "Corporate law, contracts, dispute resolution, asset protection. Practice scope of Jan Matusiak's law office.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";

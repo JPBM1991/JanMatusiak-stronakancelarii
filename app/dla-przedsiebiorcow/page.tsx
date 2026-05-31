@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   title: "Dla przedsiębiorców | Jan Matusiak — Radca Prawny",
   description:
     "Obsługa prawna dla przedsiębiorców MSP i właścicieli firm. Zewnętrzny radca prawny zamiast stałych zobowiązań — stałe wsparcie, elastyczny model, bezpośredni dostęp.",
+  alternates: {
+    canonical: "https://matusiak.legal/dla-przedsiebiorcow",
+    languages: {
+      pl: "https://matusiak.legal/dla-przedsiebiorcow",
+      en: "https://matusiak.legal/en/dla-przedsiebiorcow",
+    },
+  },
 };
 
 const NAVY = "#2B3A4A";

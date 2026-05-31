@@ -12,6 +12,13 @@ export const metadata: Metadata = {
   title: "Kancelaria | Jan Matusiak — Radca Prawny",
   description:
     "Jednoosobowa kancelaria radcy prawnego Jana Matusiaka. Strategiczne doradztwo prawne dla przedsiębiorców. Model pracy, wartości i zasady współpracy.",
+  alternates: {
+    canonical: "https://matusiak.legal/kancelaria",
+    languages: {
+      pl: "https://matusiak.legal/kancelaria",
+      en: "https://matusiak.legal/en/kancelaria",
+    },
+  },
 };
 
 const NAVY = "#2B3A4A";

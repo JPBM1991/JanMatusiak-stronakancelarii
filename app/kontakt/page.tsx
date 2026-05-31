@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   title: "Kontakt | Jan Matusiak — Radca Prawny",
   description:
     "Skontaktuj się z kancelarią. Opisz sprawę — umówimy wstępną rozmowę.",
+  alternates: {
+    canonical: "https://matusiak.legal/kontakt",
+    languages: {
+      pl: "https://matusiak.legal/kontakt",
+      en: "https://matusiak.legal/en/kontakt",
+    },
+  },
 };
 
 const NAVY = "#2B3A4A";

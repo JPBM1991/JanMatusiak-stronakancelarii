@@ -8,6 +8,29 @@ export const metadata: Metadata = {
   title: "For Business | Jan Matusiak — Attorney at Law",
   description:
     "Legal services for SME entrepreneurs and business owners. External attorney without employment commitments — ongoing support, flexible model, direct access.",
+  alternates: {
+    canonical: "https://matusiak.legal/en/dla-przedsiebiorcow",
+    languages: {
+      pl: "https://matusiak.legal/dla-przedsiebiorcow",
+      en: "https://matusiak.legal/en/dla-przedsiebiorcow",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://matusiak.legal/en/dla-przedsiebiorcow",
+    siteName: "Jan Matusiak Law Office",
+    title: "For Business | Jan Matusiak — Attorney at Law",
+    description:
+      "Legal services for SME entrepreneurs and business owners. External attorney without employment commitments — ongoing support, flexible model, direct access.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "For Business | Jan Matusiak — Attorney at Law",
+    description: "Legal services for SME entrepreneurs. External attorney — ongoing support, flexible model, direct access.",
+    images: ["/jan-matusiak.jpg"],
+  },
 };
 
 const NAVY = "#2B3A4A";
