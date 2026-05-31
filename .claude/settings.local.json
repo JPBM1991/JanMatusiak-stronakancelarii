@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm run:*)",
       "Bash(cmd //c \"taskkill /PID 20044 /F\")",
-      "WebFetch(domain:dzp.pl)"
+      "WebFetch(domain:dzp.pl)",
+      "WebFetch(domain:matusiak.legal)"
     ]
   }
 }
