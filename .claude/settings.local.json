@@ -4,7 +4,10 @@
       "Bash(npm run:*)",
       "Bash(cmd //c \"taskkill /PID 20044 /F\")",
       "WebFetch(domain:dzp.pl)",
-      "WebFetch(domain:matusiak.legal)"
+      "WebFetch(domain:matusiak.legal)",
+      "Bash(curl -s \"https://matusiak.legal/kancelaria\")",
+      "Bash(curl -s \"https://matusiak.legal/en\")",
+      "Bash(grep -o 'hreflang[^\\\\\\\\]*')"
     ]
   }
 }

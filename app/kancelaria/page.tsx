@@ -11,7 +11,7 @@ import { KancelariaCTA } from "@/components/KanalariaClient";
 export const metadata: Metadata = {
   title: "Kancelaria | Jan Matusiak — Radca Prawny",
   description:
-    "Jednoosobowa kancelaria radcy prawnego Jana Matusiaka. Strategiczne doradztwo prawne dla przedsiębiorców. Model pracy, wartości i zasady współpracy.",
+    "Kancelaria radcy prawnego Jana Matusiaka. Strategiczne doradztwo prawne dla przedsiębiorców. Model pracy, wartości i zasady współpracy.",
   alternates: {
     canonical: "https://matusiak.legal/kancelaria",
     languages: {

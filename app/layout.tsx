@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków",
     description:
-      "Jednoosobowa kancelaria radcy prawnego. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych.",
+      "Kancelaria radcy prawnego Jana Matusiaka. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych.",
     images: ["/jan-matusiak.jpg"],
   },
 };
