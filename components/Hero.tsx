@@ -200,7 +200,6 @@ export default function Hero() {
               mb: 1,
               maxWidth: 440,
             }}>
-              Absolwent Wydziału Prawa i Administracji Uniwersytetu Jagiellońskiego.
               Wieloletnie doświadczenie w obsłudze przedsiębiorców, prawie spółek i postępowaniach spornych.
             </Typography>
             <Typography sx={{ fontSize: "0.85rem", color: "#5A5A5A", lineHeight: 1.75 }}>

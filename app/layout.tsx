@@ -8,7 +8,7 @@ import CookieConsent from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://matusiak.legal"),
-  title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków",
+  title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków Bronowice, Krowodrza — Profesjonalna pomoc prawna",
   description:
     "Jan Matusiak — Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
   keywords:
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     url: "https://matusiak.legal",
     siteName: "Jan Matusiak Kancelaria Radcy Prawnego",
-    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków",
+    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków Bronowice, Krowodrza — Profesjonalna pomoc prawna",
     description:
       "Jan Matusiak — Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
     images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Radca Prawny" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków",
+    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków Bronowice, Krowodrza — Profesjonalna pomoc prawna",
     description:
       "Kancelaria radcy prawnego Jana Matusiaka. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych.",
     images: ["/jan-matusiak.jpg"],
