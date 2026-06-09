@@ -182,6 +182,17 @@ export default function NewsPage() {
               ))}
             </Grid>
           )}
+
+          {/* Disclaimer */}
+          <Box sx={{ mt: 6, pt: 3, borderTop: `1px solid ${BORDER}` }}>
+            <Typography sx={{
+              fontSize: "0.7rem",
+              color: "#B0B0B0",
+              lineHeight: 1.75,
+            }}>
+              The author accepts no liability for the content of this blog or individual posts to the extent that third parties may suffer financial or non-financial harm by taking (or refraining from taking) any action based on the content published on this website. The content of the posts does not constitute a legal opinion or any form of legal advice and may not serve as the basis for any decision, in particular a business decision. The content of the posts does not constitute information on the current state of the law. The content of the posts reflects solely the views of the Author and does not constitute the Author's official position in any particular matter. The Author reserves the right to amend texts and views expressed in the posts, in particular in the event of changes in the law or in the judicial or administrative practice.
+            </Typography>
+          </Box>
         </Container>
       </Box>
 

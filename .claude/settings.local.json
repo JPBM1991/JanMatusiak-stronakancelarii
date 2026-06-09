@@ -7,7 +7,15 @@
       "WebFetch(domain:matusiak.legal)",
       "Bash(curl -s \"https://matusiak.legal/kancelaria\")",
       "Bash(curl -s \"https://matusiak.legal/en\")",
-      "Bash(grep -o 'hreflang[^\\\\\\\\]*')"
+      "Bash(grep -o 'hreflang[^\\\\\\\\]*')",
+      "WebFetch(domain:www.dzp.pl)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(findstr :3000)",
+      "Bash(npm run *)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/aktualnosci/odpowiedzialnosc-czlonkow-zarzadu-sp-zoo-decyzje-biznesowe)"
     ]
   }
 }
