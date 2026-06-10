@@ -173,17 +173,6 @@ export default function AktualnosciPage() {
               ))}
             </Grid>
           )}
-
-          {/* Zastrzeżenie */}
-          <Box sx={{ mt: 6, pt: 3, borderTop: `1px solid ${BORDER}` }}>
-            <Typography sx={{
-              fontSize: "0.7rem",
-              color: "#B0B0B0",
-              lineHeight: 1.75,
-            }}>
-              Autor nie odpowiada za treść niniejszego bloga ani poszczególnych wpisów w zakresie, w jakim podmioty trzecie mogłyby doznać szkody majątkowej lub niemajątkowej, podejmując (lub nie podejmując) jakiekolwiek czynności na podstawie treści zamieszczonych na stronie. Treść wpisów nie stanowi opinii prawnej ani jakiejkolwiek porady prawnej i nie może być podstawą do podjęcia jakiejkolwiek decyzji, w szczególności biznesowej. Treść wpisów nie stanowi informacji o stanie obowiązującego prawa. Treść wpisów stanowi wyłącznie odzwierciedlenie poglądów Autora i nie stanowi jego oficjalnego stanowiska w jakiejkolwiek konkretnej sprawie. Autor zastrzega prawo do zmiany tekstów oraz poglądów wyrażonych we wpisach, w szczególności w przypadku zmiany prawa lub praktyki orzeczniczej sądów i organów administracji.
-            </Typography>
-          </Box>
         </Container>
       </Box>
 
