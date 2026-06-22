@@ -16,6 +16,7 @@ const BORDER = "rgba(255,255,255,0.08)";
 export default function Footer() {
   const pathname = usePathname();
   const isEn = pathname.startsWith("/en");
+  const showDisclaimer = pathname.includes("/aktualnosci");
   return (
     <Box component="footer" sx={{ backgroundColor: NAVY, borderTop: `3px solid ${GOLD}` }}>
 
@@ -29,15 +30,17 @@ export default function Footer() {
           gap: { xs: 4, md: 6 },
         }}>
 
-          {/* Zastrzeżenie */}
-          <Box sx={{ maxWidth: { xs: "100%", md: 480 } }}>
-            <Typography sx={{ fontSize: "0.68rem", color: "rgba(255,255,255,0.3)", lineHeight: 1.8 }}>
-              {isEn
-                ? "The author accepts no liability for the content of this blog or individual posts to the extent that third parties may suffer harm by taking or refraining from any action based on the content published on this website. The content does not constitute legal advice and may not serve as the basis for any decision. The content reflects solely the views of the Author and does not constitute the Author's official position in any particular matter."
-                : "Autor nie odpowiada za treść niniejszego bloga ani poszczególnych wpisów w zakresie, w jakim podmioty trzecie mogłyby doznać szkody, podejmując (lub nie podejmując) jakiekolwiek czynności na podstawie treści zamieszczonych na stronie. Treść wpisów nie stanowi opinii prawnej ani porady prawnej. Treść wpisów stanowi wyłącznie odzwierciedlenie poglądów Autora i nie stanowi jego oficjalnego stanowiska w jakiejkolwiek konkretnej sprawie."
-              }
-            </Typography>
-          </Box>
+          {/* Zastrzeżenie — tylko w zakładce Aktualności */}
+          {showDisclaimer && (
+            <Box sx={{ maxWidth: { xs: "100%", md: 480 } }}>
+              <Typography sx={{ fontSize: "0.68rem", color: "rgba(255,255,255,0.3)", lineHeight: 1.8 }}>
+                {isEn
+                  ? "The author accepts no liability for the content of this blog or individual posts to the extent that third parties may suffer harm by taking or refraining from any action based on the content published on this website. The content does not constitute legal advice and may not serve as the basis for any decision. The content reflects solely the views of the Author and does not constitute the Author's official position in any particular matter."
+                  : "Autor nie odpowiada za treść niniejszego bloga ani poszczególnych wpisów w zakresie, w jakim podmioty trzecie mogłyby doznać szkody, podejmując (lub nie podejmując) jakiekolwiek czynności na podstawie treści zamieszczonych na stronie. Treść wpisów nie stanowi opinii prawnej ani porady prawnej. Treść wpisów stanowi wyłącznie odzwierciedlenie poglądów Autora i nie stanowi jego oficjalnego stanowiska w jakiejkolwiek konkretnej sprawie."
+                }
+              </Typography>
+            </Box>
+          )}
 
           {/* Dane kontaktowe */}
           <Box sx={{ display: "flex", flexDirection: "column", gap: 1.25 }}>
