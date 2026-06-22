@@ -478,7 +478,7 @@ export default async function PostPage({
                   <Typography sx={{
                     fontSize: "0.8rem", color: "#5A5A5A", lineHeight: 1.7,
                   }}>
-                    Radca prawny w Krakowie, członek OIRP.
+                    Radca prawny, członek OIRP w Krakowie.
                   </Typography>
                 </Box>
 
