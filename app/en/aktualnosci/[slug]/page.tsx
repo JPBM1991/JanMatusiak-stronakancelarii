@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllSlugsEN, getPostBySlugEN, getAllPostsEN } from "@/lib/posts-en";
+import { enToPlSlugMap } from "@/lib/slug-map";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const NAVY = "#0B1829";
@@ -22,17 +23,26 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlugEN(slug);
+  const plSlug = enToPlSlugMap[slug];
+  const suffix = "Jan Matusiak — Attorney at Law";
+  const raw = `${post.title} | ${suffix}`;
+  const seoTitle = raw.length > 65 ? `${post.title.split(".")[0].trim()} | ${suffix}` : raw;
   return {
-    title: `${post.title} | Jan Matusiak — Attorney at Law`,
+    title: seoTitle,
     description: post.excerpt,
     alternates: {
       canonical: `https://matusiak.legal/en/aktualnosci/${slug}`,
+      languages: {
+        "en": `https://matusiak.legal/en/aktualnosci/${slug}`,
+        ...(plSlug ? { "pl": `https://matusiak.legal/aktualnosci/${plSlug}` } : {}),
+        "x-default": `https://matusiak.legal/aktualnosci/${plSlug ?? slug}`,
+      },
     },
     openGraph: {
       type: "article",
       locale: "en_US",
       url: `https://matusiak.legal/en/aktualnosci/${slug}`,
-      title: `${post.title} | Jan Matusiak — Attorney at Law`,
+      title: seoTitle,
       description: post.excerpt,
       images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
     },
@@ -190,6 +200,7 @@ export default async function PostENPage({
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       "@type": "Person",
       name: "Jan Matusiak",
@@ -426,7 +437,7 @@ export default async function PostENPage({
                     Attorney at Law
                   </Typography>
                   <Typography sx={{ fontSize: "0.8rem", color: "#5A5A5A", lineHeight: 1.7 }}>
-                    Graduate of Jagiellonian University, member of the Bar Association in Kraków (OIRP).
+                    Attorney at law in Kraków, member of the Regional Bar Association (OIRP).
                   </Typography>
                 </Box>
 

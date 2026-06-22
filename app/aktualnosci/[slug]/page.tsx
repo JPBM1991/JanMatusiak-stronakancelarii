@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/posts";
+import { plToEnSlugMap } from "@/lib/slug-map";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const NAVY = "#0B1829";
@@ -22,17 +23,26 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
+  const enSlug = plToEnSlugMap[slug];
+  const suffix = "Jan Matusiak — Radca Prawny";
+  const raw = `${post.title} | ${suffix}`;
+  const seoTitle = raw.length > 65 ? `${post.title.split(".")[0].trim()} | ${suffix}` : raw;
   return {
-    title: `${post.title} | Jan Matusiak — Radca Prawny`,
+    title: seoTitle,
     description: post.excerpt,
     alternates: {
       canonical: `https://matusiak.legal/aktualnosci/${slug}`,
+      languages: {
+        "pl": `https://matusiak.legal/aktualnosci/${slug}`,
+        ...(enSlug ? { "en": `https://matusiak.legal/en/aktualnosci/${enSlug}` } : {}),
+        "x-default": `https://matusiak.legal/aktualnosci/${slug}`,
+      },
     },
     openGraph: {
       type: "article",
       locale: "pl_PL",
       url: `https://matusiak.legal/aktualnosci/${slug}`,
-      title: `${post.title} | Jan Matusiak — Radca Prawny`,
+      title: seoTitle,
       description: post.excerpt,
       images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Radca Prawny" }],
     },
@@ -197,6 +207,7 @@ export default async function PostPage({
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       "@type": "Person",
       name: "Jan Matusiak",
@@ -467,7 +478,7 @@ export default async function PostPage({
                   <Typography sx={{
                     fontSize: "0.8rem", color: "#5A5A5A", lineHeight: 1.7,
                   }}>
-                    Absolwent UJ, członek OIRP w Krakowie.
+                    Radca prawny w Krakowie, członek OIRP.
                   </Typography>
                 </Box>
 
