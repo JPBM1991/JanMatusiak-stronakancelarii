@@ -138,8 +138,8 @@ export default function KancelariaPage() {
                   body: "Każda sprawa jest prowadzona przeze mnie osobiście — nie przekazywana dalej. Każdy klient ma ze mną bezpośredni kontakt.",
                 },
                 {
-                  lead: "Działam ogólnopolsko i zdalnie.",
-                  body: "Praca odbywa się głównie zdalnie — telefonicznie, mailowo i przez wideokonferencje. Spotkania stacjonarne organizuję wtedy, gdy są rzeczywiście potrzebne i uzasadnione. Obsługuję również sprawy z elementem zagranicznym — w języku angielskim.",
+                  lead: "Działam ogólnopolsko i prowadzę sprawy na terenie całego kraju.",
+                  body: "Praca oraz kontakt odbywa się przede wszystkim zdalnie — telefonicznie, mailowo i przez wideokonferencje. Spotkania stacjonarne organizuję wtedy, gdy są rzeczywiście potrzebne i uzasadnione. Obsługuję również sprawy z elementem zagranicznym — w języku angielskim.",
                 },
               ].map((item, i) => (
                 <Box key={i} sx={{ mb: i < 2 ? 3.5 : 0 }}>

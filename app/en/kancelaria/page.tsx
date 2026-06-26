@@ -152,8 +152,8 @@ export default function KancelariaENPage() {
                   body: "Every matter is handled by me personally — not passed on. Every client has direct contact with me.",
                 },
                 {
-                  lead: "I work nationwide and remotely.",
-                  body: "Work is carried out primarily remotely — by phone, email and video conference. In-person meetings are arranged when genuinely needed and justified. I also handle matters with an international element — in English.",
+                  lead: "I work nationwide and handle matters across the whole of Poland.",
+                  body: "Work and contact take place primarily remotely — by phone, email and video conference. In-person meetings are arranged when genuinely needed and justified. I also handle matters with an international element — in English.",
                 },
               ].map((item, i) => (
                 <Box key={i} sx={{ mb: i < 2 ? 3.5 : 0 }}>
