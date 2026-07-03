@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -11,9 +11,9 @@ import {
 } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Jan Matusiak — Attorney at Law",
+  title: "Jan Matusiak - Attorney at Law",
   description:
-    "Jan Matusiak — attorney at law, graduate of Jagiellonian University, member of the Kraków Bar of Attorneys at Law. Years of experience advising entrepreneurs, corporate law, dispute resolution and contract work.",
+    "Jan Matusiak - attorney at law, graduate of Jagiellonian University, member of the Kraków Bar of Attorneys at Law. Years of experience advising entrepreneurs, corporate law, dispute resolution and contract work.",
   alternates: {
     canonical: "https://matusiak.legal/en/jan-matusiak",
     languages: {
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://matusiak.legal/en/jan-matusiak",
     siteName: "Jan Matusiak Law Office",
-    title: "Jan Matusiak — Attorney at Law",
+    title: "Jan Matusiak - Attorney at Law",
     description:
-      "Jan Matusiak — attorney at law, graduate of Jagiellonian University, member of the Kraków Bar of Attorneys at Law. Years of experience advising entrepreneurs, corporate law, dispute resolution and contract work.",
-    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+      "Jan Matusiak - attorney at law, graduate of Jagiellonian University, member of the Kraków Bar of Attorneys at Law. Years of experience advising entrepreneurs, corporate law, dispute resolution and contract work.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jan Matusiak — Attorney at Law",
+    title: "Jan Matusiak - Attorney at Law",
     description: "Attorney at law, graduate of Jagiellonian University, member of the Kraków Bar of Attorneys at Law.",
     images: ["/jan-matusiak.jpg"],
   },
@@ -79,7 +79,7 @@ const expertiseAreas = [
   {
     area: "Asset protection and planning",
     detail:
-      "Advisory on structuring, protection and succession of assets — for business owners and individual clients. Matrimonial property agreements, asset transfer planning, family and property settlements.",
+      "Advisory on structuring, protection and succession of assets - for business owners and individual clients. Matrimonial property agreements, asset transfer planning, family and property settlements.",
     href: "/en/praktyka#majatek",
   },
 ];
@@ -146,12 +146,12 @@ export default function JanMatusiakENPage() {
         <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
           <Grid container spacing={{ xs: 4, md: 7 }} alignItems="flex-start">
 
-            {/* LEFT — photo + credentials + contact */}
+            {/* LEFT - photo + credentials + contact */}
             <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ width: "100%", mb: 3, position: "relative" }}>
                 <Image
                   src="/jan-matusiak.jpg"
-                  alt="Jan Matusiak — Attorney at Law"
+                  alt="Jan Matusiak - Attorney at Law"
                   width={600}
                   height={800}
                   style={{ width: "100%", height: "auto", display: "block", objectFit: "cover", objectPosition: "center top" }}
@@ -254,7 +254,7 @@ export default function JanMatusiakENPage() {
               </Box>
             </Grid>
 
-            {/* RIGHT — bio */}
+            {/* RIGHT - bio */}
             <Grid size={{ xs: 12, md: 8 }}>
               <Box
                 sx={{
@@ -307,7 +307,7 @@ export default function JanMatusiakENPage() {
                 </Box>
                 <Box sx={{ pl: "32px" }}>
                   <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 0.5 }}>
-                    Faculty of Law and Administration — Jagiellonian University, Kraków
+                    Faculty of Law and Administration - Jagiellonian University, Kraków
                   </Typography>
                   <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 2.5 }}>
                     Kraków Bar of Attorneys at Law (OIRP)
@@ -415,7 +415,7 @@ export default function JanMatusiakENPage() {
                 lineHeight: 1.7,
                 maxWidth: 520,
               }}>
-                Let&apos;s start with a brief conversation. Tell me what brings you here —
+                Let&apos;s start with a brief conversation. Tell me what brings you here -
                 I will assess whether I can help and what engagement would look like.
               </Typography>
             </Grid>

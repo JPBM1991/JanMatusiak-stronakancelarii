@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import ContactFormEN from "@/components/ContactFormEN";
 
 export const metadata: Metadata = {
-  title: "Contact | Jan Matusiak — Attorney at Law",
+  title: "Contact | Jan Matusiak - Attorney at Law",
   description:
-    "Get in touch with the firm. Describe your matter — we will arrange an initial conversation.",
+    "Get in touch with the firm. Describe your matter - we will arrange an initial conversation.",
   alternates: {
     canonical: "https://matusiak.legal/en/kontakt",
     languages: {
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://matusiak.legal/en/kontakt",
     siteName: "Jan Matusiak Law Office",
-    title: "Contact | Jan Matusiak — Attorney at Law",
-    description: "Get in touch with the firm. Describe your matter — we will arrange an initial conversation.",
-    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+    title: "Contact | Jan Matusiak - Attorney at Law",
+    description: "Get in touch with the firm. Describe your matter - we will arrange an initial conversation.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact | Jan Matusiak — Attorney at Law",
-    description: "Get in touch with the firm. Describe your matter — we will arrange an initial conversation.",
+    title: "Contact | Jan Matusiak - Attorney at Law",
+    description: "Get in touch with the firm. Describe your matter - we will arrange an initial conversation.",
     images: ["/jan-matusiak.jpg"],
   },
 };
@@ -55,7 +55,7 @@ const infoItems = [
   },
   {
     title: "Response time",
-    text: "I respond to emails and form submissions within 1–2 business days. For urgent matters — please call directly.",
+    text: "I respond to emails and form submissions within 1–2 business days. For urgent matters - please call directly.",
   },
   {
     title: "Working together",
@@ -111,7 +111,7 @@ export default function KontaktENPage() {
             lineHeight: 1.7,
             maxWidth: 460,
           }}>
-            The first step is a brief conversation — to assess whether your matter
+            The first step is a brief conversation - to assess whether your matter
             falls within the scope of my practice.
           </Typography>
         </Container>
@@ -122,12 +122,12 @@ export default function KontaktENPage() {
         <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
           <Grid container spacing={{ xs: 4, md: 6 }} alignItems="flex-start">
 
-            {/* LEFT — form */}
+            {/* LEFT - form */}
             <Grid size={{ xs: 12, md: 7 }}>
               <ContactFormEN />
             </Grid>
 
-            {/* RIGHT — contact details + info */}
+            {/* RIGHT - contact details + info */}
             <Grid size={{ xs: 12, md: 5 }}>
 
               <Box

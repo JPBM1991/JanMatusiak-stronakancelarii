@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Typography } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "AML / RODO | Jan Matusiak — Radca Prawny",
+  title: "AML / RODO | Jan Matusiak - Radca Prawny",
   description:
-    "Klauzula informacyjna RODO w zakresie ustawy AML — informacje o przetwarzaniu danych osobowych w ramach obowiązków wynikających z ustawy o przeciwdziałaniu praniu pieniędzy.",
+    "Klauzula informacyjna RODO w zakresie ustawy AML - informacje o przetwarzaniu danych osobowych w ramach obowiązków wynikających z ustawy o przeciwdziałaniu praniu pieniędzy.",
   alternates: {
     canonical: "https://matusiak.legal/aml-rodo",
     languages: {
@@ -169,7 +169,7 @@ export default function AmlRodoPage() {
               <Li>dane adresowe: adres zamieszkania lub siedziby,</Li>
               <Li>numer identyfikacji podatkowej (NIP),</Li>
               <Li>
-                kopię dokumentu tożsamości — w zakresie wymaganym przez art. 34 ustawy AML.
+                kopię dokumentu tożsamości - w zakresie wymaganym przez art. 34 ustawy AML.
               </Li>
             </Section>
 
@@ -186,7 +186,7 @@ export default function AmlRodoPage() {
               <Li>oceny charakteru i celu nawiązywanej relacji biznesowej,</Li>
               <Li>bieżącego monitorowania stosunków gospodarczych z klientem,</Li>
               <Li>
-                przekazywania informacji właściwym organom — w przypadkach przewidzianych
+                przekazywania informacji właściwym organom - w przypadkach przewidzianych
                 przepisami prawa.
               </Li>
             </Section>
@@ -195,7 +195,7 @@ export default function AmlRodoPage() {
 
             <Section number="IV." title="Podstawa prawna przetwarzania">
               <P>
-                Dane osobowe przetwarzane są na podstawie art. 6 ust. 1 lit. c RODO —
+                Dane osobowe przetwarzane są na podstawie art. 6 ust. 1 lit. c RODO -
                 przetwarzanie jest niezbędne do wypełnienia obowiązku prawnego ciążącego
                 na Administratorze, wynikającego z przepisów ustawy AML.
               </P>
@@ -229,7 +229,7 @@ export default function AmlRodoPage() {
               </P>
               <Li>Generalny Inspektor Informacji Finansowej (GIIF),</Li>
               <Li>organy prowadzące Centralny Rejestr Beneficjentów Rzeczywistych,</Li>
-              <Li>prokuratura i inne organy ścigania — w przypadkach przewidzianych przepisami.</Li>
+              <Li>prokuratura i inne organy ścigania - w przypadkach przewidzianych przepisami.</Li>
             </Section>
 
             <Box sx={{ borderTop: `1px solid ${BORDER}`, mb: 5 }} />
@@ -243,14 +243,14 @@ export default function AmlRodoPage() {
               <Li>prawo do sprostowania danych (art. 16 RODO),</Li>
               <Li>prawo do ograniczenia przetwarzania (art. 18 RODO),</Li>
               <Li>prawo do wniesienia sprzeciwu (art. 21 RODO),</Li>
-              <Li>prawo do przenoszenia danych (art. 20 RODO) — o ile jest technicznie możliwe,</Li>
+              <Li>prawo do przenoszenia danych (art. 20 RODO) - o ile jest technicznie możliwe,</Li>
               <Li>
                 prawo do wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych
                 (ul. Stawki 2, 00-193 Warszawa, uodo.gov.pl).
               </Li>
               <P>
                 Realizacja niektórych z powyższych praw może być ograniczona ze względu
-                na obowiązki wynikające z ustawy AML — w szczególności obowiązek przechowania
+                na obowiązki wynikające z ustawy AML - w szczególności obowiązek przechowania
                 dokumentacji przez wymagany okres.
               </P>
             </Section>

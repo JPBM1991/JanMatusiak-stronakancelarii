@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "For Business | Jan Matusiak — Attorney at Law",
+  title: "For Business | Jan Matusiak - Attorney at Law",
   description:
-    "Legal services for SME entrepreneurs and business owners. External attorney without employment commitments — ongoing support, flexible model, direct access.",
+    "Legal services for SME entrepreneurs and business owners. External attorney without employment commitments - ongoing support, flexible model, direct access.",
   alternates: {
     canonical: "https://matusiak.legal/en/dla-przedsiebiorcow",
     languages: {
@@ -20,15 +20,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://matusiak.legal/en/dla-przedsiebiorcow",
     siteName: "Jan Matusiak Law Office",
-    title: "For Business | Jan Matusiak — Attorney at Law",
+    title: "For Business | Jan Matusiak - Attorney at Law",
     description:
-      "Legal services for SME entrepreneurs and business owners. External attorney without employment commitments — ongoing support, flexible model, direct access.",
-    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+      "Legal services for SME entrepreneurs and business owners. External attorney without employment commitments - ongoing support, flexible model, direct access.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "For Business | Jan Matusiak — Attorney at Law",
-    description: "Legal services for SME entrepreneurs. External attorney — ongoing support, flexible model, direct access.",
+    title: "For Business | Jan Matusiak - Attorney at Law",
+    description: "Legal services for SME entrepreneurs. External attorney - ongoing support, flexible model, direct access.",
     images: ["/jan-matusiak.jpg"],
   },
 };
@@ -41,7 +41,7 @@ const LIGHT = "#EDF3F6";
 const modelPoints = [
   {
     label: "Direct access",
-    desc: "You contact me directly — not an assistant or a receptionist.",
+    desc: "You contact me directly - not an assistant or a receptionist.",
   },
   {
     label: "Ongoing support without employment costs",
@@ -49,15 +49,15 @@ const modelPoints = [
   },
   {
     label: "Understanding the business context",
-    desc: "I focus on how a legal decision will affect your business — not just what the regulation says.",
+    desc: "I focus on how a legal decision will affect your business - not just what the regulation says.",
   },
   {
     label: "Punctuality and clear terms of engagement",
-    desc: "I meet deadlines. If a matter requires more time or additional experts — I communicate this in advance, not after the fact.",
+    desc: "I meet deadlines. If a matter requires more time or additional experts - I communicate this in advance, not after the fact.",
   },
   {
     label: "Remote and efficient",
-    desc: "I operate nationwide, primarily remotely — phone, email, video conference. If needed, I am happy to meet in person.",
+    desc: "I operate nationwide, primarily remotely - phone, email, video conference. If needed, I am happy to meet in person.",
   },
   {
     label: "Transparency as a quality guarantee",
@@ -143,7 +143,7 @@ export default function DlaPrzedsiebiorcowENPage() {
               <Typography sx={{
                 fontSize: "0.9rem", color: "#5A5A5A", lineHeight: 1.85,
               }}>
-                I also work with clients who have internal legal teams — as external counsel I support in-house teams in matters requiring specialist knowledge or greater operational support.
+                I also work with clients who have internal legal teams - as external counsel I support in-house teams in matters requiring specialist knowledge or greater operational support.
               </Typography>
             </Grid>
 
@@ -256,7 +256,7 @@ export default function DlaPrzedsiebiorcowENPage() {
                 color: "rgba(255,255,255,0.6)",
                 fontSize: "0.925rem", lineHeight: 1.75, maxWidth: 500,
               }}>
-                A brief introductory conversation — no commitment. Tell me where your company
+                A brief introductory conversation - no commitment. Tell me where your company
                 is and what support you need. I will be direct about whether I can help
                 and what engagement would look like.
               </Typography>

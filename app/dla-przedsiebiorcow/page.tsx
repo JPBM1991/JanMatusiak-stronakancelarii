@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -6,9 +6,9 @@ import Link from "next/link";
 import { DlaPrzedsiebiorcowCTA } from "@/components/DlaPrzedsiebiorcowClient";
 
 export const metadata: Metadata = {
-  title: "Dla przedsiębiorców | Jan Matusiak — Radca Prawny",
+  title: "Dla przedsiębiorców | Jan Matusiak - Radca Prawny",
   description:
-    "Obsługa prawna dla przedsiębiorców MSP i właścicieli firm. Zewnętrzny radca prawny zamiast stałych zobowiązań — stałe wsparcie, elastyczny model, bezpośredni dostęp.",
+    "Obsługa prawna dla przedsiębiorców MSP i właścicieli firm. Zewnętrzny radca prawny zamiast stałych zobowiązań - stałe wsparcie, elastyczny model, bezpośredni dostęp.",
   alternates: {
     canonical: "https://matusiak.legal/dla-przedsiebiorcow",
     languages: {
@@ -27,7 +27,7 @@ const LIGHT = "#EDF3F6";
 const modelPoints = [
   {
     label: "Bezpośredni dostęp",
-    desc: "Kontaktujesz się bezpośrednio ze mną — nie z asystentem ani sekretariatem.",
+    desc: "Kontaktujesz się bezpośrednio ze mną - nie z asystentem ani sekretariatem.",
   },
   {
     label: "Stałe wsparcie bez etatu",
@@ -35,15 +35,15 @@ const modelPoints = [
   },
   {
     label: "Zrozumienie kontekstu biznesowego",
-    desc: "Interesuje mnie, jak decyzja prawna wpłynie na Twój biznes — nie tylko co mówi przepis.",
+    desc: "Interesuje mnie, jak decyzja prawna wpłynie na Twój biznes - nie tylko co mówi przepis.",
   },
   {
     label: "Terminowość i jasne zasady współpracy",
-    desc: "Dotrzymuję terminów. Jeśli sprawa wymaga większego nakładu czasu lub zaangażowania dodatkowych ekspertów — informuję o tym z wyprzedzeniem, nie po fakcie.",
+    desc: "Dotrzymuję terminów. Jeśli sprawa wymaga większego nakładu czasu lub zaangażowania dodatkowych ekspertów - informuję o tym z wyprzedzeniem, nie po fakcie.",
   },
   {
     label: "Zdalnie i sprawnie",
-    desc: "Działam ogólnopolsko, głównie zdalnie — telefon, mail, wideokonferencje. Jeśli sprawa tego wymaga, chętnie spotkam się też osobiście.",
+    desc: "Działam ogólnopolsko, głównie zdalnie - telefon, mail, wideokonferencje. Jeśli sprawa tego wymaga, chętnie spotkam się też osobiście.",
   },
   {
     label: "Transparentność jako gwarancja jakości",
@@ -129,7 +129,7 @@ export default function DlaPrzedsiebiorcowPage() {
               <Typography sx={{
                 fontSize: "0.9rem", color: "#5A5A5A", lineHeight: 1.85,
               }}>
-                Współpracuję również z klientami posiadającymi wewnętrzne działy prawne — jako zewnętrzny counsel wspieram zespoły in-house w sprawach wymagających pogłębionej wiedzy branżowej lub większego wsparcia operacyjnego.
+                Współpracuję również z klientami posiadającymi wewnętrzne działy prawne - jako zewnętrzny counsel wspieram zespoły in-house w sprawach wymagających pogłębionej wiedzy branżowej lub większego wsparcia operacyjnego.
               </Typography>
             </Grid>
 
@@ -243,7 +243,7 @@ export default function DlaPrzedsiebiorcowPage() {
                 color: "rgba(255,255,255,0.6)",
                 fontSize: "0.925rem", lineHeight: 1.75, maxWidth: 500,
               }}>
-                Krótka rozmowa rozpoznawcza — bez zobowiązań. Powiedz,
+                Krótka rozmowa rozpoznawcza - bez zobowiązań. Powiedz,
                 na jakim etapie jest firma i z czym potrzebujesz wsparcia.
                 Powiem wprost, czy mogę pomóc i jak wyglądałaby współpraca.
               </Typography>

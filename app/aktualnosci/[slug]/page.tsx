@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Box, Container, Grid, Typography } from "@mui/material";
@@ -24,7 +24,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPostBySlug(slug);
   const enSlug = plToEnSlugMap[slug];
-  const suffix = "Jan Matusiak — Radca Prawny";
+  const suffix = "Jan Matusiak - Radca Prawny";
   const raw = `${post.title} | ${suffix}`;
   const seoTitle = raw.length > 65 ? `${post.title.split(".")[0].trim()} | ${suffix}` : raw;
   return {
@@ -44,7 +44,7 @@ export async function generateMetadata({
       url: `https://matusiak.legal/aktualnosci/${slug}`,
       title: seoTitle,
       description: post.excerpt,
-      images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Radca Prawny" }],
+      images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Radca Prawny" }],
     },
   };
 }
@@ -499,7 +499,7 @@ export default async function PostPage({
                     fontSize: "0.8rem", color: "rgba(255,255,255,0.55)",
                     lineHeight: 1.65, mb: 2.5,
                   }}>
-                    Zapraszam do kontaktu — omówimy Twoją sprawę.
+                    Zapraszam do kontaktu - omówimy Twoją sprawę.
                   </Typography>
                   <Link href="/kontakt" style={{ textDecoration: "none", display: "block" }}>
                   <Box

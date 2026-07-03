@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Box, Container, Grid, Typography } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Prawnicy | Jan Matusiak — Radca Prawny",
+  title: "Prawnicy | Jan Matusiak - Radca Prawny",
   description:
-    "Jan Matusiak — radca prawny, założyciel kancelarii. Daria Meysztowicz–Matusiak — radca prawny, Of Counsel, specjalistka ds. transakcji inwestycyjnych i venture capital.",
+    "Jan Matusiak - radca prawny, założyciel kancelarii. Daria Meysztowicz–Matusiak - radca prawny, Of Counsel, specjalistka ds. transakcji inwestycyjnych i venture capital.",
   alternates: {
     canonical: "https://matusiak.legal/prawnicy",
     languages: {

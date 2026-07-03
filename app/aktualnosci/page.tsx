@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { getAllPosts } from "@/lib/posts";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export const metadata: Metadata = {
-  title: "Aktualności | Jan Matusiak — Radca Prawny",
+  title: "Aktualności | Jan Matusiak - Radca Prawny",
   description:
     "Artykuły prawne i komentarze dotyczące prawa spółek, umów, negocjacji i obsługi przedsiębiorców. Blog kancelarii Jana Matusiaka.",
   alternates: {
@@ -69,7 +69,7 @@ export default function AktualnosciPage() {
             lineHeight: 1.75, maxWidth: 520,
           }}>
             Artykuły i komentarze dotyczące prawa spółek, umów, negocjacji
-            i obsługi przedsiębiorców. Bez zbędnej teorii — z naciskiem
+            i obsługi przedsiębiorców. Bez zbędnej teorii - z naciskiem
             na praktyczne znaczenie omawianych zagadnień.
           </Typography>
         </Container>

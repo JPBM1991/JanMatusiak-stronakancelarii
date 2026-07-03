@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Kontakt | Jan Matusiak — Radca Prawny",
+  title: "Kontakt | Jan Matusiak - Radca Prawny",
   description:
-    "Skontaktuj się z kancelarią. Opisz sprawę — umówimy wstępną rozmowę.",
+    "Skontaktuj się z kancelarią. Opisz sprawę - umówimy wstępną rozmowę.",
   alternates: {
     canonical: "https://matusiak.legal/kontakt",
     languages: {
@@ -40,7 +40,7 @@ const infoItems = [
   },
   {
     title: "Czas odpowiedzi",
-    text: "Na wiadomości e-mail i zgłoszenia z formularza odpowiadam w ciągu 1–2 dni roboczych. W pilnych sprawach — zadzwoń bezpośrednio.",
+    text: "Na wiadomości e-mail i zgłoszenia z formularza odpowiadam w ciągu 1–2 dni roboczych. W pilnych sprawach - zadzwoń bezpośrednio.",
   },
   {
     title: "Współpraca",
@@ -96,7 +96,7 @@ export default function KontaktPage() {
             lineHeight: 1.7,
             maxWidth: 460,
           }}>
-            Pierwszym krokiem jest krótka rozmowa — żeby ocenić, czy sprawa
+            Pierwszym krokiem jest krótka rozmowa - żeby ocenić, czy sprawa
             pasuje do zakresu mojej praktyki.
           </Typography>
         </Container>
@@ -107,12 +107,12 @@ export default function KontaktPage() {
         <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
           <Grid container spacing={{ xs: 4, md: 6 }} alignItems="flex-start">
 
-            {/* LEWA — formularz */}
+            {/* LEWA - formularz */}
             <Grid size={{ xs: 12, md: 7 }}>
               <ContactForm />
             </Grid>
 
-            {/* PRAWA — dane + info */}
+            {/* PRAWA - dane + info */}
             <Grid size={{ xs: 12, md: 5 }}>
 
               {/* Dane kontaktowe */}

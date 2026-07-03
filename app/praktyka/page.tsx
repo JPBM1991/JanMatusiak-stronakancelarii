@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlined";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
@@ -15,7 +15,7 @@ import LocalHospitalOutlinedIcon from "@mui/icons-material/LocalHospitalOutlined
 import { PraktykaCTA } from "@/components/PraktykaClient";
 
 export const metadata: Metadata = {
-  title: "Zakres praktyki | Jan Matusiak — Radca Prawny",
+  title: "Zakres praktyki | Jan Matusiak - Radca Prawny",
   description:
     "Prawo spółek, kontraktowanie, obsługa bieżąca przedsiębiorców, spory gospodarcze i transakcje. Zakres praktyki kancelarii Jana Matusiaka.",
   alternates: {
@@ -43,7 +43,7 @@ const areas = [
       "Umowy wspólników (shareholders agreements)",
       "Przekształcenia, reorganizacje, likwidacje spółek",
       "Prawa i obowiązki zarządu, odpowiedzialność członków zarządu, doradztwo dla członków organów spółek",
-      "Umowy i statuty spółek — projektowanie i negocjowanie",
+      "Umowy i statuty spółek - projektowanie i negocjowanie",
       "Zmiany w strukturze udziałowej spółek",
       "Obsługa zgromadzeń wspólników i walnych zgromadzeń",
       "Transakcje na udziałach i akcjach (M&A)",
@@ -55,7 +55,7 @@ const areas = [
     title: "Kontrakty i negocjacje",
     lead: "Projektowanie, analiza i negocjowanie umów handlowych.",
     items: [
-      "Umowy B2B, B2C — przegląd, weryfikacja, sporządzanie, negocjowanie",
+      "Umowy B2B, B2C - przegląd, weryfikacja, sporządzanie, negocjowanie",
       "Umowy o współpracy, agencyjne, dystrybucyjne, franczyzowe, dostawy",
       "Umowy z elementem zagranicznym",
       "Umowy dla branży FMCG",
@@ -65,12 +65,12 @@ const areas = [
     id: "obsluga-przedsiebiorcow",
     icon: <BusinessCenterOutlinedIcon />,
     title: "Obsługa przedsiębiorców",
-    lead: "Model zewnętrznego counsel — stałe wsparcie prawne bez etatu.",
+    lead: "Model zewnętrznego counsel - stałe wsparcie prawne bez etatu.",
     items: [
       "Stała obsługa prawna w modelu retainer (ryczałt miesięczny)",
       "Opiniowanie umów i dokumentów korporacyjnych na bieżąco",
       "Wsparcie w decyzjach zarządczych i operacyjnych",
-      "Konsultacje ad hoc — telefonicznie i mailowo",
+      "Konsultacje ad hoc - telefonicznie i mailowo",
       "Obsługa relacji z kontrahentami, podwykonawcami, klientami",
       "Monitoring zmian prawnych istotnych dla działalności klienta",
     ],
@@ -81,7 +81,7 @@ const areas = [
     title: "Postępowania sporne",
     lead: "Reprezentacja przed sądami w sprawach gospodarczych, cywilnych, rodzinnych oraz administracyjnych.",
     items: [
-      "Spory kontraktowe — roszczenia z umów B2B",
+      "Spory kontraktowe - roszczenia z umów B2B",
       "Dochodzenie wierzytelności i obrona przed roszczeniami",
       "Odzyskiwanie należności i reprezentacja przed komornikiem",
       "Postępowania sądowe przed sądami powszechnymi",
@@ -93,7 +93,7 @@ const areas = [
     id: "majatek",
     icon: <ShieldOutlinedIcon />,
     title: "Ochrona i planowanie majątku",
-    lead: "Kompleksowe podejście do majątku prywatnego i firmowego — od strukturyzacji i zabezpieczenia, przez sukcesję i dziedziczenie, po rozliczenia w sytuacjach życiowych i biznesowych.",
+    lead: "Kompleksowe podejście do majątku prywatnego i firmowego - od strukturyzacji i zabezpieczenia, przez sukcesję i dziedziczenie, po rozliczenia w sytuacjach życiowych i biznesowych.",
     items: [
       "Strukturyzacja majątku (spółki, nieruchomości, aktywa)",
       "Zabezpieczenie majątku przed ryzykiem gospodarczym i osobistym",
@@ -175,7 +175,7 @@ export default function PraktykaPage() {
               >
                 <Grid container spacing={{ xs: 3, md: 6 }} alignItems="flex-start">
 
-                  {/* Lewa — tytuł */}
+                  {/* Lewa - tytuł */}
                   <Grid size={{ xs: 12, md: 4 }}>
                     <Box sx={{ color: GOLD, mb: 2, "& svg": { fontSize: "1.75rem" } }}>
                       {area.icon}
@@ -201,7 +201,7 @@ export default function PraktykaPage() {
                     </Typography>
                   </Grid>
 
-                  {/* Prawa — lista */}
+                  {/* Prawa - lista */}
                   <Grid size={{ xs: 12, md: 8 }}>
                     <Box
                       component="ul"
@@ -269,7 +269,7 @@ export default function PraktykaPage() {
               <Typography sx={{
                 fontSize: "0.875rem", color: "#5A5A5A", lineHeight: 1.8, textAlign: "justify",
               }}>
-                Kancelaria nie jest sprofilowana branżowo — decydujący jest charakter sprawy. Dotychczasowe doświadczenie zdobyłem przede wszystkim obsługując klientów biznesowych z następujących obszarów:
+                Kancelaria nie jest sprofilowana branżowo - decydujący jest charakter sprawy. Dotychczasowe doświadczenie zdobyłem przede wszystkim obsługując klientów biznesowych z następujących obszarów:
               </Typography>
             </Grid>
             <Grid size={{ xs: 12, md: 7 }}>
@@ -329,7 +329,7 @@ export default function PraktykaPage() {
               Obsługa w języku angielskim
             </Typography>
             <Typography sx={{ fontSize: "0.875rem", color: "#4A4A4A", lineHeight: 1.8 }}>
-              Obsługuję sprawy z elementem zagranicznym — w tym kontrakty, negocjacje
+              Obsługuję sprawy z elementem zagranicznym - w tym kontrakty, negocjacje
               i korespondencję w języku angielskim. Jeśli Twój biznes działa
               międzynarodowo lub kontrahent jest zagraniczny, to nie stanowi przeszkody.
             </Typography>
@@ -361,7 +361,7 @@ export default function PraktykaPage() {
                 color: "rgba(255,255,255,0.6)",
                 fontSize: "0.925rem", lineHeight: 1.75, maxWidth: 500,
               }}>
-                Zacznijmy od krótkiej rozmowy rozpoznawczej — bez zobowiązań.
+                Zacznijmy od krótkiej rozmowy rozpoznawczej - bez zobowiązań.
                 Opowiedz, z czym przychodzisz. Powiem wprost, czy kancelaria
                 może realnie pomóc.
               </Typography>

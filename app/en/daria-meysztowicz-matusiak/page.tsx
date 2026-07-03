@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -11,9 +11,9 @@ import {
 } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Daria Meysztowicz-Matusiak — Attorney at Law",
+  title: "Daria Meysztowicz-Matusiak - Attorney at Law",
   description:
-    "Daria Meysztowicz-Matusiak — attorney at law, specialist in investment transactions and venture capital. Of Counsel at Jan Matusiak Law Office in Kraków.",
+    "Daria Meysztowicz-Matusiak - attorney at law, specialist in investment transactions and venture capital. Of Counsel at Jan Matusiak Law Office in Kraków.",
   alternates: {
     canonical: "https://matusiak.legal/en/daria-meysztowicz-matusiak",
     languages: {
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://matusiak.legal/en/daria-meysztowicz-matusiak",
     siteName: "Jan Matusiak Law Office",
-    title: "Daria Meysztowicz-Matusiak — Attorney at Law",
+    title: "Daria Meysztowicz-Matusiak - Attorney at Law",
     description:
-      "Daria Meysztowicz-Matusiak — attorney at law, specialist in investment transactions and venture capital. Of Counsel at Jan Matusiak Law Office in Kraków.",
-    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+      "Daria Meysztowicz-Matusiak - attorney at law, specialist in investment transactions and venture capital. Of Counsel at Jan Matusiak Law Office in Kraków.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daria Meysztowicz-Matusiak — Attorney at Law",
+    title: "Daria Meysztowicz-Matusiak - Attorney at Law",
     description: "Attorney at law, specialist in investment transactions and venture capital. Of Counsel in Kraków.",
     images: ["/jan-matusiak.jpg"],
   },
@@ -100,12 +100,12 @@ export default function OfCounselENPage() {
         <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
           <Grid container spacing={{ xs: 4, md: 7 }} alignItems="flex-start">
 
-            {/* LEFT — photo + data */}
+            {/* LEFT - photo + data */}
             <Grid size={{ xs: 12, md: 4 }}>
               <Box sx={{ width: "100%", mb: 3, position: "relative" }}>
                 <Image
                   src="/daria-meysztowicz-matusiak.jpg"
-                  alt="Daria Meysztowicz–Matusiak — Attorney at Law"
+                  alt="Daria Meysztowicz–Matusiak - Attorney at Law"
                   width={600}
                   height={800}
                   style={{ width: "100%", height: "auto", display: "block", objectFit: "cover", objectPosition: "center top" }}
@@ -180,7 +180,7 @@ export default function OfCounselENPage() {
               </Box>
             </Grid>
 
-            {/* RIGHT — bio */}
+            {/* RIGHT - bio */}
             <Grid size={{ xs: 12, md: 8 }}>
               <Box
                 sx={{
@@ -250,7 +250,7 @@ export default function OfCounselENPage() {
                 </Box>
                 <Box sx={{ pl: "32px" }}>
                   <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 0.5 }}>
-                    Faculty of Law and Administration & Institute of Romance Philology — Jagiellonian University in Kraków
+                    Faculty of Law and Administration & Institute of Romance Philology - Jagiellonian University in Kraków
                   </Typography>
                   <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 2.5 }}>
                     Cracow Bar Association of Attorneys-at-Law (OIRP Kraków)
@@ -286,7 +286,7 @@ export default function OfCounselENPage() {
               },
               {
                 area: "Business legal services",
-                detail: "Ongoing legal advisory for companies — including startups and entities in VC fund portfolios.",
+                detail: "Ongoing legal advisory for companies - including startups and entities in VC fund portfolios.",
                 href: "/en/praktyka#obsluga-przedsiebiorcow",
               },
             ].map((item, i) => (

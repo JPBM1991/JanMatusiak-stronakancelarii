@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlined";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
@@ -14,7 +14,7 @@ import BrushOutlinedIcon from "@mui/icons-material/BrushOutlined";
 import LocalHospitalOutlinedIcon from "@mui/icons-material/LocalHospitalOutlined";
 
 export const metadata: Metadata = {
-  title: "Practice Areas | Jan Matusiak — Attorney at Law",
+  title: "Practice Areas | Jan Matusiak - Attorney at Law",
   description:
     "Corporate law, contracts, ongoing business support, dispute resolution, asset protection and planning. Practice scope of Jan Matusiak's law office.",
   alternates: {
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://matusiak.legal/en/praktyka",
     siteName: "Jan Matusiak Law Office",
-    title: "Practice Areas | Jan Matusiak — Attorney at Law",
+    title: "Practice Areas | Jan Matusiak - Attorney at Law",
     description:
       "Corporate law, contracts, ongoing business support, dispute resolution, asset protection and planning. Practice scope of Jan Matusiak's law office.",
-    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Practice Areas | Jan Matusiak — Attorney at Law",
+    title: "Practice Areas | Jan Matusiak - Attorney at Law",
     description: "Corporate law, contracts, dispute resolution, asset protection. Practice scope of Jan Matusiak's law office.",
     images: ["/jan-matusiak.jpg"],
   },
@@ -58,7 +58,7 @@ const areas = [
       "Shareholders agreements",
       "Transformations, reorganisations, liquidations",
       "Rights and obligations of boards, directors' liability, advisory for company bodies",
-      "Articles of association and bylaws — drafting and negotiation",
+      "Articles of association and bylaws - drafting and negotiation",
       "Changes in shareholding structure",
       "General meetings and shareholders meetings support",
       "Share and equity transactions (M&A)",
@@ -70,7 +70,7 @@ const areas = [
     title: "Contracts and negotiations",
     lead: "Drafting, reviewing and negotiating commercial agreements.",
     items: [
-      "B2B, B2C agreements — review, verification, drafting, negotiation",
+      "B2B, B2C agreements - review, verification, drafting, negotiation",
       "Cooperation, agency, distribution, franchise and supply agreements",
       "Agreements with an international element",
       "Agreements for the FMCG sector",
@@ -80,12 +80,12 @@ const areas = [
     id: "obsluga-przedsiebiorcow",
     icon: <BusinessCenterOutlinedIcon />,
     title: "Business legal services",
-    lead: "External counsel model — ongoing legal support without the cost of in-house.",
+    lead: "External counsel model - ongoing legal support without the cost of in-house.",
     items: [
       "Ongoing legal support on a retainer (monthly fee) basis",
       "Review of contracts and corporate documents on an ongoing basis",
       "Support in management and operational decisions",
-      "Ad hoc consultations — by phone and email",
+      "Ad hoc consultations - by phone and email",
       "Managing relations with counterparties, subcontractors, clients",
       "Monitoring of legal changes relevant to the client's business",
     ],
@@ -96,7 +96,7 @@ const areas = [
     title: "Dispute resolution",
     lead: "Representation before courts in commercial, civil, family and administrative matters.",
     items: [
-      "Contractual disputes — claims under B2B agreements",
+      "Contractual disputes - claims under B2B agreements",
       "Debt enforcement and defence against claims",
       "Debt recovery and enforcement proceedings",
       "Court proceedings before common courts",
@@ -108,7 +108,7 @@ const areas = [
     id: "majatek",
     icon: <ShieldOutlinedIcon />,
     title: "Asset protection and planning",
-    lead: "A comprehensive approach to private and business assets — from structuring and protection, through succession and inheritance, to settlement in life and business situations.",
+    lead: "A comprehensive approach to private and business assets - from structuring and protection, through succession and inheritance, to settlement in life and business situations.",
     items: [
       "Asset structuring (companies, real estate, assets)",
       "Asset protection against business and personal risk",
@@ -282,7 +282,7 @@ export default function PraktykaENPage() {
               <Typography sx={{
                 fontSize: "0.875rem", color: "#5A5A5A", lineHeight: 1.8, textAlign: "justify",
               }}>
-                The firm is not sector-specific — what matters is the nature of the case. My experience has been built primarily through serving business clients in the following areas:
+                The firm is not sector-specific - what matters is the nature of the case. My experience has been built primarily through serving business clients in the following areas:
               </Typography>
             </Grid>
             <Grid size={{ xs: 12, md: 7 }}>
@@ -342,7 +342,7 @@ export default function PraktykaENPage() {
               Services in English
             </Typography>
             <Typography sx={{ fontSize: "0.875rem", color: "#4A4A4A", lineHeight: 1.8 }}>
-              I handle matters with an international element — including contracts, negotiations
+              I handle matters with an international element - including contracts, negotiations
               and correspondence in English. If your business operates internationally or your
               counterparty is foreign, this is no obstacle.
             </Typography>
@@ -374,7 +374,7 @@ export default function PraktykaENPage() {
                 color: "rgba(255,255,255,0.6)",
                 fontSize: "0.925rem", lineHeight: 1.75, maxWidth: 500,
               }}>
-                Let&apos;s start with a brief exploratory conversation — no commitment.
+                Let&apos;s start with a brief exploratory conversation - no commitment.
                 Tell me what brings you here. I will be direct about whether the firm
                 can genuinely help.
               </Typography>

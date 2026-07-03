@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Box, Button, Container, Typography } from "@mui/material";
 import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlined";
@@ -11,7 +11,7 @@ import DynamicStatementEN from "@/components/DynamicStatementEN";
 export const metadata: Metadata = {
   title: "Jan Matusiak | Attorney at Law",
   description:
-    "A law office personally run by attorney Jan Matusiak. Strategic legal support for entrepreneurs and individual clients — corporate law, contracts, dispute resolution, asset planning. Nationwide.",
+    "A law office personally run by attorney Jan Matusiak. Strategic legal support for entrepreneurs and individual clients - corporate law, contracts, dispute resolution, asset planning. Nationwide.",
   alternates: {
     canonical: "https://matusiak.legal/en",
     languages: {
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     siteName: "Jan Matusiak Law Office",
     title: "Jan Matusiak | Attorney at Law",
     description:
-      "A law office personally run by attorney Jan Matusiak. Strategic legal support for entrepreneurs and individual clients — corporate law, contracts, dispute resolution, asset planning. Nationwide.",
-    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+      "A law office personally run by attorney Jan Matusiak. Strategic legal support for entrepreneurs and individual clients - corporate law, contracts, dispute resolution, asset planning. Nationwide.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -72,7 +72,7 @@ const pillars = [
   {
     icon: <ShieldOutlinedIcon />,
     title: "Asset protection\n& planning",
-    desc: "Structuring, safeguarding and succession of assets — for business owners and individuals.",
+    desc: "Structuring, safeguarding and succession of assets - for business owners and individuals.",
     href: "/en/praktyka#majatek",
   },
 ];

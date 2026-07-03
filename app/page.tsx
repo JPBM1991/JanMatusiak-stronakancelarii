@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ const jsonLd = {
   "@type": "LegalService",
   name: "Jan Matusiak Kancelaria Radcy Prawnego",
   description:
-    "Kancelaria radcy prawnego Jana Matusiaka. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych — prawo spółek, kontrakty, sprawy sporne, majątek.",
+    "Kancelaria radcy prawnego Jana Matusiaka. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych - prawo spółek, kontrakty, sprawy sporne, majątek.",
   url: "https://matusiak.legal",
   telephone: "+48500255293",
   email: "jan.matusiak@matusiak.legal",

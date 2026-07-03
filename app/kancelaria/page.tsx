@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
@@ -9,7 +9,7 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { KancelariaCTA } from "@/components/KanalariaClient";
 
 export const metadata: Metadata = {
-  title: "Kancelaria | Jan Matusiak — Radca Prawny",
+  title: "Kancelaria | Jan Matusiak - Radca Prawny",
   description:
     "Kancelaria radcy prawnego Jana Matusiaka. Strategiczne doradztwo prawne dla przedsiębiorców. Model pracy, wartości i zasady współpracy.",
   alternates: {
@@ -30,7 +30,7 @@ const differentiators = [
   {
     icon: <PsychologyOutlinedIcon />,
     title: "Zaangażowanie",
-    desc: "Każda sprawa jest prowadzona osobiście. Nie przekazuję klientów aplikantom ani współpracownikom — kontakt i odpowiedzialność są po mojej stronie od początku do końca.",
+    desc: "Każda sprawa jest prowadzona osobiście. Nie przekazuję klientów aplikantom ani współpracownikom - kontakt i odpowiedzialność są po mojej stronie od początku do końca.",
   },
   {
     icon: <WorkHistoryOutlinedIcon />,
@@ -40,7 +40,7 @@ const differentiators = [
   {
     icon: <ScheduleOutlinedIcon />,
     title: "Terminowość",
-    desc: "Dotrzymuję terminów. Jeśli coś wymaga więcej czasu, informuję o tym wcześniej — nie po fakcie. Sprawność w obsłudze jest częścią usługi, nie opcją.",
+    desc: "Dotrzymuję terminów. Jeśli coś wymaga więcej czasu, informuję o tym wcześniej - nie po fakcie. Sprawność w obsłudze jest częścią usługi, nie opcją.",
   },
   {
     icon: <InsightsOutlinedIcon />,
@@ -50,12 +50,12 @@ const differentiators = [
   {
     icon: <PersonOutlinedIcon />,
     title: "Butikowy model pracy",
-    desc: "Stawiam na bezpośrednią relację z klientem. Każda sprawa jest prowadzona przeze mnie osobiście — nie przekazywana dalej. Każdy klient ma ze mną bezpośredni kontakt.",
+    desc: "Stawiam na bezpośrednią relację z klientem. Każda sprawa jest prowadzona przeze mnie osobiście - nie przekazywana dalej. Każdy klient ma ze mną bezpośredni kontakt.",
   },
   {
     icon: <CheckCircleOutlineIcon />,
     title: "Realna użyteczność",
-    desc: "Obsługa prawna ma odciążać, nie dokładać pracy. Dbam o to, żeby klient rozumiał, co się dzieje — i mógł skupić się na prowadzeniu biznesu.",
+    desc: "Obsługa prawna ma odciążać, nie dokładać pracy. Dbam o to, żeby klient rozumiał, co się dzieje - i mógł skupić się na prowadzeniu biznesu.",
   },
 ];
 
@@ -135,11 +135,11 @@ export default function KancelariaPage() {
                 },
                 {
                   lead: "Stawiam na bezpośrednią relację z klientem.",
-                  body: "Każda sprawa jest prowadzona przeze mnie osobiście — nie przekazywana dalej. Każdy klient ma ze mną bezpośredni kontakt.",
+                  body: "Każda sprawa jest prowadzona przeze mnie osobiście - nie przekazywana dalej. Każdy klient ma ze mną bezpośredni kontakt.",
                 },
                 {
                   lead: "Działam ogólnopolsko i prowadzę sprawy na terenie całego kraju.",
-                  body: "Praca oraz kontakt odbywa się przede wszystkim zdalnie — telefonicznie, mailowo i przez wideokonferencje. Spotkania stacjonarne organizuję wtedy, gdy są rzeczywiście potrzebne i uzasadnione. Obsługuję również sprawy z elementem zagranicznym — w języku angielskim.",
+                  body: "Praca oraz kontakt odbywa się przede wszystkim zdalnie - telefonicznie, mailowo i przez wideokonferencje. Spotkania stacjonarne organizuję wtedy, gdy są rzeczywiście potrzebne i uzasadnione. Obsługuję również sprawy z elementem zagranicznym - w języku angielskim.",
                 },
               ].map((item, i) => (
                 <Box key={i} sx={{ mb: i < 2 ? 3.5 : 0 }}>
@@ -234,7 +234,7 @@ export default function KancelariaPage() {
               Wynagrodzenie
             </Typography>
             <Typography sx={{ fontSize: "0.875rem", color: "#4A4A4A", lineHeight: 1.75 }}>
-              Wynagrodzenie jest ustalane indywidualnie — na etapie wstępnej rozmowy,
+              Wynagrodzenie jest ustalane indywidualnie - na etapie wstępnej rozmowy,
               po ocenie sprawy. Podstawowym modelem rozliczeń jest stawka godzinowa;
               możliwe są też inne formy uzgodnione z klientem.
             </Typography>
@@ -266,7 +266,7 @@ export default function KancelariaPage() {
                 color: "rgba(255,255,255,0.6)",
                 fontSize: "0.925rem", lineHeight: 1.75, maxWidth: 500,
               }}>
-                Zacznijmy od krótkiej rozmowy — bez zobowiązań. Opowiedz,
+                Zacznijmy od krótkiej rozmowy - bez zobowiązań. Opowiedz,
                 z czym przychodzisz. Ocenię, czy kancelaria może pomóc
                 i jak wyglądałaby ewentualna współpraca.
               </Typography>

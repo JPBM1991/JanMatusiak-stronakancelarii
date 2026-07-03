@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Box, Container, Grid, Typography } from "@mui/material";
@@ -24,7 +24,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPostBySlugEN(slug);
   const plSlug = enToPlSlugMap[slug];
-  const suffix = "Jan Matusiak — Attorney at Law";
+  const suffix = "Jan Matusiak - Attorney at Law";
   const raw = `${post.title} | ${suffix}`;
   const seoTitle = raw.length > 65 ? `${post.title.split(".")[0].trim()} | ${suffix}` : raw;
   return {
@@ -44,7 +44,7 @@ export async function generateMetadata({
       url: `https://matusiak.legal/en/aktualnosci/${slug}`,
       title: seoTitle,
       description: post.excerpt,
-      images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+      images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
     },
   };
 }
@@ -457,7 +457,7 @@ export default async function PostENPage({
                     fontSize: "0.8rem", color: "rgba(255,255,255,0.55)",
                     lineHeight: 1.65, mb: 2.5,
                   }}>
-                    Feel free to contact me — I am happy to discuss your matter.
+                    Feel free to contact me - I am happy to discuss your matter.
                   </Typography>
                   <Link href="/en/kontakt" style={{ textDecoration: "none", display: "block" }}>
                     <Box sx={{

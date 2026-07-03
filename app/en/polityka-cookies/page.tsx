@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Typography } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Privacy & Cookies Policy | Jan Matusiak — Attorney at Law",
+  title: "Privacy & Cookies Policy | Jan Matusiak - Attorney at Law",
   description:
-    "Privacy and Cookies Policy of Jan Matusiak's law firm — information on the processing of personal data, cookies, and user rights.",
+    "Privacy and Cookies Policy of Jan Matusiak's law firm - information on the processing of personal data, cookies, and user rights.",
 };
 
 const NAVY = "#2B3A4A";
@@ -152,7 +152,7 @@ export default function PolitykaCookiesENPage() {
                 <P>
                   Data are processed in order to take steps prior to entering into a contract
                   or to perform a contract to which the data subject is a party
-                  (Art. 6(1)(b) GDPR), and thereafter — to fulfil a legal obligation incumbent
+                  (Art. 6(1)(b) GDPR), and thereafter - to fulfil a legal obligation incumbent
                   on the Controller (Art. 6(1)(c) GDPR).
                 </P>
               </Box>
@@ -163,7 +163,7 @@ export default function PolitykaCookiesENPage() {
                 </Typography>
                 <P>
                   Data submitted via the contact form are processed in order to respond to the
-                  enquiry — based on the legitimate interest of the Controller (Art. 6(1)(f) GDPR),
+                  enquiry - based on the legitimate interest of the Controller (Art. 6(1)(f) GDPR),
                   namely conducting correspondence with persons interested in the Firm&apos;s services.
                 </P>
               </Box>
@@ -174,7 +174,7 @@ export default function PolitykaCookiesENPage() {
                 </Typography>
                 <P>
                   The Controller may process personal data for the purpose of establishing,
-                  pursuing, or defending against potential claims — based on the legitimate
+                  pursuing, or defending against potential claims - based on the legitimate
                   interest of the Controller (Art. 6(1)(f) GDPR).
                 </P>
               </Box>
@@ -191,7 +191,7 @@ export default function PolitykaCookiesENPage() {
               <Li>the right to data portability,</Li>
               <Li>the right to object to the processing of personal data,</Li>
               <Li>
-                the right to lodge a complaint with the supervisory authority — the President of the
+                the right to lodge a complaint with the supervisory authority - the President of the
                 Personal Data Protection Office (ul. Stawki 2, 00-193 Warsaw, Poland).
               </Li>
               <P>
@@ -210,7 +210,7 @@ export default function PolitykaCookiesENPage() {
               <Li>IT service providers (hosting, email),</Li>
               <Li>accountants and tax advisors,</Li>
               <Li>notaries and other lawyers cooperating on specific matters,</Li>
-              <Li>courts and public administration bodies — to the extent required by law.</Li>
+              <Li>courts and public administration bodies - to the extent required by law.</Li>
               <P>
                 The Firm does not sell personal data or share them with third parties
                 for marketing purposes.
@@ -230,18 +230,18 @@ export default function PolitykaCookiesENPage() {
 
             <Box sx={{ borderTop: `1px solid ${BORDER}`, mb: 5 }} />
 
-            <Section number="VII." title="Cookies — General Information">
+            <Section number="VII." title="Cookies - General Information">
               <P>
-                The Firm&apos;s website uses cookies — small text files stored on the user&apos;s device
+                The Firm&apos;s website uses cookies - small text files stored on the user&apos;s device
                 by the web server.
               </P>
               <P>The Firm uses two types of cookies:</P>
               <Li>
-                <strong>Session cookies</strong> — stored on the user&apos;s device for the duration
+                <strong>Session cookies</strong> - stored on the user&apos;s device for the duration
                 of the browser session; deleted automatically when the session ends.
               </Li>
               <Li>
-                <strong>Persistent cookies</strong> — stored on the user&apos;s device for a period
+                <strong>Persistent cookies</strong> - stored on the user&apos;s device for a period
                 defined in the cookie parameters or until deleted by the user.
               </Li>
             </Section>
@@ -250,15 +250,15 @@ export default function PolitykaCookiesENPage() {
 
             <Section number="VIII." title="Types of Cookies Used">
               <Li>
-                <strong>Essential</strong> — necessary for the proper functioning of the website
+                <strong>Essential</strong> - necessary for the proper functioning of the website
                 (e.g. remembering cookie preferences). Do not require user consent.
               </Li>
               <Li>
-                <strong>Functional</strong> — allow the website to remember user preferences
+                <strong>Functional</strong> - allow the website to remember user preferences
                 and personalise displayed content.
               </Li>
               <Li>
-                <strong>Analytical</strong> — used to measure website traffic and analyse usage
+                <strong>Analytical</strong> - used to measure website traffic and analyse usage
                 patterns in order to improve the service.
               </Li>
             </Section>
@@ -267,7 +267,7 @@ export default function PolitykaCookiesENPage() {
 
             <Section number="IX." title="Managing Cookies">
               <P>
-                Users may at any time change their cookie settings in their browser —
+                Users may at any time change their cookie settings in their browser -
                 including blocking cookies or deleting those already stored.
                 The method varies by browser:
               </P>

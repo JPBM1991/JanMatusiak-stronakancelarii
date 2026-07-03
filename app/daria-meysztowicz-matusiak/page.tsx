@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -11,9 +11,9 @@ import {
 } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Daria Meysztowicz-Matusiak — Radca Prawny",
+  title: "Daria Meysztowicz-Matusiak - Radca Prawny",
   description:
-    "Daria Meysztowicz-Matusiak — radca prawny, specjalistka ds. transakcji inwestycyjnych i venture capital. Of Counsel kancelarii Jana Matusiaka w Krakowie.",
+    "Daria Meysztowicz-Matusiak - radca prawny, specjalistka ds. transakcji inwestycyjnych i venture capital. Of Counsel kancelarii Jana Matusiaka w Krakowie.",
   alternates: {
     canonical: "https://matusiak.legal/daria-meysztowicz-matusiak",
     languages: {
@@ -84,14 +84,14 @@ export default function OfCounselPage() {
         <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
           <Grid container spacing={{ xs: 4, md: 7 }} alignItems="flex-start">
 
-            {/* LEWA — zdjęcie + dane */}
+            {/* LEWA - zdjęcie + dane */}
             <Grid size={{ xs: 12, md: 4 }}>
 
               {/* Zdjęcie */}
               <Box sx={{ width: "100%", mb: 3, position: "relative" }}>
                 <Image
                   src="/daria-meysztowicz-matusiak.jpg"
-                  alt="Daria Meysztowicz–Matusiak — Radca Prawny"
+                  alt="Daria Meysztowicz–Matusiak - Radca Prawny"
                   width={600}
                   height={800}
                   style={{ width: "100%", height: "auto", display: "block", objectFit: "cover", objectPosition: "center top" }}
@@ -168,7 +168,7 @@ export default function OfCounselPage() {
               </Box>
             </Grid>
 
-            {/* PRAWA — bio */}
+            {/* PRAWA - bio */}
             <Grid size={{ xs: 12, md: 8 }}>
               <Box
                 sx={{
@@ -238,7 +238,7 @@ export default function OfCounselPage() {
                 </Box>
                 <Box sx={{ pl: "32px" }}>
                   <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 0.5 }}>
-                    Wydział Prawa i Administracji oraz Instytut Filologii Romańskiej — Uniwersytet Jagielloński w Krakowie
+                    Wydział Prawa i Administracji oraz Instytut Filologii Romańskiej - Uniwersytet Jagielloński w Krakowie
                   </Typography>
                   <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 2.5 }}>
                     Okręgowa Izba Radców Prawnych w Krakowie
@@ -274,7 +274,7 @@ export default function OfCounselPage() {
               },
               {
                 area: "Obsługa przedsiębiorców",
-                detail: "Bieżące doradztwo prawne dla spółek — w tym startupów i podmiotów z portfela funduszy VC.",
+                detail: "Bieżące doradztwo prawne dla spółek - w tym startupów i podmiotów z portfela funduszy VC.",
                 href: "/praktyka#obsluga-przedsiebiorcow",
               },
             ].map((item, i) => (

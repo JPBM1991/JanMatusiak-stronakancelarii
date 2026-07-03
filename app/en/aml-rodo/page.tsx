@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Typography } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "AML-RODO Notice | Jan Matusiak — Attorney at Law",
+  title: "AML-RODO Notice | Jan Matusiak - Attorney at Law",
   description:
-    "GDPR information notice in connection with AML obligations — information on the processing of personal data under the Anti-Money Laundering Act.",
+    "GDPR information notice in connection with AML obligations - information on the processing of personal data under the Anti-Money Laundering Act.",
   alternates: {
     canonical: "https://matusiak.legal/en/aml-rodo",
     languages: {
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://matusiak.legal/en/aml-rodo",
     siteName: "Jan Matusiak Law Office",
-    title: "AML-RODO Notice | Jan Matusiak — Attorney at Law",
+    title: "AML-RODO Notice | Jan Matusiak - Attorney at Law",
     description:
-      "GDPR information notice in connection with AML obligations — information on the processing of personal data under the Anti-Money Laundering Act.",
-    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+      "GDPR information notice in connection with AML obligations - information on the processing of personal data under the Anti-Money Laundering Act.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AML-RODO Notice | Jan Matusiak — Attorney at Law",
+    title: "AML-RODO Notice | Jan Matusiak - Attorney at Law",
     description: "GDPR information notice in connection with AML obligations.",
     images: ["/jan-matusiak.jpg"],
   },
@@ -107,7 +107,7 @@ export default function AmlRodoENPage() {
             fontSize: { xs: "1.75rem", md: "2.5rem" },
             lineHeight: 1.2, letterSpacing: "-0.015em", mb: 1.5, maxWidth: 640,
           }}>
-            Information Notice —{" "}
+            Information Notice -{" "}
             <Box component="span" sx={{ color: "#EDF3F6", fontStyle: "italic" }}>
               AML-RODO
             </Box>
@@ -185,7 +185,7 @@ export default function AmlRodoENPage() {
               <Li>address data: residential or registered address,</Li>
               <Li>tax identification number (NIP),</Li>
               <Li>
-                a copy of the identity document — to the extent required by Art. 34 of the AML Act.
+                a copy of the identity document - to the extent required by Art. 34 of the AML Act.
               </Li>
             </Section>
 
@@ -202,7 +202,7 @@ export default function AmlRodoENPage() {
               <Li>assessing the nature and purpose of the business relationship,</Li>
               <Li>ongoing monitoring of business relations with the client,</Li>
               <Li>
-                reporting information to the competent authorities — in cases provided for by law.
+                reporting information to the competent authorities - in cases provided for by law.
               </Li>
             </Section>
 
@@ -210,7 +210,7 @@ export default function AmlRodoENPage() {
 
             <Section number="IV." title="Legal Basis for Processing">
               <P>
-                Personal data are processed on the basis of Art. 6(1)(c) GDPR —
+                Personal data are processed on the basis of Art. 6(1)(c) GDPR -
                 processing is necessary to comply with a legal obligation incumbent
                 on the Controller, arising from the provisions of the AML Act.
               </P>
@@ -244,7 +244,7 @@ export default function AmlRodoENPage() {
               </P>
               <Li>the General Inspector of Financial Information (GIIF),</Li>
               <Li>authorities maintaining the Central Register of Beneficial Owners,</Li>
-              <Li>prosecutors and other law enforcement authorities — in cases provided for by law.</Li>
+              <Li>prosecutors and other law enforcement authorities - in cases provided for by law.</Li>
             </Section>
 
             <Box sx={{ borderTop: `1px solid ${BORDER}`, mb: 5 }} />
@@ -258,14 +258,14 @@ export default function AmlRodoENPage() {
               <Li>the right to rectification of data (Art. 16 GDPR),</Li>
               <Li>the right to restriction of processing (Art. 18 GDPR),</Li>
               <Li>the right to object (Art. 21 GDPR),</Li>
-              <Li>the right to data portability (Art. 20 GDPR) — where technically feasible,</Li>
+              <Li>the right to data portability (Art. 20 GDPR) - where technically feasible,</Li>
               <Li>
                 the right to lodge a complaint with the President of the Personal Data Protection
                 Office (ul. Stawki 2, 00-193 Warsaw, Poland; uodo.gov.pl).
               </Li>
               <P>
                 The exercise of some of the above rights may be restricted due to obligations
-                under the AML Act — in particular the obligation to retain documentation for
+                under the AML Act - in particular the obligation to retain documentation for
                 the required period.
               </P>
             </Section>

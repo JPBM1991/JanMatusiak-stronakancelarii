@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Typography } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Polityka Prywatności i Cookies | Jan Matusiak — Radca Prawny",
+  title: "Polityka Prywatności i Cookies | Jan Matusiak - Radca Prawny",
   description:
-    "Polityka Prywatności i Cookies kancelarii Jana Matusiaka — informacje o przetwarzaniu danych osobowych, plikach cookies i prawach użytkowników.",
+    "Polityka Prywatności i Cookies kancelarii Jana Matusiaka - informacje o przetwarzaniu danych osobowych, plikach cookies i prawach użytkowników.",
 };
 
 const NAVY = "#2B3A4A";
@@ -152,7 +152,7 @@ export default function PolitykaCookiesPage() {
                 <P>
                   Dane przetwarzane są w celu podjęcia działań zmierzających do zawarcia umowy
                   lub wykonania umowy, której stroną jest osoba, której dane dotyczą
-                  (art. 6 ust. 1 lit. b RODO), a po jej zawarciu — w celu wypełnienia obowiązku
+                  (art. 6 ust. 1 lit. b RODO), a po jej zawarciu - w celu wypełnienia obowiązku
                   prawnego ciążącego na Administratorze (art. 6 ust. 1 lit. c RODO).
                 </P>
               </Box>
@@ -163,7 +163,7 @@ export default function PolitykaCookiesPage() {
                 </Typography>
                 <P>
                   Dane podane w formularzu kontaktowym przetwarzane są w celu udzielenia odpowiedzi
-                  na przesłane zapytanie — na podstawie uzasadnionego interesu Administratora
+                  na przesłane zapytanie - na podstawie uzasadnionego interesu Administratora
                   (art. 6 ust. 1 lit. f RODO), jakim jest prowadzenie korespondencji z osobami
                   zainteresowanymi świadczonymi usługami.
                 </P>
@@ -175,7 +175,7 @@ export default function PolitykaCookiesPage() {
                 </Typography>
                 <P>
                   Administrator może przetwarzać dane osobowe w celu ustalenia, dochodzenia
-                  lub obrony przed potencjalnymi roszczeniami — na podstawie uzasadnionego
+                  lub obrony przed potencjalnymi roszczeniami - na podstawie uzasadnionego
                   interesu Administratora (art. 6 ust. 1 lit. f RODO).
                 </P>
               </Box>
@@ -192,7 +192,7 @@ export default function PolitykaCookiesPage() {
               <Li>prawo do przenoszenia danych osobowych,</Li>
               <Li>prawo do wniesienia sprzeciwu wobec przetwarzania danych osobowych,</Li>
               <Li>
-                prawo do wniesienia skargi do organu nadzorczego — Prezesa Urzędu Ochrony Danych
+                prawo do wniesienia skargi do organu nadzorczego - Prezesa Urzędu Ochrony Danych
                 Osobowych (ul. Stawki 2, 00-193 Warszawa).
               </Li>
               <P>
@@ -211,7 +211,7 @@ export default function PolitykaCookiesPage() {
               <Li>dostawcom usług IT (hosting, obsługa poczty elektronicznej),</Li>
               <Li>biurom rachunkowym i doradcom podatkowym,</Li>
               <Li>notariuszom i innym prawnikom współpracującym w ramach konkretnych spraw,</Li>
-              <Li>organom wymiaru sprawiedliwości i administracji publicznej — w zakresie wymaganym przepisami prawa.</Li>
+              <Li>organom wymiaru sprawiedliwości i administracji publicznej - w zakresie wymaganym przepisami prawa.</Li>
               <P>
                 Kancelaria nie sprzedaje danych osobowych ani nie udostępnia ich podmiotom
                 trzecim w celach marketingowych.
@@ -223,7 +223,7 @@ export default function PolitykaCookiesPage() {
             <Section number="VI." title="Przekazywanie danych do państw trzecich">
               <P>
                 Dane osobowe są co do zasady przetwarzane na terenie Europejskiego Obszaru
-                Gospodarczego. W przypadku korzystania z usług dostawców spoza EOG — dane
+                Gospodarczego. W przypadku korzystania z usług dostawców spoza EOG - dane
                 przekazywane są na podstawie standardowych klauzul umownych zatwierdzonych
                 przez Komisję Europejską lub innych mechanizmów zapewniających odpowiedni
                 poziom ochrony.
@@ -232,7 +232,7 @@ export default function PolitykaCookiesPage() {
 
             <Box sx={{ borderTop: `1px solid ${BORDER}`, mb: 5 }} />
 
-            <Section number="VII." title="Pliki cookies — informacje ogólne">
+            <Section number="VII." title="Pliki cookies - informacje ogólne">
               <P>
                 Strona internetowa Kancelarii korzysta z plików cookies (ciasteczek), tj. małych
                 plików tekstowych zapisywanych na urządzeniu końcowym użytkownika przez serwer
@@ -240,11 +240,11 @@ export default function PolitykaCookiesPage() {
               </P>
               <P>Kancelaria stosuje dwa rodzaje plików cookies:</P>
               <Li>
-                <strong>Sesyjne</strong> — przechowywane na urządzeniu użytkownika do czasu
+                <strong>Sesyjne</strong> - przechowywane na urządzeniu użytkownika do czasu
                 zakończenia sesji przeglądarki; po jej zakończeniu są usuwane automatycznie.
               </Li>
               <Li>
-                <strong>Trwałe</strong> — przechowywane na urządzeniu użytkownika przez czas
+                <strong>Trwałe</strong> - przechowywane na urządzeniu użytkownika przez czas
                 określony w parametrach pliku lub do czasu usunięcia przez użytkownika.
               </Li>
             </Section>
@@ -253,15 +253,15 @@ export default function PolitykaCookiesPage() {
 
             <Section number="VIII." title="Rodzaje wykorzystywanych cookies">
               <Li>
-                <strong>Niezbędne</strong> — konieczne do prawidłowego funkcjonowania strony
+                <strong>Niezbędne</strong> - konieczne do prawidłowego funkcjonowania strony
                 (np. zapamiętanie wyboru dotyczącego cookies). Nie wymagają zgody użytkownika.
               </Li>
               <Li>
-                <strong>Funkcjonalne</strong> — umożliwiają zapamiętanie preferencji użytkownika
+                <strong>Funkcjonalne</strong> - umożliwiają zapamiętanie preferencji użytkownika
                 i personalizację wyświetlanych treści.
               </Li>
               <Li>
-                <strong>Analityczne</strong> — pozwalają mierzyć ruch na stronie i analizować
+                <strong>Analityczne</strong> - pozwalają mierzyć ruch na stronie i analizować
                 sposób korzystania z serwisu w celu jego ulepszania.
               </Li>
             </Section>
@@ -271,7 +271,7 @@ export default function PolitykaCookiesPage() {
             <Section number="IX." title="Zarządzanie plikami cookies">
               <P>
                 Użytkownik może w każdym czasie zmienić ustawienia dotyczące plików cookies
-                w przeglądarce internetowej — w tym zablokować ich zapisywanie lub usunąć
+                w przeglądarce internetowej - w tym zablokować ich zapisywanie lub usunąć
                 już zapisane pliki. Sposób zarządzania zależy od używanej przeglądarki:
               </P>
               <Li>

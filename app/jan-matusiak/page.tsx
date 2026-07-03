@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -11,9 +11,9 @@ import {
 import { ContactButtons, CtaButtons } from "@/components/JanButtons";
 
 export const metadata: Metadata = {
-  title: "Jan Matusiak — Radca Prawny",
+  title: "Jan Matusiak - Radca Prawny",
   description:
-    "Jan Matusiak — Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
+    "Jan Matusiak - Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
   alternates: {
     canonical: "https://matusiak.legal/jan-matusiak",
     languages: {
@@ -63,7 +63,7 @@ const expertiseAreas = [
   {
     area: "Ochrona i planowanie majątku",
     detail:
-      "Doradztwo w zakresie strukturyzacji, zabezpieczenia i sukcesji majątku — dla właścicieli firm i klientów indywidualnych. Intercyzy, umowy majątkowe małżeńskie, planowanie przekazania majątku, działy i rozliczenia majątkowe w sprawach rodzinnych.",
+      "Doradztwo w zakresie strukturyzacji, zabezpieczenia i sukcesji majątku - dla właścicieli firm i klientów indywidualnych. Intercyzy, umowy majątkowe małżeńskie, planowanie przekazania majątku, działy i rozliczenia majątkowe w sprawach rodzinnych.",
     href: "/praktyka#majatek",
   },
 ];
@@ -161,14 +161,14 @@ export default function JanMatusiakPage() {
         <Container maxWidth="lg" sx={{ px: { xs: 3, md: 6 } }}>
           <Grid container spacing={{ xs: 4, md: 7 }} alignItems="flex-start">
 
-            {/* LEWA — zdjęcie + dane + kontakt */}
+            {/* LEWA - zdjęcie + dane + kontakt */}
             <Grid size={{ xs: 12, md: 4 }}>
 
               {/* Zdjęcie */}
               <Box sx={{ width: "100%", mb: 3, position: "relative" }}>
                 <Image
                   src="/jan-matusiak.jpg"
-                  alt="Jan Matusiak — Radca Prawny"
+                  alt="Jan Matusiak - Radca Prawny"
                   width={600}
                   height={800}
                   style={{ width: "100%", height: "auto", display: "block", objectFit: "cover", objectPosition: "center top" }}
@@ -218,11 +218,11 @@ export default function JanMatusiakPage() {
                 ))}
               </Box>
 
-              {/* Przyciski kontaktowe — client component */}
+              {/* Przyciski kontaktowe - client component */}
               <ContactButtons />
             </Grid>
 
-            {/* PRAWA — bio */}
+            {/* PRAWA - bio */}
             <Grid size={{ xs: 12, md: 8 }}>
               <Box
                 sx={{
@@ -276,7 +276,7 @@ export default function JanMatusiakPage() {
                 </Box>
                 <Box sx={{ pl: "32px" }}>
                   <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 0.5 }}>
-                    Wydział Prawa i Administracji — Uniwersytet Jagielloński w Krakowie
+                    Wydział Prawa i Administracji - Uniwersytet Jagielloński w Krakowie
                   </Typography>
                   <Typography sx={{ fontSize: "0.9rem", color: NAVY, fontWeight: 500, mb: 2.5 }}>
                     Okręgowa Izba Radców Prawnych w Krakowie
@@ -383,7 +383,7 @@ export default function JanMatusiakPage() {
                 lineHeight: 1.7,
                 maxWidth: 520,
               }}>
-                Zacznijmy od krótkiej rozmowy. Opowiedz, z czym przychodzisz —
+                Zacznijmy od krótkiej rozmowy. Opowiedz, z czym przychodzisz -
                 ocenię, czy mogę pomóc i jak wyglądałaby współpraca.
               </Typography>
             </Grid>

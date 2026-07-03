@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 import ThemeRegistry from "@/components/ThemeRegistry";
@@ -8,9 +8,9 @@ import CookieConsent from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://matusiak.legal"),
-  title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków Bronowice, Krowodrza — Profesjonalna pomoc prawna",
+  title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków Bronowice, Krowodrza - Profesjonalna pomoc prawna",
   description:
-    "Jan Matusiak — Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
+    "Jan Matusiak - Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
   keywords:
     "radca prawny, Jan Matusiak, prawo spółek, obsługa przedsiębiorców, kancelaria prawna, prawo umów, własność intelektualna",
   robots: {
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     url: "https://matusiak.legal",
     siteName: "Jan Matusiak Kancelaria Radcy Prawnego",
-    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków Bronowice, Krowodrza — Profesjonalna pomoc prawna",
+    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków Bronowice, Krowodrza - Profesjonalna pomoc prawna",
     description:
-      "Jan Matusiak — Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
-    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Radca Prawny" }],
+      "Jan Matusiak - Kancelaria Radcy Prawnego w Krakowie. Rozwiązania prawne dla przedsiębiorców i klientów indywidualnych.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Radca Prawny" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków Bronowice, Krowodrza — Profesjonalna pomoc prawna",
+    title: "Jan Matusiak Kancelaria Radcy Prawnego Kraków Bronowice, Krowodrza - Profesjonalna pomoc prawna",
     description:
       "Kancelaria radcy prawnego Jana Matusiaka. Strategiczne wsparcie prawne dla przedsiębiorców i klientów indywidualnych.",
     images: ["/jan-matusiak.jpg"],

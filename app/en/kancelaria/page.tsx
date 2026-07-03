@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
@@ -8,9 +8,9 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
 export const metadata: Metadata = {
-  title: "The Firm | Jan Matusiak — Attorney at Law",
+  title: "The Firm | Jan Matusiak - Attorney at Law",
   description:
-    "A law office personally run by attorney Jan Matusiak. Strategic legal advisory for businesses — corporate law, contracts, dispute resolution.",
+    "A law office personally run by attorney Jan Matusiak. Strategic legal advisory for businesses - corporate law, contracts, dispute resolution.",
   alternates: {
     canonical: "https://matusiak.legal/en/kancelaria",
     languages: {
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://matusiak.legal/en/kancelaria",
     siteName: "Jan Matusiak Law Office",
-    title: "The Firm | Jan Matusiak — Attorney at Law",
+    title: "The Firm | Jan Matusiak - Attorney at Law",
     description:
-      "A law office personally run by attorney Jan Matusiak. Strategic legal advisory for businesses — corporate law, contracts, dispute resolution.",
-    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak — Attorney at Law" }],
+      "A law office personally run by attorney Jan Matusiak. Strategic legal advisory for businesses - corporate law, contracts, dispute resolution.",
+    images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Firm | Jan Matusiak — Attorney at Law",
+    title: "The Firm | Jan Matusiak - Attorney at Law",
     description: "A law office personally run by attorney Jan Matusiak. Strategic legal advisory for businesses.",
     images: ["/jan-matusiak.jpg"],
   },
@@ -45,7 +45,7 @@ const differentiators = [
   {
     icon: <PsychologyOutlinedIcon />,
     title: "Commitment",
-    desc: "Every matter is handled personally. I do not pass clients to trainees or associates — contact and responsibility remain with me from start to finish.",
+    desc: "Every matter is handled personally. I do not pass clients to trainees or associates - contact and responsibility remain with me from start to finish.",
   },
   {
     icon: <WorkHistoryOutlinedIcon />,
@@ -55,7 +55,7 @@ const differentiators = [
   {
     icon: <ScheduleOutlinedIcon />,
     title: "Punctuality",
-    desc: "I meet deadlines. If something takes longer, I say so in advance — not after the fact. Efficiency is part of the service, not an option.",
+    desc: "I meet deadlines. If something takes longer, I say so in advance - not after the fact. Efficiency is part of the service, not an option.",
   },
   {
     icon: <InsightsOutlinedIcon />,
@@ -65,12 +65,12 @@ const differentiators = [
   {
     icon: <PersonOutlinedIcon />,
     title: "Boutique working model",
-    desc: "I believe in a direct relationship with the client. Every matter is handled by me personally — not passed on. Every client has direct contact with me.",
+    desc: "I believe in a direct relationship with the client. Every matter is handled by me personally - not passed on. Every client has direct contact with me.",
   },
   {
     icon: <CheckCircleOutlineIcon />,
     title: "Real utility",
-    desc: "Legal support should reduce your burden, not add to it. I ensure clients understand what is happening — and can focus on running their business.",
+    desc: "Legal support should reduce your burden, not add to it. I ensure clients understand what is happening - and can focus on running their business.",
   },
 ];
 
@@ -149,11 +149,11 @@ export default function KancelariaENPage() {
                 },
                 {
                   lead: "I believe in a direct relationship with the client.",
-                  body: "Every matter is handled by me personally — not passed on. Every client has direct contact with me.",
+                  body: "Every matter is handled by me personally - not passed on. Every client has direct contact with me.",
                 },
                 {
                   lead: "I work nationwide and handle matters across the whole of Poland.",
-                  body: "Work and contact take place primarily remotely — by phone, email and video conference. In-person meetings are arranged when genuinely needed and justified. I also handle matters with an international element — in English.",
+                  body: "Work and contact take place primarily remotely - by phone, email and video conference. In-person meetings are arranged when genuinely needed and justified. I also handle matters with an international element - in English.",
                 },
               ].map((item, i) => (
                 <Box key={i} sx={{ mb: i < 2 ? 3.5 : 0 }}>
@@ -248,7 +248,7 @@ export default function KancelariaENPage() {
               Fees
             </Typography>
             <Typography sx={{ fontSize: "0.875rem", color: "#4A4A4A", lineHeight: 1.75 }}>
-              Fees are agreed individually — at the initial consultation stage, following assessment of the matter.
+              Fees are agreed individually - at the initial consultation stage, following assessment of the matter.
               The primary billing model is an hourly rate; other arrangements agreed with the client are also possible.
             </Typography>
           </Box>
@@ -279,7 +279,7 @@ export default function KancelariaENPage() {
                 color: "rgba(255,255,255,0.6)",
                 fontSize: "0.925rem", lineHeight: 1.75, maxWidth: 500,
               }}>
-                Let&apos;s start with a brief conversation — no commitment. Tell me what brings you here.
+                Let&apos;s start with a brief conversation - no commitment. Tell me what brings you here.
                 I will assess whether the firm can help and what a potential engagement would look like.
               </Typography>
             </Grid>
