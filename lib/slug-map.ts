@@ -6,6 +6,7 @@ export const plToEnSlugMap: Record<string, string> = {
   "fundacja-rodzinna-po-wecie-prezydenta-2026": "family-foundation-presidential-veto-2026",
   "zarzad-sukcesyjny-jdg": "succession-management-sole-proprietorship",
   "odszkodowanie-opozniony-lot-wakacje-2026": "compensation-delayed-flight-2026",
+  "nowelizacja-ksh-akcje-imienne-okaziciel-2026": "ksh-amendment-registered-bearer-shares-2026",
 };
 
 export const enToPlSlugMap: Record<string, string> = Object.fromEntries(
