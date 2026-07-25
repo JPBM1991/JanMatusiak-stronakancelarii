@@ -45,6 +45,7 @@ Używaj spójnie jednej z tych kategorii:
 - `Postępowania sporne`
 - `Majątek`
 - `Prawo pracy`
+- `Obsługa przedsiębiorców`
 
 ### `readTime`
 Przybliżony czas czytania: "4 min", "6 min", "8 min" (ok. 200 słów/min)
@@ -99,7 +100,7 @@ Krótkie podsumowanie lub wniosek praktyczny.
 Każdy artykuł PL powinien mieć odpowiednik EN:
 - Ten sam slug po angielsku: `content/posts-en/liability-of-board-members.mdx`
 - Przetłumaczone `title`, `excerpt`, `category` (po angielsku)
-- `category` EN: `Corporate Law`, `Contracts`, `Litigation`, `Assets`, `Employment Law`
+- `category` EN: `Corporate Law`, `Contracts`, `Litigation`, `Assets`, `Employment Law`, `For Entrepreneurs`
 
 ---
 
