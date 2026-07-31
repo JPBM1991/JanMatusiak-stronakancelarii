@@ -81,7 +81,7 @@ export default function DynamicStatement() {
                 color: GOLD,
               }}
             >
-              Typowa sprawa
+              Przykładowa sytuacja
             </Typography>
           </Box>
 

@@ -2,6 +2,8 @@
 import Hero from "@/components/Hero";
 
 export const metadata: Metadata = {
+  description:
+    "Wieloletnie doświadczenie w obsłudze przedsiębiorców, prawie spółek i postępowaniach spornych. Obsługa w języku polskim i angielskim. Kancelaria Kraków.",
   alternates: {
     canonical: "https://matusiak.legal",
     languages: {
