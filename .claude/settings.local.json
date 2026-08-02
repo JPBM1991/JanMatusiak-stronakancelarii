@@ -20,7 +20,18 @@
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(node -e \"require\\('sharp'\\); console.log\\('sharp ok'\\)\")",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(mkdir -p \"c:/Users/eshar/Documents/GitHub/JanMatusiak-stronakancelarii/public/images\")",
+      "Bash(curl -s -L \"https://unsplash.com/photos/qAatP8mYncE\")",
+      "Bash(curl -s -L -o \"c:/Users/eshar/Documents/GitHub/JanMatusiak-stronakancelarii/public/images/ppwr-opakowania.jpg\" \"https://images.unsplash.com/photo-qAatP8mYncE?w=1200&auto=format&fit=crop&q=80\")",
+      "Bash(curl -s -L -o \"c:/Users/eshar/Documents/GitHub/JanMatusiak-stronakancelarii/public/images/ppwr-opakowania.jpg\" \"https://unsplash.com/photos/qAatP8mYncE/download?force=true\")",
+      "Bash(grep -o '\"text\":\"[^\"]*PPWR[^\"]*\"' \"C:\\\\Users\\\\eshar\\\\.claude\\\\projects\\\\c--Users-eshar-Documents-GitHub-JanMatusiak-stronakancelarii\\\\b9c484b1-7c94-40c3-bee2-452a9fdfc680.jsonl\" 2>/dev/null | head -5)",
+      "Read(//c/Users/eshar/.claude/projects/c--Users-eshar-Documents-GitHub-JanMatusiak-stronakancelarii/**)",
+      "Bash(grep -o '\"text\":\"[^\"]*Problematyka[^\"]*\"' \"C:\\\\Users\\\\eshar\\\\.claude\\\\projects\\\\c--Users-eshar-Documents-GitHub-JanMatusiak-stronakancelarii\\\\b9c484b1-7c94-40c3-bee2-452a9fdfc680.jsonl\" 2>/dev/null | head -3)",
+      "Bash(grep -c \"\" \"C:\\\\Users\\\\eshar\\\\.claude\\\\projects\\\\c--Users-eshar-Documents-GitHub-JanMatusiak-stronakancelarii\\\\b9c484b1-7c94-40c3-bee2-452a9fdfc680.jsonl\" 2>/dev/null)",
+      "Bash(grep -n \"marka\" \"C:\\\\Users\\\\eshar\\\\.claude\\\\projects\\\\c--Users-eshar-Documents-GitHub-JanMatusiak-stronakancelarii\\\\b9c484b1-7c94-40c3-bee2-452a9fdfc680.jsonl\" 2>/dev/null | head -20)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -L -o c:/Users/eshar/Documents/GitHub/JanMatusiak-stronakancelarii/public/images/ppwr-opakowania.avif -H 'Accept: image/avif,image/webp,*/*' -H 'User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36' 'https://plus.unsplash.com/premium_photo-1681487526392-6183829c5f80?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' --max-time 30 -w '\\\\nHTTP %{http_code}, size %{size_download} bytes')"
     ]
   }
 }

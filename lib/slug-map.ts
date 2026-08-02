@@ -8,6 +8,7 @@ export const plToEnSlugMap: Record<string, string> = {
   "odszkodowanie-opozniony-lot-wakacje-2026": "compensation-delayed-flight-2026",
   "nowelizacja-ksh-akcje-imienne-okaziciel-2026": "ksh-amendment-registered-bearer-shares-2026",
   "e-doreczenia-jdg-1-pazdziernika-2026": "e-delivery-sole-trader-october-2026",
+  "ppwr-marka-wlasna-opakowania-2026": "ppwr-private-label-packaging-2026",
 };
 
 export const enToPlSlugMap: Record<string, string> = Object.fromEntries(

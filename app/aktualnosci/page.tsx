@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { getAllPosts } from "@/lib/posts";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -108,6 +109,20 @@ export default function AktualnosciPage() {
                       },
                     }}
                   >
+                    {/* Cover image */}
+                    {post.image && (
+                      <Box sx={{
+                        position: "relative",
+                        height: i === 0 ? 260 : 180,
+                        overflow: "hidden",
+                        mx: { xs: -3, md: i === 0 ? -4.5 : -3.5 },
+                        mt: { xs: -3, md: i === 0 ? -4.5 : -3.5 },
+                        mb: 2.5,
+                      }}>
+                        <Image src={post.image} alt={post.title} fill style={{ objectFit: "cover" }} />
+                      </Box>
+                    )}
+
                     {/* Meta */}
                     <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}>
                       <Typography sx={{

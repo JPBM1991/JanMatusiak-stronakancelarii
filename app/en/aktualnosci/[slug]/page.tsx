@@ -44,7 +44,7 @@ export async function generateMetadata({
       url: `https://matusiak.legal/en/aktualnosci/${slug}`,
       title: seoTitle,
       description: post.excerpt,
-      images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
+      images: [{ url: post.image ?? "/jan-matusiak.jpg", width: 1200, height: 630, alt: post.title }],
     },
   };
 }
@@ -282,6 +282,13 @@ export default async function PostENPage({
           </Typography>
         </Container>
       </Box>
+
+      {/* ── COVER IMAGE ── */}
+      {post.image && (
+        <Box sx={{ position: "relative", width: "100%", height: { xs: 220, md: 420 }, overflow: "hidden" }}>
+          <Image src={post.image} alt={post.title} fill style={{ objectFit: "cover" }} priority />
+        </Box>
+      )}
 
       {/* ── CONTENT ── */}
       <Box sx={{ backgroundColor: LIGHT, py: { xs: 6, md: 8 } }}>
