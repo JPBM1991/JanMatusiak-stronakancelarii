@@ -45,6 +45,7 @@ const contactDetails = [
     label: "Phone",
     value: "+48 500 255 293",
     href: "tel:+48500255293",
+    note: "If I don't answer, please send a text, I'll call back.",
   },
 ];
 
@@ -175,6 +176,11 @@ export default function KontaktENPage() {
                     >
                       {item.value}
                     </Typography>
+                    {"note" in item && item.note && (
+                      <Typography sx={{ fontSize: "0.75rem", color: "#7A8A96", mt: 0.4, lineHeight: 1.5 }}>
+                        {item.note}
+                      </Typography>
+                    )}
                   </Box>
                 ))}
 
