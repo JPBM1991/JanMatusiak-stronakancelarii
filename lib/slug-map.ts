@@ -10,6 +10,7 @@ export const plToEnSlugMap: Record<string, string> = {
   "e-doreczenia-jdg-1-pazdziernika-2026": "e-delivery-sole-trader-october-2026",
   "ppwr-marka-wlasna-opakowania-2026": "ppwr-private-label-packaging-2026",
   "greenwashing-twierdzenia-srodowiskowe-2026": "greenwashing-environmental-claims-2026",
+  "women-on-boards-rownowaga-plci-2026": "women-on-boards-gender-balance-2026",
 };
 
 export const enToPlSlugMap: Record<string, string> = Object.fromEntries(
