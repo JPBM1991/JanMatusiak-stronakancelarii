@@ -49,8 +49,30 @@ const infoItems = [
   },
 ];
 
+const contactJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  name: "Jan Matusiak Kancelaria Radcy Prawnego",
+  url: "https://matusiak.legal",
+  telephone: "+48500255293",
+  email: "jan.matusiak@matusiak.legal",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Kraków",
+    addressCountry: "PL",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+48500255293",
+    contactType: "customer service",
+    availableLanguage: ["Polish", "English"],
+  },
+};
+
 export default function KontaktPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }} />
     <Box sx={{ backgroundColor: "#ffffff", minHeight: "100vh" }}>
 
       {/* ── NAGŁÓWEK ── */}
@@ -265,5 +287,6 @@ export default function KontaktPage() {
       </Box>
 
     </Box>
+    </>
   );
 }
