@@ -12,6 +12,7 @@ export const plToEnSlugMap: Record<string, string> = {
   "greenwashing-twierdzenia-srodowiskowe-2026": "greenwashing-environmental-claims-2026",
   "women-on-boards-rownowaga-plci-2026": "women-on-boards-gender-balance-2026",
   "pkd-2025-aktualizacja-krs-2026": "pkd-2025-update-krs-2026",
+  "interpretacje-gip-b2b-2026": "gip-interpretations-b2b-2026",
 };
 
 export const enToPlSlugMap: Record<string, string> = Object.fromEntries(
