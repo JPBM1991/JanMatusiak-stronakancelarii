@@ -14,6 +14,7 @@ export const plToEnSlugMap: Record<string, string> = {
   "pkd-2025-aktualizacja-krs-2026": "pkd-2025-update-krs-2026",
   "interpretacje-gip-b2b-2026": "gip-interpretations-b2b-2026",
   "nis2-ksc-kto-podlega-2026": "nis2-ksc-registration-2026",
+  "odrzucenie-spadku-dlugi": "rejecting-inheritance-debts",
 };
 
 export const enToPlSlugMap: Record<string, string> = Object.fromEntries(
