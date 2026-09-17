@@ -45,7 +45,7 @@ const contactDetails = [
     label: "Phone",
     value: "+48 500 255 293",
     href: "tel:+48500255293",
-    note: "If I don't answer, please send a text, I'll call back.",
+    note: "If I can't take your call, please send a text or email, I'll get back to you.",
   },
 ];
 

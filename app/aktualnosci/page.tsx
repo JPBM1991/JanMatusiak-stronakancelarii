@@ -8,7 +8,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 export const metadata: Metadata = {
   title: "Aktualności | Jan Matusiak - Radca Prawny",
   description:
-    "Artykuły prawne i komentarze dotyczące prawa spółek, umów, negocjacji i obsługi przedsiębiorców. Blog kancelarii Jana Matusiaka.",
+    "Artykuły prawne dotyczące prawa spółek, umów, negocjacji, obsługi przedsiębiorców oraz planowania i zarządzania majątkiem. Blog kancelarii Jana Matusiaka.",
   alternates: {
     canonical: "https://matusiak.legal/aktualnosci",
     languages: {
@@ -69,9 +69,11 @@ export default function AktualnosciPage() {
             fontSize: { xs: "0.9rem", md: "1rem" },
             lineHeight: 1.75, maxWidth: 520,
           }}>
-            Artykuły i komentarze dotyczące prawa spółek, umów, negocjacji
-            i obsługi przedsiębiorców. Bez zbędnej teorii - z naciskiem
-            na praktyczne znaczenie omawianych zagadnień.
+            Artykuły i komentarze dotyczące w szczególności prawa spółek, umów,
+            negocjacji, obsługi przedsiębiorców, a także zagadnień związanych
+            z planowaniem i zarządzaniem majątkiem. Bez zbędnej teorii,
+            z naciskiem na praktyczne znaczenie omawianych zagadnień
+            dla przedsiębiorców oraz klientów indywidualnych.
           </Typography>
         </Container>
       </Box>

@@ -30,7 +30,7 @@ const contactDetails = [
     label: "Telefon",
     value: "+48 500 255 293",
     href: "tel:+48500255293",
-    note: "Jeśli nie odbiorę, proszę o SMS, oddzwonię.",
+    note: "Jeśli akurat nie mogę rozmawiać, proszę o SMS lub e-mail, oddzwonię.",
   },
 ];
 

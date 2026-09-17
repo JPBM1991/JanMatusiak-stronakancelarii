@@ -8,7 +8,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 export const metadata: Metadata = {
   title: "News | Jan Matusiak - Attorney at Law",
   description:
-    "Legal articles and commentary on company law, contracts, negotiations and business advisory. Blog of Jan Matusiak's law firm.",
+    "Legal articles on company law, contracts, negotiations, business advisory and asset planning and management. Blog of Jan Matusiak's law firm.",
   alternates: {
     canonical: "https://matusiak.legal/en/aktualnosci",
     languages: {
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
     siteName: "Jan Matusiak Law Office",
     title: "News | Jan Matusiak - Attorney at Law",
     description:
-      "Legal articles and commentary on company law, contracts, negotiations and business advisory. Blog of Jan Matusiak's law firm.",
+      "Legal articles on company law, contracts, negotiations, business advisory and asset planning and management. Blog of Jan Matusiak's law firm.",
     images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "News | Jan Matusiak - Attorney at Law",
-    description: "Legal articles on company law, contracts, negotiations and business advisory.",
+    description: "Legal articles on company law, contracts, negotiations, business advisory and asset planning.",
     images: ["/jan-matusiak.jpg"],
   },
 };
@@ -85,8 +85,11 @@ export default function NewsPage() {
             fontSize: { xs: "0.9rem", md: "1rem" },
             lineHeight: 1.75, maxWidth: 520,
           }}>
-            Articles and commentary on company law, contracts, negotiations
-            and business advisory - focused on practical implications.
+            Articles and commentary on company law, contracts, negotiations,
+            business advisory, and matters related to asset planning and
+            management. No unnecessary theory, with emphasis on the practical
+            significance of the issues discussed for businesses and individual
+            clients.
           </Typography>
         </Container>
       </Box>
