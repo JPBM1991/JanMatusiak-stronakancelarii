@@ -16,6 +16,7 @@ export const plToEnSlugMap: Record<string, string> = {
   "nis2-ksc-kto-podlega-2026": "nis2-ksc-registration-2026",
   "odrzucenie-spadku-dlugi": "rejecting-inheritance-debts",
   "ksef-bez-kar-2027-zapowiedz": "ksef-no-penalties-2027-announcement",
+  "pip-trzy-miesiace-reformy": "pip-reform-three-months",
 };
 
 export const enToPlSlugMap: Record<string, string> = Object.fromEntries(
