@@ -17,6 +17,7 @@ export const plToEnSlugMap: Record<string, string> = {
   "odrzucenie-spadku-dlugi": "rejecting-inheritance-debts",
   "ksef-bez-kar-2027-zapowiedz": "ksef-no-penalties-2027-announcement",
   "pip-trzy-miesiace-reformy": "pip-reform-three-months",
+  "ksef-kary-rzad-przyjal-projekt": "ksef-penalties-government-adopts-draft",
 };
 
 export const enToPlSlugMap: Record<string, string> = Object.fromEntries(
