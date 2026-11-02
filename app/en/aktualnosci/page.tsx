@@ -131,11 +131,12 @@ export default function NewsPage() {
                           position: "relative",
                           height: i === 0 ? 260 : 180,
                           overflow: "hidden",
+                          backgroundColor: post.imageFit === "contain" ? LIGHT : undefined,
                           mx: { xs: -3, md: i === 0 ? -4.5 : -3.5 },
                           mt: { xs: -3, md: i === 0 ? -4.5 : -3.5 },
                           mb: 2.5,
                         }}>
-                          <Image src={post.image} alt={post.title} fill style={{ objectFit: "cover" }} />
+                          <Image src={post.image} alt={post.title} fill style={{ objectFit: post.imageFit === "contain" ? "contain" : "cover" }} />
                         </Box>
                       )}
 

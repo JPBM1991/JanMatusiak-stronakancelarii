@@ -12,6 +12,7 @@ export type PostMeta = {
   category: string;
   readTime: string;
   image?: string;
+  imageFit?: string;
 };
 
 export type Post = PostMeta & {
@@ -34,6 +35,7 @@ export function getAllPosts(): PostMeta[] {
       category: data.category as string,
       readTime: data.readTime as string,
       image: data.image as string | undefined,
+      imageFit: data.imageFit as string | undefined,
     };
   });
 
@@ -54,6 +56,7 @@ export function getPostBySlug(slug: string): Post {
     category: data.category as string,
     readTime: data.readTime as string,
     image: data.image as string | undefined,
+    imageFit: data.imageFit as string | undefined,
     content,
   };
 }
