@@ -117,7 +117,7 @@ export default function AktualnosciPage() {
                         position: "relative",
                         height: i === 0 ? 260 : 180,
                         overflow: "hidden",
-                        backgroundColor: post.imageFit === "contain" ? LIGHT : undefined,
+                        backgroundColor: post.imageFit === "contain" ? "#0B1829" : undefined,
                         mx: { xs: -3, md: i === 0 ? -4.5 : -3.5 },
                         mt: { xs: -3, md: i === 0 ? -4.5 : -3.5 },
                         mb: 2.5,

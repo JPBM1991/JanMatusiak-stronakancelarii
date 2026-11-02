@@ -285,7 +285,7 @@ export default async function PostENPage({
 
       {/* ── COVER IMAGE ── */}
       {post.image && (
-        <Box sx={{ position: "relative", width: "100%", height: { xs: 220, md: 420 }, overflow: "hidden", backgroundColor: post.imageFit === "contain" ? LIGHT : undefined }}>
+        <Box sx={{ position: "relative", width: "100%", height: { xs: 220, md: post.imageFit === "contain" ? 560 : 420 }, overflow: "hidden", backgroundColor: post.imageFit === "contain" ? "#0B1829" : undefined }}>
           <Image src={post.image} alt={post.title} fill style={{ objectFit: post.imageFit === "contain" ? "contain" : "cover" }} priority />
         </Box>
       )}
