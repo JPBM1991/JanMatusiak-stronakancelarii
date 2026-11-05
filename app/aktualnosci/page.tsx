@@ -101,7 +101,7 @@ export default function AktualnosciPage() {
                       display: "block",
                       backgroundColor: "#ffffff",
                       border: `1px solid ${BORDER}`,
-                      borderTop: `3px solid ${i === 0 ? GOLD : BORDER}`,
+                      borderTop: `3px solid ${i === 0 || post.badge ? GOLD : BORDER}`,
                       p: { xs: 3, md: i === 0 ? 4.5 : 3.5 },
                       height: "100%",
                       transition: "border-top-color 0.2s, box-shadow 0.2s",
@@ -127,7 +127,16 @@ export default function AktualnosciPage() {
                     )}
 
                     {/* Meta */}
-                    <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}>
+                    <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2, flexWrap: "wrap", rowGap: 1 }}>
+                      {post.badge && (
+                        <Typography sx={{
+                          fontSize: "0.6rem", fontWeight: 700,
+                          color: GOLD, letterSpacing: "0.12em", textTransform: "uppercase",
+                          border: `1px solid ${GOLD}`, px: 0.9, py: 0.3, lineHeight: 1.4,
+                        }}>
+                          {post.badge}
+                        </Typography>
+                      )}
                       <Typography sx={{
                         fontSize: "0.68rem", fontWeight: 600,
                         color: GOLD, letterSpacing: "0.15em", textTransform: "uppercase",
