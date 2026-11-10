@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const NAVY = "#2B3A4A";
 const GOLD = "#2B3A4A";
 const BORDER = "#D4E2EA";
+const ACCENT = "#B8924A";
 const LIGHT = "#EDF3F6";
 
 function formatDate(dateStr: string) {
@@ -100,13 +101,13 @@ export default function AktualnosciPage() {
                     sx={{
                       display: "block",
                       backgroundColor: "#ffffff",
-                      border: `1px solid ${BORDER}`,
-                      borderTop: `3px solid ${i === 0 || post.badge ? GOLD : BORDER}`,
+                      border: `1px solid ${post.badge ? ACCENT : BORDER}`,
+                      borderTop: `3px solid ${post.badge ? ACCENT : i === 0 ? GOLD : BORDER}`,
                       p: { xs: 3, md: i === 0 ? 4.5 : 3.5 },
                       height: "100%",
                       transition: "border-top-color 0.2s, box-shadow 0.2s",
                       "&:hover": {
-                        borderTopColor: GOLD,
+                        borderTopColor: post.badge ? ACCENT : GOLD,
                         boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
                       },
                     }}
@@ -131,8 +132,8 @@ export default function AktualnosciPage() {
                       {post.badge && (
                         <Typography sx={{
                           fontSize: "0.6rem", fontWeight: 700,
-                          color: GOLD, letterSpacing: "0.12em", textTransform: "uppercase",
-                          border: `1px solid ${GOLD}`, px: 0.9, py: 0.3, lineHeight: 1.4,
+                          color: ACCENT, letterSpacing: "0.12em", textTransform: "uppercase",
+                          border: `1px solid ${ACCENT}`, px: 0.9, py: 0.3, lineHeight: 1.4,
                         }}>
                           {post.badge}
                         </Typography>
