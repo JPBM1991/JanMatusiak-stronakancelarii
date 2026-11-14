@@ -45,15 +45,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const plPosts = getAllPosts().map((post) => ({
     url: `${BASE}/aktualnosci/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "yearly" as const,
+    lastModified: new Date(post.updated ?? post.date),
+    changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
   const enPosts = getAllPostsEN().map((post) => ({
     url: `${BASE}/en/aktualnosci/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "yearly" as const,
+    lastModified: new Date(post.updated ?? post.date),
+    changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 

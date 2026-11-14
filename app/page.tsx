@@ -32,8 +32,11 @@ const jsonLd = {
   areaServed: "PL",
   founder: {
     "@type": "Person",
+    "@id": "https://matusiak.legal/jan-matusiak#person",
     name: "Jan Matusiak",
     jobTitle: "Radca Prawny",
+    url: "https://matusiak.legal/jan-matusiak",
+    sameAs: ["https://www.linkedin.com/in/jan-matusiak-000842183/"],
   },
   image: "https://matusiak.legal/jan-matusiak.jpg",
 };

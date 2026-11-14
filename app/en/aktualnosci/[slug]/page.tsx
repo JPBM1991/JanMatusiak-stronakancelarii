@@ -200,9 +200,10 @@ export default async function PostENPage({
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     author: {
       "@type": "Person",
+      "@id": "https://matusiak.legal/jan-matusiak#person",
       name: "Jan Matusiak",
       url: "https://matusiak.legal/en/jan-matusiak",
     },

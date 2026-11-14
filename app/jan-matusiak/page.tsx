@@ -82,7 +82,9 @@ const jsonLd = {
   jobTitle: "Radca Prawny",
   description:
     "Radca prawny, absolwent UJ, członek OIRP w Krakowie. Wieloletnie doświadczenie w obsłudze przedsiębiorców, prawie spółek, postępowaniach spornych i kontraktowaniu.",
+  "@id": "https://matusiak.legal/jan-matusiak#person",
   url: "https://matusiak.legal/jan-matusiak",
+  sameAs: ["https://www.linkedin.com/in/jan-matusiak-000842183/"],
   image: "https://matusiak.legal/jan-matusiak.jpg",
   email: "jan.matusiak@matusiak.legal",
   telephone: "+48500255293",

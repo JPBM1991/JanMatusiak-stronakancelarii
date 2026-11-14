@@ -39,6 +39,34 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://matusiak.legal/jan-matusiak#person",
+  name: "Jan Matusiak",
+  jobTitle: "Attorney at Law",
+  description:
+    "Attorney at law, graduate of the Jagiellonian University, member of the Regional Bar Association in Kraków. Extensive experience advising businesses on company law, litigation and contracts.",
+  url: "https://matusiak.legal/en/jan-matusiak",
+  sameAs: ["https://www.linkedin.com/in/jan-matusiak-000842183/"],
+  image: "https://matusiak.legal/jan-matusiak.jpg",
+  email: "jan.matusiak@matusiak.legal",
+  telephone: "+48500255293",
+  worksFor: {
+    "@type": "LegalService",
+    name: "Jan Matusiak Law Office",
+    url: "https://matusiak.legal/en",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Jagiellonian University",
+  },
+  memberOf: {
+    "@type": "Organization",
+    name: "Regional Bar Association of Attorneys at Law in Kraków",
+  },
+};
+
 const NAVY = "#2B3A4A";
 const GOLD = "#2B3A4A";
 const BORDER = "#D4E2EA";
@@ -93,6 +121,11 @@ const bioParas = [
 
 export default function JanMatusiakENPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <Box sx={{ backgroundColor: "#ffffff", minHeight: "100vh" }}>
 
       {/* ── HEADER ── */}
@@ -464,5 +497,6 @@ export default function JanMatusiakENPage() {
       </Box>
 
     </Box>
+    </>
   );
 }
