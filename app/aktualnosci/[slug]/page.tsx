@@ -26,7 +26,10 @@ export async function generateMetadata({
   const enSlug = plToEnSlugMap[slug];
   const suffix = "Jan Matusiak - Radca Prawny";
   const raw = `${post.title} | ${suffix}`;
-  const seoTitle = raw.length > 65 ? `${post.title.split(".")[0].trim()} | ${suffix}` : raw;
+  // Skracamy tylko na granicy zdania: kropka/znak zapytania + spacja + wielka litera.
+  // Zwykly split(".") rozbijalby skroty typu "sp. z o.o." w srodku tytulu.
+  const firstSentence = post.title.match(/^(.{15,}?[.?!])\s+\p{Lu}/u)?.[1].replace(/\.$/, "");
+  const seoTitle = raw.length > 65 && firstSentence ? `${firstSentence} | ${suffix}` : raw;
   return {
     title: seoTitle,
     description: post.excerpt,

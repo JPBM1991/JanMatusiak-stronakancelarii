@@ -21,6 +21,7 @@ export const plToEnSlugMap: Record<string, string> = {
   "fundacja-rodzinna-a-zachowek": "family-foundation-and-legitim",
   "jan-matusiak-dla-parp-pkd-2025": "jan-matusiak-for-parp-pkd-2025",
   "fundacja-rodzinna-a-sukcesja-firmy": "family-foundation-and-business-succession",
+  "pelnomocnictwo-forma-dokumentowa-ksh": "power-of-attorney-documentary-form-ksh",
 };
 
 export const enToPlSlugMap: Record<string, string> = Object.fromEntries(

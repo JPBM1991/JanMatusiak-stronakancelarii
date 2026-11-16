@@ -26,7 +26,10 @@ export async function generateMetadata({
   const plSlug = enToPlSlugMap[slug];
   const suffix = "Jan Matusiak - Attorney at Law";
   const raw = `${post.title} | ${suffix}`;
-  const seoTitle = raw.length > 65 ? `${post.title.split(".")[0].trim()} | ${suffix}` : raw;
+  // Shorten only at a real sentence boundary: ./?/! + space + capital letter.
+  // A plain split(".") would break abbreviations such as "sp. z o.o." mid-title.
+  const firstSentence = post.title.match(/^(.{15,}?[.?!])\s+\p{Lu}/u)?.[1].replace(/\.$/, "");
+  const seoTitle = raw.length > 65 && firstSentence ? `${firstSentence} | ${suffix}` : raw;
   return {
     title: seoTitle,
     description: post.excerpt,
