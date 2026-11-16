@@ -43,7 +43,7 @@ const pillars = [
   {
     icon: <ShieldOutlinedIcon />,
     title: "Ochrona i planowanie\nmajątku",
-    desc: "Strukturyzacja, zabezpieczenie i sukcesja majątku — dla właścicieli firm i klientów indywidualnych.",
+    desc: "Strukturyzacja, zabezpieczenie i sukcesja majątku przedsiębiorców oraz klientów indywidualnych.",
     href: "/praktyka#majatek",
   },
 ];

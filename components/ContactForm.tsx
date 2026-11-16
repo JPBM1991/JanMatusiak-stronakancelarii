@@ -110,7 +110,7 @@ export default function ContactForm() {
         </Typography>
         <Typography sx={{ color: "#5A5A5A", fontSize: "0.9rem", lineHeight: 1.7, maxWidth: 340 }}>
           Dziękuję za kontakt. Odpiszę w ciągu 1–2 dni roboczych.
-          Jeśli sprawa jest pilna — zadzwoń bezpośrednio.
+          Jeśli sprawa jest pilna, zadzwoń bezpośrednio.
         </Typography>
       </Box>
     );

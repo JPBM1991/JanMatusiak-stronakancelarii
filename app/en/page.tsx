@@ -11,7 +11,7 @@ import DynamicStatementEN from "@/components/DynamicStatementEN";
 export const metadata: Metadata = {
   title: "Jan Matusiak | Attorney at Law",
   description:
-    "A law office personally run by attorney Jan Matusiak. Strategic legal support for entrepreneurs and individual clients - corporate law, contracts, dispute resolution, asset planning. Nationwide.",
+    "Legal services for businesses and individual clients. Corporate law, contracts, disputes, asset protection and succession. Law office in Kraków.",
   alternates: {
     canonical: "https://matusiak.legal/en",
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Jan Matusiak Law Office",
     title: "Jan Matusiak | Attorney at Law",
     description:
-      "A law office personally run by attorney Jan Matusiak. Strategic legal support for entrepreneurs and individual clients - corporate law, contracts, dispute resolution, asset planning. Nationwide.",
+      "Legal services for businesses and individual clients. Corporate law, contracts, disputes, asset protection and succession. Law office in Kraków.",
     images: [{ url: "/jan-matusiak.jpg", width: 800, height: 800, alt: "Jan Matusiak - Attorney at Law" }],
   },
   twitter: {
@@ -72,7 +72,7 @@ const pillars = [
   {
     icon: <ShieldOutlinedIcon />,
     title: "Asset protection\n& planning",
-    desc: "Structuring, safeguarding and succession of assets - for business owners and individuals.",
+    desc: "Structuring, safeguarding and succession of assets for businesses and individual clients.",
     href: "/en/praktyka#majatek",
   },
 ];
