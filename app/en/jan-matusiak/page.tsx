@@ -150,27 +150,33 @@ export default function JanMatusiakENPage() {
               The Firm · About
             </Typography>
           </Box>
-          <Typography
-            variant="h1"
-            sx={{
-              color: "#ffffff",
-              fontSize: { xs: "2.2rem", md: "3rem" },
-              lineHeight: 1.15,
-              letterSpacing: "-0.015em",
-              mb: 1,
-            }}
-          >
-            Jan Matusiak
-          </Typography>
-          <Typography sx={{
-            color: GOLD,
-            fontSize: { xs: "0.85rem", md: "0.95rem" },
-            fontWeight: 500,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-          }}>
-            Attorney at Law
-          </Typography>
+          <Box component="h1" sx={{ m: 0 }}>
+            <Typography
+              variant="h1"
+              component="span"
+              sx={{
+                display: "block",
+                color: "#ffffff",
+                fontSize: { xs: "2.2rem", md: "3rem" },
+                lineHeight: 1.15,
+                letterSpacing: "-0.015em",
+                mb: 1,
+              }}
+            >
+              Jan Matusiak
+            </Typography>
+            {" "}
+            <Typography component="span" sx={{
+              display: "block",
+              color: GOLD,
+              fontSize: { xs: "0.85rem", md: "0.95rem" },
+              fontWeight: 500,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+            }}>
+              Attorney at Law
+            </Typography>
+          </Box>
         </Container>
       </Box>
 
